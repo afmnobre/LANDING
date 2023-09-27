@@ -1,0 +1,45 @@
+
+            LUCY KUSHINADA
+
+
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠉⠉⠉⠉⠙⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠉⢹⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⢀⠔⢹⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⢀⠔⠁⠀⢸⠀⠀⠀⠀⠈⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⢁⠀⢠⠀⠀⢀⠀⡰⠁⠀⠀⠀⢸⠀⠀⠀⠀⠀⠘⡀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠘⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⠃⢸⠀⣸⠀⠀⢸⠜⠀⠀⠀⠀⢠⢻⠀⠀⠀⠀⠀⠀⢡⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠇⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⡏⠀⠘⢰⢹⠀⠀⢸⠀⠀⠀⠀⢠⠃⠘⠀⢸⠀⠀⠀⠀⠈⡄⠀⠀⠀⠀⠀⠀⢠⠀⠀⢰⠀⠀⠀⠀⠇⠀⠀⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⠁⠀⢀⠇⢸⠀⠀⢸⠠⣀⠀⡰⠁⠀⠀⡆⠸⡆⠀⠀⠀⠀⢡⠀⠀⠀⠀⠀⠀⠈⠀⠀⠸⠀⠀⠀⠀⢰⠀⠀⢸⣿⣿⣿
+        ⣿⣿⣿⣿⣿⡿⠀⠀⡘⠀⣸⠀⠀⠀⠑⢄⠁⠁⠀⠀⠀⢡⠀⣇⠀⠀⠀⠀⠘⡀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠈⣿⣿⣿
+        ⣿⣿⣿⣿⣿⠃⠀⢠⡇⢠⠁⠀⠀⡀⢀⠎⠀⠀⠀⠀⠀⠈⡄⢹⠀⠀⠀⠀⠀⣇⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⢿⣿⣿
+        ⣿⣿⣿⣿⣿⠀⡆⡘⡇⠆⠀⠀⠀⡧⡌⠀⠀⠀⠀⠀⠀⠀⠱⠈⡇⠀⠀⠀⡀⠹⡀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⢸⣿⣿
+        ⣿⣿⣿⣿⣿⠀⡇⠇⣛⣀⠀⡇⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⢃⡸⡄⠀⠀⢠⢀⡇⠀⠀⠀⢰⡇⠀⠀⢰⠀⠀⠀⠀⢸⠀⠀⠀⢸⣿⣿
+        ⣿⣿⣿⣿⣿⠀⠙⠀⣭⣀⠈⡇⠀⡏⠀⠀⠀⣈⠩⠽⠶⢦⣤⣌⣳⠤⠤⠤⢬⡚⠡⣤⢤⣠⡷⠧⠄⠀⠈⡆⠀⠀⠀⢸⠀⠀⠀⢸⣿⣿
+        ⣿⣿⣿⣿⣿⡀⠀⠀⡇⠀⢣⡇⠀⡗⠳⣲⣖⢲⡟⢓⡒⣲⣶⡻⣹⠑⠒⠒⠚⢳⡿⣿⣫⡭⠽⢿⡷⢶⣶⡇⠀⠀⠀⢸⠀⠀⠀⢸⣿⣿
+        ⣿⣿⣿⡿⣿⡇⠀⠀⡇⠀⡎⣇⠀⡇⠀⠈⠙⠧⡳⢬⣭⠝⣠⠙⠁⠀⠀⠀⠀⠃⠈⠛⡹⡔⣿⢱⠂⡼⠋⡇⠀⠀⠀⢸⠀⠀⠀⣸⣿⣿
+        ⣿⣿⣿⣿⣿⣇⠀⠀⠱⡀⠹⣸⠀⡟⡀⠀⠀⠀⠈⠲⠶⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣮⢭⠵⠋⠀⠀⡇⠀⠀⠀⢸⠀⠀⠀⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⡀⠀⢸⠘⢄⠸⠀⢰⢡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⡜⠀⠀⢰⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣇⠀⠈⠀⠀⢣⡇⢸⠄⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⣾⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢸⢸⣣⠈⢆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣤⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠀⠀⠀⠀⡇⠀⢰⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⢿⣿⣇⠀⠄⠀⠀⡼⡌⣿⣷⡈⠢⡀⠀⠀⠀⠀⠠⢀⣀⣀⢀⣀⣀⠄⠀⠀⠀⠀⠀⠀⣴⣿⠀⠀⠀⢀⡇⢀⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣏⠀⠀⠈⡆⠇⣠⣾⣿⣇⢿⣿⣿⣶⣌⠢⡀⠀⠀⠀⠈⠢⣄⣀⠞⠁⠀⠀⠀⠀⠀⣠⣾⣿⣿⠀⠀⠀⢸⣇⣼⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⠀⠀⠂⠸⣸⢛⣿⣟⠹⣸⣿⣿⣿⡇⠑⢌⡓⢄⠀⠀⠀⠀⠁⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⠀⠀⠀⢀⠷⣿⣿⣿⠃⣏⣿⣿⣿⣿⣄⡀⠈⠲⢷⣄⠀⠀⠀⠀⢀⣠⡶⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⡄⠀⠀⠈⠀⠀⠛⠛⠁⣿⣿⣿⣿⣿⣿⣿⣷⣦⣀⠙⠳⠤⠤⠒⣩⠎⡠⣻⣿⣿⣿⣿⣿⡇⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⡇⠀⢀⣀⣀⣀⣀⣀⣀⣛⣛⣿⣿⣿⣿⣿⡟⢿⣿⣿⣧⣀⡠⠞⣡⢮⣴⡇⣿⣛⣛⣛⣛⡇⠀⠀⣸⣛⣛⣛⣛⣛⣛⣛⣛
+        ⣿⣿⣿⣿⣿⣷⣶⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⡇⠀⠈⢹⠟⠋⠀⠀⠀⠀⡿⢱⢸⣿⣿⣿⣿⠁⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠈⠻⣿⣿⣿⣇⠀⠀⢸⣾⠀⠀⠀⠀⠠⡫⢄⣻⡈⢻⣿⣻⠀⠀⢸⣾⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⡿⠿⠟⠛⠷⣤⣈⠑⠢⣀⠀⠀⠀⠀⠈⠻⣿⣿⡀⡴⢋⡜⠀⠀⠀⠀⢠⠈⠑⣮⢱⡀⣿⡟⠀⠀⡏⢿⠿⢿⣿⣿⣿⣿⣿⣿
+        ⠒⠊⠉⠀⠀⠀⠀⠀⠀⠀⠉⠻⢦⡈⠑⢄⠀⠀⠀⠀⠈⢻⣧⢇⠸⡀⠀⠀⠀⠀⠸⡆⠀⣿⢸⢇⢸⡇⠀⢰⢆⠈⢆⠀⠀⠉⠁⠒⠲⣶
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢦⠀⢳⠀⠀⠀⠀⠀⠹⡞⡄⢣⣀⠀⠀⠀⠘⣇⠀⡁⢸⢸⣾⠀⠀⡼⠋⢣⠈⢆⢀⣀⡀⠀⠀⠈
+        ⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠒⠒⠒⠒⠀⢇⠀⢧⠤⠤⠄⠀⣀⣑⣈⣒⣄⡉⠐⢄⠀⠈⡰⠀⢎⡮⠿⠀⢀⠷⠶⠮⢧⠈⢇⠀⠸⡀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠘⡄⠸⡀⠀⠀⠀⠀⠀⠀⠈⠑⠫⣢⡈⠦⣴⠁⡸⢋⠔⡇⠀⣸⠁⠀⠀⠘⡄⠘⠀⡰⠁⠀⠀
+
+
+    Uma das personagens principais de Cyberpunk: Edgerunners. Ela é uma jovem que se envolve romanticamente com David Martinez e o apresenta ao submundo do crime de Night City. Ela tem um ódio particular pela a Arasaka, e por isso ela gosta de roubar os seus funcionários e sonha em viajar para a Lua.
+
+    Lucy é descendente de japoneses e poloneses, e foi selecionada ainda jovem depois de ter feito um teste de proficiência – ao lado de outras 12 crianças – para receber treinamento em uma instalação não revelada de Arasaka e se tornar uma netrunner. Se guiar pelo sonho de “servir a megacorporação mais poderosa do mundo” um dia, fez com que ela e os outros passassem pelos dias e treinamentos mais difíceis.
+
+    Quando seu treinamento foi concluído, eles foram transferidos para o subsolo para participar de mergulhos profundos na pré-DataKrash Net, pois Arasaka os enviou em busca de conhecimento que foi perdido. À medida que mergulhavam na Net, eles eram suscetíveis a daemons do velho mundo e IAs desonestos. As crianças foram apanhadas uma a uma, e não demorou muito até restar apenas um punhado delas. Em vez de serem escravizados pela corporação, as crianças restantes, incluindo Lucy, usaram suas habilidades de netrunning para sobrecarregar a equipe Arasaka e escapar.

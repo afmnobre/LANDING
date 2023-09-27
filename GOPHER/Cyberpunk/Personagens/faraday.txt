@@ -1,0 +1,46 @@
+
+            FARADAY
+
+
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⠋⠀⠀⠀⠀⠀⠀⠀⠉⠙⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣯⣙⡉⠉⠉⠉⣹⡿⠛⢹⣆⢧⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⣟⠋⡟⣻⣿⡏⠈⠀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⢀⣾⠋⠀⠀⣎⢿⣾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣧⣿⣿⡇⠀⠀⠀⠀⠀⢀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠈⠻⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⡅⣠⣶⣶⣾⣿⣿⣷⣤
+        ⣿⣿⣿⣿⣿⣹⣿⣿⣿⣿⣟⠁⠀⠀⠀⠀⠀⠀⠀⢻⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⢹⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⢏⠃⠀⠀⠀⠀⠀⠀⠀⠐⢮⡻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠈⣿⣿⡿⠛⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣚⣿⣿⣟⡏⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠙⢮⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣚⣵⣻⣶⣢⠀⠀⠀⢸⣿⣿⣶⣿⣿⣿⣿
+        ⣿⣿⣿⣾⣿⣿⣿⣿⢹⡇⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠹⣄⠀⠀⠀⠀⠀⠀⠀⢀⠾⠛⠁⠀⠀⠹⡉⠁⠀⠀⢸⣿⣿⡿⠿⠿⠛⠛
+        ⣟⣿⣿⣾⣿⣦⣿⢿⠉⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡆⢠⠀⠀⠀⢀⡴⠁⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⠿⣾⣿⣿⣿⣿⡀⢸⡇⠀⠀⠘⢦⠀⠀⠀⠀⠀⠀⣠⣄⢼⣄⣸⢄⡤⠚⠉⠀⠀⠀⠀⠀⢠⠞⠉⡇⠀⠀⠀⠸⠀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⠀⠀⠀⠀⠈⠉⣧⠀⢷⣇⠀⠈⢌⢧⡀⠀⠀⠀⠀⢳⠙⠛⠋⠛⠋⠀⠀⠀⠀⠀⠀⢀⠴⠉⠀⣰⠁⠀⠀⠀⠄⠀⠀⠀⠀⠀⣀⣀
+        ⣿⣿⠀⠀⠀⠀⠀⢀⣿⠀⢈⡿⣦⡀⠀⠳⠝⠲⣄⠀⠀⢸⡆⠀⠀⠀⠀⠀⠀⠀⢀⡴⠚⠁⠀⠀⠀⢩⢃⣴⣻⣁⣼⠿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⠀⠀⠀⠀⠀⣿⢹⣴⡎⠹⣌⢳⡄⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⡀⠀⠀⣇⣤⡄⠀⠀⠀⠀⠀⠀⠙⢣⡷⢁⢼⢳⣤⣿⣿⣿⣿
+        ⣿⣿⣀⣀⣀⣀⣀⣹⣧⠋⣇⠀⠙⠦⣷⣴⣄⡀⣀⠀⠀⠀⣽⡀⠀⢠⡾⠁⠀⠀⠀⡠⠃⠀⢀⣀⣀⠀⠀⠀⡟⣿⣞⠂⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⡇⡆⣸⡄⠀⢳⣜⣯⣹⡉⣹⠶⣄⠀⡁⣧⠀⠀⠀⠀⠀⠀⡬⣄⠴⢛⣫⣽⠟⠋⠁⣰⠀⠻⣯⠇⣼⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⡳⣿⠃⣧⠀⢠⣝⣎⣹⡙⢳⠶⣯⣷⣙⣾⢰⣄⣀⣠⣶⡿⠟⢿⠽⠋⡠⠃⠀⠀⠀⣸⢫⣰⠏⣰⣏⣉⣽⣿⣿⣿
+        ⡟⠋⠛⡻⠿⠏⠉⠟⢿⣽⣷⣼⠇⠀⠻⣍⠻⡟⢿⣦⣍⡡⠹⣿⠟⢩⡟⣿⠚⠛⣤⣬⣴⡞⠁⠀⠀⢀⡴⢵⣿⣥⣰⣯⡭⠉⣿⣿⣿⣿
+        ⠀⠀⠀⠁⠀⠀⠀⠀⠀⡏⢻⣏⢷⡀⠐⠬⠽⠓⠺⠘⠉⠙⠓⣿⠀⡟⠀⠙⢳⡀⠸⣍⠉⠀⠀⠀⣴⠋⠀⢀⡿⣵⣿⣷⣿⣶⣿⡟⣿⣿
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⡄⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⡇⠀⠀⢀⡷⠀⠈⢦⡀⠀⡼⠁⠀⠀⣼⣿⣿⣿⡟⠋⠉⠻⡗⣿⣿
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠴⣷⠈⢷⡀⠀⠀⠀⠀⠀⠀⠀⢘⢀⣧⢀⣀⠺⣦⡀⢰⢚⡴⠚⠁⠀⠀⣼⣻⠿⠉⠙⠇⠂⠀⠀⠁⢻⣿
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠹⡄⠘⣷⡀⣄⠀⠀⠀⠀⠀⠀⢸⣷⣤⣼⠀⠀⠉⠳⢿⣁⢀⡀⠀⣴⡏⣿⡄⠀⠀⠀⠀⠀⠀⠁⠌⠉
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣷⡀⠘⣿⡙⣆⠀⠀⠀⠀⠰⣯⠟⣽⠃⠀⠀⠀⠀⠀⡴⠋⣠⣾⡟⢰⡟⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⣾⣿⣿⣳⣄⠈⢳⡽⣆⡠⣖⣛⣁⣸⠿⠷⠶⢤⣤⣓⣄⡼⢁⣴⣿⡟⢀⡼⡇⢸⣿⣿⣆⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⣀⣀⣶⣿⣿⣿⢸⣧⢻⣷⡀⢻⣿⡀⠀⢀⡴⠿⠖⠓⠲⠶⠤⠿⣽⡗⢞⣾⡟⢀⣿⡜⡀⠀⢿⣿⣮⠛⠶⣤⣄⣀⡀
+        ⣀⣀⣤⣴⣶⣾⣿⣿⣿⣿⣿⣿⡟⠀⣿⢷⣟⠟⣆⠫⢷⡄⠿⠚⠋⠀⠀⠈⠳⣄⠀⠘⣠⣿⡟⢀⠞⢁⠔⠉⠀⣿⣿⣿⡎⠀⠀⢦⠈⠉
+        ⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣷⠀⢹⡆⠙⢷⣌⢧⡈⢳⡄⠀⠀⡆⠀⠀⠀⠘⠃⣰⣿⡟⠐⢁⡴⠋⠀⠀⣼⣿⣿⣿⡧⠀⠀⢸⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⢻⣿⣿⣿⡟⢿⣇⠀⢿⡀⠀⠉⣷⣿⣄⡻⠶⠶⠧⡴⠴⠶⣺⣿⡿⠋⣠⢴⠏⠀⠀⠀⢰⣿⣿⣿⣿⡇⠀⠀⠘⡆⠀
+        ⣿⣿⣿⣿⣿⣿⡟⣼⣿⣿⣿⡅⠈⢿⣆⠘⣷⡄⠀⠀⠈⠙⠻⢷⣖⠒⠚⣻⡿⠛⢁⣴⡾⠗⠋⣠⠀⠀⢠⣿⣿⣿⣿⣿⡇⠈⠀⢰⣧⠀
+        ⣿⣿⣿⣿⣿⣿⠇⣿⣿⣿⣿⣷⡀⠈⣿⡄⠘⣟⣦⡀⠠⠄⢰⡮⢿⣷⠾⢿⣾⣦⠙⠿⣄⠀⡴⠃⠀⢠⣿⣿⣿⣿⣿⣿⣇⣘⣷⡞⣿⠀
+        ⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣷⡀⠘⣿⡄⣿⠊⣧⢀⣘⢴⠀⠺⣇⡀⠀⢹⢿⣧⠀⠈⠋⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣇⣿⡄
+        ⠈⠻⢿⣿⣿⣿⠀⠘⢿⣿⣿⣿⣿⣷⡀⠸⣿⣹⣆⢈⣧⡿⣿⣇⠀⠈⠙⡇⢸⣾⣿⣧⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣧
+        ⠀⠀⠀⠙⠿⣿⣦⡀⠀⠻⣿⣿⣿⣿⣧⠀⠹⣷⣿⡘⢯⡼⣻⣿⣷⡀⠂⡇⢸⠉⢙⣿⣷⡴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠀⠈⠻⠿⣆⠀⠹⣿⣿⣿⣿⣇⣼⣿⣿⣿⡾⣿⡿⡟⡏⠻⣆⡇⢸⡴⠊⠀⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⠀⠀⠀⠀⠠⢤⣀⠀⣿⣶⡄⠙⣿⣿⣿⣿⣿⣿⣿⡏⠻⣮⠙⢿⣷⠀⠹⣿⠛⠙⠲⢦⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+    Aqui está o antagonista da série em anime, um contato com laços com a Militech. Ele tem uma relação comercial com a equipe do Maine e muitas vezes os comissiona para realizar trabalhos que geralmente os envolvem roubando dados valiosos e ultra-secretos da Arasaka.
+
+    Faraday era um reparador implacável que trabalhava para a Militech. Ele estava baseado em Santo Domingo e muitas vezes contratou Maine e sua equipe para realizar trabalhos que geralmente os envolvem realizando espionagem corporativa contra Arasaka.
+
+    Faraday é muito preciso. Se ele planeja algo, então ele precisa saber tudo, até mesmo onde seus líderes ficarão ou que tipo de ciberware eles usarão. Ele não gosta quando algo não sai como planejado, mas ele não vai gritar ou ficar com raiva. O problema que ele vai ser muito pior. Ele lhe dirá calmamente que você cometeu um erro e que deve se comportar melhor da próxima vez. Entretanto, você não sabe se há uma próxima vez para você. Esse é o modus operandi de Faraday. Ele gosta que as pessoas fiquem estressadas e assustadas, sem ter certeza do que ele planejou para elas. Ele é frio e não gosta de se aproximar de seus edgerunners.
