@@ -1,0 +1,73 @@
+ ______      _             _                                         _
+|_   _ `.   (_)           (_)                                       (_)
+  | | `. \  __    .---.   __     .--.    _ .--.    ,--.    _ .--.   __     .--.
+  | |  | | [  |  / /'`\] [  |  / .'`\ \ [ `.-. |  `'_\ :  [ `/'`\] [  |  / .'`\ \
+ _| |_.' /  | |  | \__.   | |  | \__. |  | | | |  // | |,  | |      | |  | \__. |
+|______.'  [___] '.___.' [___]  '.__.'  [___||__] \'-;__/ [___]    [___]  '.__.'
+
+
+
+	Instrumentalidade Humana: A Instrumentalidade Humana é um conceito central na série. Refere-se à fusão de todas as almas humanas em uma única entidade, alcançando um estado de transcendência. É um objetivo tanto dos Anjos quanto da NERV, mas com motivações diferentes.
+
+	Eva: Os Evangelions são gigantes biomecânicos usados para combater os Anjos. Eles são pilotados por adolescentes e desempenham um papel crucial na série.
+
+	Anjo: Os Anjos são seres misteriosos e poderosos que ameaçam a humanidade. Eles são oponentes formidáveis ​​e variam em forma e habilidades.
+
+	NERV: Uma organização militar secreta encarregada de defender a humanidade dos Anjos. Eles são os responsáveis pelo projeto Evangelion.
+
+	NERV-01: NERV-01 é o nome do quartel-general da NERV localizado em Tóquio-3. É onde os Evangelions são mantidos e onde ocorrem as principais operações.
+
+	Terceiro Impacto: O Terceiro Impacto é um evento cataclísmico que pode ocorrer quando os Anjos entram em contato com Lilith, um ser ancestral. Ele representa a fusão de todas as almas humanas e a possível extinção da individualidade humana.
+
+	Lilith: Lilith é um ser antigo e misterioso, muitas vezes associado aos Anjos e ao Terceiro Impacto.
+
+	Lance de Longinus: Uma lança sagrada usada tanto pelos Anjos quanto pelos Evangelions. É uma arma poderosa que desempenha um papel significativo na série.
+
+	Dummy Plug: Um dispositivo que permite o piloto automático de um Eva, muitas vezes usando dados de personalidade de um ser humano.
+
+	MAGI: O sistema de supercomputador usado pela NERV para processar informações e tomar decisões estratégicas.
+
+	Seele: Uma organização secreta com influência sobre a NERV, com seus próprios planos misteriosos relacionados à Instrumentalidade Humana.
+
+	LCL (Liquido Controlador de Ligações): O LCL é um fluido que preenche o cockpit do Eva durante a pilotagem. Ele permite a conexão mental entre o piloto e o Eva e é essencial para o funcionamento das unidades.
+
+	Cordão Umbilical: O cordão umbilical é uma conexão física que liga um Eva à base da NERV. Ele fornece energia e dados de sincronização para a unidade durante as operações.
+
+	Primeiro Impacto: O Primeiro Impacto é um evento histórico que ocorreu há milhões de anos, envolvendo a chegada de uma das Luas de Lilith (um dos seres ancestrais) à Terra. Isso resultou na diversificação da vida no planeta e na criação das bases para a existência humana.
+	
+			⠉⠉⠉⠉⠉⠉⠉⠀⠈⠉⣩⠏⠉⠉⠉⠉⠉⠉⠉⠈⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠹⣿⠉⠛⠙⠛⠛⠛⠯⣍⠉⠻⣍⠓⢾⣍⡚⠋⠒⠚⠛⣲⡖⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠀⠀⠀⠀⠀⣀⠀⠀⠒⠒⢄⢀⠀⢄⠀⠈⠳⠀⠈⠳⣦⣈⠉⢳⡄⠀⣰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠀⢀⣤⡾⠃⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⢠⡞⠀⠀⠀⠀⣰⠇⠘⠄⠀⠀⠀⠀⠈⢧⠀⠑⣄⠀⠀⢀⠀⠈⢯⡢⡄⢻⣶⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⢠⡎⠁⠀⠀⠀⠀⢀⠞⠀⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⡀⠀⡏⠀⠀⢱⠀⠀⡄⠀⠀⢸⡆⠀⠘⡇⠀⠈⢇⠀⠀⠳⡜⣆⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⣸⠃⠀⠀⠀⠀⢠⠞⠀⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀⢸⡇⢰⡇⠀⠀⠸⡆⠀⢸⡄⠀⠈⣇⠀⠀⢸⠀⠀⢸⠀⢧⡀⠹⣼⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⡁⠀⠀⠀⠀⣞⡏⠀⠀⠀⠀⠀⠀⠀⢠⣿⠀⢠⠀⢸⡇⣸⡇⠀⠀⠀⡇⠀⠈⣇⠀⠀⣹⠀⠀⣜⠀⠀⢸⠀⠈⢧⠀⢻⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠇⠀⠀⠀⢸⡾⠀⠀⢠⢦⠞⠀⠀⢀⡞⣿⢀⡎⠀⡾⡇⣿⣇⠀⠀⠀⢸⠀⢸⣿⠀⢠⡟⢠⣿⡇⠀⠀⢸⠀⢀⠸⡆⢸⡇⠀⠀⠀⠀⠀⠀⠀⠤⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⢠⡿⠋⠀⠀⠀⡞⢀⣿⢸⠃⢠⠇⠁⡿⢿⡄⠀⢸⡟⠀⣸⣿⠀⣸⣧⣿⢻⢧⠀⠀⣾⠀⣸⠀⣿⡌⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⢠⡎⠀⠀⠀⢀⣼⡿⣻⣿⡜⢰⡿⡀⢣⣷⠸⡇⠀⣼⡇⢀⡿⠻⣆⣿⡿⠋⢻⣏⠀⡼⢻⠁⣿⡆⡟⢻⣸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢀⢯⠂⠀⠀⢀⣾⣿⣾⡿⠒⢗⣛⣺⣷⡺⠾⠶⠿⣄⣿⡇⣼⠁⢠⠿⠿⠷⠶⡿⣿⠿⠷⣾⡿⢸⣧⠇⢸⡏⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⡆⠀⠀⠀⠀⣤⠟⠈⠀⠀⣠⠞⢱⣏⠙⢀⣴⡿⢿⣿⣟⣻⢷⡄⠀⠈⢻⡿⠁⠀⠃⣴⣡⣼⣿⢿⠷⣦⣴⣿⠁⣼⡟⠀⢸⡇⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠸⡄⠀⢀⣾⠋⠀⠀⠀⡴⣹⡆⠀⠻⡄⠸⡅⠀⠸⣿⣿⣏⠀⠀⠀⠀⠀⠑⠀⠀⠘⠉⠁⢸⣿⡟⠀⢼⡿⢁⣾⡟⣀⢀⣿⢧⣿⠻⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⢡⣴⣿⠃⠀⠀⠀⡼⠁⠘⣇⠀⠀⠹⣄⠀⠀⠈⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠚⠃⠠⠋⢰⡿⣿⣵⢇⣾⣿⣾⣿⣿⡏⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⢸
+		⠀⠀⠀⠀⠀⠀⢿⡇⠀⠀⠀⡼⠃⠀⠀⢸⡆⠈⢿⡌⠳⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢧⡀⠀⠀⠀⠀⠀⢠⣞⣼⠏⣿⣿⣿⡿⡇⣿⣿⣧⣿⣿⣿⣷⡄⣠⣀⣀⠀⢀⣀⣸
+		⠀⠀⠀⠀⠀⠀⠈⣷⡀⠀⢸⡇⠀⠀⠀⠀⢳⡀⢈⣷⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣼⠟⠀⠀⠀⢀⣴⠋⣩⡿⢿⣿⣿⣿⣿⡇⣿⢽⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠘⣷⣜⡀⢿⡄⠸⡄⠀⠀⢷⡥⣷⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⣴⢟⣫⠾⡽⠁⡾⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠹⡟⢧⡘⢿⣄⠹⣆⠀⠀⣿⡶⣌⢫⣷⣄⠀⠀⠀⠀⠀⠀⢀⣤⣄⡀⠀⠀⢀⡤⢾⣿⣿⡾⢻⡇⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠟⠖⠱⣆⠻⣦⣈⢷⡀⠘⢿⢦⡁⠈⠙⠀⠀⠀⠀⠀⠀⠉⠉⠉⠁⠀⠀⢀⣴⣿⡿⡿⢀⣿⣰⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⢀⡠⠤⠤⠤⠤⠤⣇⣀⠀⠀⠛⢽⣜⣆⣿⣦⣘⢦⣝⠢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⢧⣾⣿⡷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠒⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⢦⣀⡿⢿⣿⣇⠙⠻⡞⠯⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⣿⣿⡟⣿⣿⣿⣟⣻⢯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣾⣿⠞⠀⠀⠀⠀⠀⠀⠙⢿⣶⣦⣄⣀⣠⡶⢿⣹⣿⣿⢹⡷⣿⢽⣏⣯⣿⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⡇⣽⢿⡇⣿⢸⣧⡟⣿⣻⡷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣽⣿⡇⣿⣿⡇⣿⣼⣿⣧⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠈⠙⠶⣼⡃⣟⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⣔⢢⠀⠈⠛⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠄⠴⠒⣶⣦⡆⠀⠀⠀⠀⠀⠀⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠹⣷⡳⡀⠀⠀⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⡀⠀⠀⡠⣉⣉⢘⣯⣥⠄⠀⠀⠀⠀⠀⠀⠙⠦⢄⡀⠀⠀⠀⠀⠀⠸⡄⠀⠘⣿⡇⠀⠀⠀⠀⠀⠈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠃⠀⠁⠃⠚⠋⠛⠁⠿⠀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠉⠳⢦⣀⣀⡀⠀⠹⡄⠀⢙⡇⠀⠀⠀⠀⠀⠀⠀⠀⣠⣽⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⢀⣩⣇⣀⣿⡉⣏⡁⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠈⠳⣌⠉⠉⠀⠚⣹⠁⠀⠀⠀⠀⠀⢀⣠⠞⠁⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢿⡶⠦⠤⢤⣄⣀⡀⠈⢢⡀⠀⢠⠏⠀⠀⠀⣀⣠⠖⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠈⣦⠀⠀⠀⠉⠻⣿⣷⣄⠹⣤⡾⠀⠀⣠⣶⡏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠘⣆⠀⠀⠀⠀⠈⠿⣿⣿⣎⣀⣠⣾⣿⠇⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠹⡆⠀⠀⠀⠀⠀⣀⣽⣿⣿⣿⣿⣥⣤⣼⠀⠀⠀⠀⠀⠀⠀⠀⡆⢀⣾⠟⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⢻⡀⠀⠀⣀⣌⣿⣿⣿⣿⣿⣿⡿⢿⣿⣷⣶⡆⠀⠀⠀⠀⠀⣿⣿⡯⡆⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢀⢀⣀⣀⣀⣏⠀⢀⡀⠀⢀⣷⣠⣾⣿⣿⣿⠟⢸⣿⡛⣿⣧⠀⢸⣟⠛⠀⠀⠀⠀⡀⢀⣿⠇⢳⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿		
+		
