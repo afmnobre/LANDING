@@ -7,15 +7,23 @@
             #conteudo {
                 background-color: #000000;
                 max-width: 80%;
+                margin-top: 3%;
                 margin: auto;
+                text-align: justify;
+            }
+
+            img {
+
             }
 
             body {
-            color: #FFFFFF;
-            background-color: #000000;
+                color: #FFFFFF;
+                background-color: #000000;
+                font-family: monospace;
             }
 
             .titulo {
+                font-size: 22px;
                 background-color: #AFE9FC;
                 color: #000000;
                 text-align: center;
@@ -23,9 +31,35 @@
             }
 
             nav {
+                font-size:  19px;
                 margin-top: -1.9%;
                 background-color: #000000;
-                color: #FFFFFF
+                color: #D9D9D9;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: inline-block;
+                width: 150px;
+                height: 50px;
+                background-color: #000000;
+                /*padding: 1%;*/
+                margin: 1%;
+            }
+
+            nav ul li a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            nav ul li a:visited {
+                color: #FFFFFF;
+            }
+
+            nav ul li a:hover {
+                /*color: #000000;
+                background-color: #AFE9FC;
+                font-size: 18px;*/
+                text-shadow: 1px 1px 1px #FF0000;
             }
 
             footer {
@@ -35,6 +69,7 @@
                 padding: 1%;
                 margin-top: 2%;
             }
+
         </style>
 
     </head>
@@ -49,10 +84,11 @@
         <!--MENU PRINCIPAL-->
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Agenda</a></li>
+                <li><a href=".">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="https://www.youtube.com/@ramones" target="_blank">Youtube</a>
             </ul>
         </nav>
 
@@ -60,14 +96,14 @@
     <div id="conteudo">
     <img src="./img/joao-band-2.webp" alt="Imagem da Banda Ramones." title="Foto dos Integrantes do Ramones." />
 
-    <h3>Sobre</h3>
+    <h3 id="sobre">Sobre</h3>
     <p>Seja bem vindo ao website do João Band.
         Uma banda de rock do subúrbio do sul do pais. Formada em 1995 pelo Lucas D. Ramone.</p>
 
-    <h3>Contato</h3>
+    <h3 id="contato">Contato</h3>
     <a href="mailto:contato@joaoband.com.br" target="">contato@joaoband.com.br</a>
 
-    <h3>Agenda</h3>
+    <h3 id="agenda">Agenda</h3>
 Local  -  Cidade  -  Data
 Estádio Joaquim,  Curitiba,   10/12/2020
 Feria municipal,  São Paulo,  15/15/2020
