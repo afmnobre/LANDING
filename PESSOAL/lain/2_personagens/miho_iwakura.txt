@@ -1,0 +1,52 @@
+ ____    ____    _    __
+|_   \  /   _|  (_)  [  |
+  |   \/   |    __    | |--.     .--.
+  | |\  /| |   [  |   | .-. |  / .'`\ \
+ _| |_\/_| |_   | |   | | | |  | \__. |
+|_____||_____| [___] [___]|__]  '.__.'
+
+ _____                        __
+|_   _|                      [  |  _
+  | |    _   _   __   ,--.    | | / ]   __   _    _ .--.   ,--.
+  | |   [ \ [ \ [  ] `'_\ :   | '' <   [  | | |  [ `/'`\] `'_\ :
+ _| |_   \ \/\ \/ /  // | |,  | |`\ \   | \_/ |,  | |     // | |,
+|_____|   \__/\__/   \'-;__/ [__|  \_]  '.__.'_/ [___]    \'-;__/
+
+⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢡⠹⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⡸⠡⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⢻⡌⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⡆⠀⠀⣼⣿⣿⣿⣿⡻⡻⣿⡟⠀⠀⠀⢀⡠⠤⠄⣀⡀⠀⠀⠀⠀⠀⠀⡇⠈⢷⠀⠹⣷⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⢰⠀⣼⣿⣿⣿⣿⣿⠖⢉⣾⠷⡀⠐⠈⣱⠀⠀⠀⠀⠈⢍⠐⠢⠀⠀⠀⠀⠀⠈⢑⣲⢏⢯⠩⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠳⢿⣿⣿⣿⣿⣿⢀⠎⡾⢀⠸⠀⠀⣻⣶⡤⣤⣴⣶⣾⣵⠀⠀⠀⠀⠀⠀⠀⢸⣷⣤⣬⣤⣥⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⡈⡟⢦⠠⠀⠀⠀⠈⠉⠉⠉⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠉⢅⠙⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⢀⣴⣿⣿⣿⣿⣿⣿⣷⣴⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢠⡏⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠉⠉⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠈⠛⠿⠿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠤⠔⢙⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢯⠀⡨⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠒⠋⠈⠻⡍⢻⣿⡿⣿⣿⠍⢦⠀⠀⠀⠀⠀⠀⡠⠔⠖⣒⠖⠠⡄⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⣤⡽⢻⠀⠀⠑⠢⡀⠀⠀⠀⠈⠑⠒⠒⠒⠉⠀⠀⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠖⠁⠀⡾⠀⠀⠀⠀⠉⠣⢀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠉⡏⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⢀⣠⠞⢱⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠉⠒⠤⠤⠤⠔⠊⠁⠀⠀⣇⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⣀⠤⠒⠉⡁⠀⠘⠀⠠⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⡰⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣀⡠⠔⠋⠀⠀⠀⠀⠁⠀⠀⠀⠀⠱⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣴⠀⠀⠘⡀⠀⠙⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⢠⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⠀⠀⠱⠀⠀⠀⠀⠈⠙⠿⣿⣿⣿⣿⣿
+
+    Na série de anime "Serial Experiments Lain," a mãe de Lain Iwakura também é um personagem
+secundário, e seu nome não é especificamente mencionado. Ela é referida como "Mãe" ou "Sra. Iwakura"
+e também tem um papel limitado na trama da série. Aqui estão algumas informações sobre a mãe de Lain:
+
+    Cuidado maternal: A mãe de Lain é retratada como uma figura maternal que se preocupa com o
+bem-estar de sua filha. Ela é vista realizando tarefas domésticas e cuidando das necessidades
+diárias de Lain.
+
+    Desconexão: Assim como o pai de Lain, a mãe parece estar desligada ou desconhecendo as
+atividades de Lain na realidade virtual e sua imersão no Wired. Isso reflete a falta de compreensão
+e comunicação entre Lain e seus pais em relação ao mundo virtual.
+
+    Papel limitado: Assim como o pai, a mãe de Lain não desempenha um papel significativo na trama
+principal da série. A história se concentra principalmente nas experiências de Lain enquanto ela
+explora os complexos aspectos da realidade virtual e da identidade.
+
+    Lain Iwakura é o personagem principal da série, e a narrativa se concentra em sua jornada de
+autodescoberta e nas implicações da tecnologia e da realidade virtual em sua vida. Como resultado,
+outros membros de sua família, incluindo sua mãe, têm papéis limitados na história.

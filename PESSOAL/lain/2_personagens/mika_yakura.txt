@@ -1,0 +1,70 @@
+ ____    ____    _    __
+|_   \  /   _|  (_)  [  |  _
+  |   \/   |    __    | | / ]   ,--.
+  | |\  /| |   [  |   | '' <   `'_\ :
+ _| |_\/_| |_   | |   | |`\ \  // | |,
+|_____||_____| [___] [__|  \_] \'-;__/
+
+ _____                        __
+|_   _|                      [  |  _
+  | |    _   _   __   ,--.    | | / ]   __   _    _ .--.   ,--.
+  | |   [ \ [ \ [  ] `'_\ :   | '' <   [  | | |  [ `/'`\] `'_\ :
+ _| |_   \ \/\ \/ /  // | |,  | |`\ \   | \_/ |,  | |     // | |,
+|_____|   \__/\__/   \'-;__/ [__|  \_]  '.__.'_/ [___]    \'-;__/
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⠤⠤⢤⣄⣀⣤⡒⠫⠓⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠁⠠⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠖⠋⠁⠀⢀⢀⡀⠀⠀⠀⠀⠉⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠉⠓⠤⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠞⠁⠀⠀⠀⠀⣴⡏⣼⣷⡤⠤⢄⣀⣀⣀⠀⠀⣬⢷⣄⠀⠀⠀⠀⢀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠒⠤⣀⠀⠀⠀⠀⣰⠋⠀⠀⠀⠀⠀⠀⢸⣿⢰⠁⠀⠀⠀⠀⠀⠀⠉⠉⠓⠾⣾⣏⣣⡀⠀⠀⢸⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠢⡼⠁⠀⠀⠀⠀⠀⠀⠀⣸⡇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⢶⠿⡦⣄⣸⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣁⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡄⢧⣷⠈⢻⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⣿⠁⠉⠉⣛⠦⡀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢸⣿⠀⢸⣿⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣤⣿⣾⣿⣿⡦⣹⡀⠀⠀⠀⠀⠀⢈⣉⢹⠷⡄⡏⠀⢸⡟⠃⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⢀⡀⠀⠀⠀⠀⠀⣿⡏⢿⣿⣿⠏⠁⠈⠁⠀⠀⠀⢠⢿⣿⣿⣿⣤⠈⡇⢀⣸⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣧⠀⢀⣿⡇⠀⠀⠀⠀⢠⡏⠚⠛⢏⠉⠁⠀⠀⠀⠀⠀⠀⠚⣴⢿⣿⣟⠛⢲⠋⠉⢹⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠒⠉⢹⣿⠀⣾⣿⡧⠀⠀⠀⠀⢸⡇⠀⠀⠈⠀⠀⠀⠀⠀⢀⣾⣇⢇⠈⠀⠀⠉⠀⢸⣧⠀⢸⡇⠀⠀⠀
+⠀⠀⠀⠀⢀⠤⠒⠊⠁⢸⠀⠀⠀⣸⣷⣾⣿⣿⣷⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⠘⠿⠁⠊⠀⠀⠀⠀⠀⣼⣿⣷⢸⠃⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⠀⠀⢠⣿⣿⣿⢸⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡁⠀⠀⣨⣿⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⢸⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣦⡄⣿⣿⡀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⠇⠘⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⠙⠺⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⡿⢿⣿⣿⡏⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠈⠛⠷⣄⡀⠀⠀⣀⣤⣾⣿⣿⣿⡷⠒⠒⠒⠚⢦⠀⠀⠀⠀⠀
+⠀⠀⣀⣤⣴⣶⠿⠿⠛⠋⠁⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡧⣀⡀⠀⠀⠀⠀⠉⠉⢩⣿⣿⣿⣿⣿⣿⣇⣀⣤⣤⣤⡼⣇⠀⠀⠀⠀
+⣾⣿⠟⠛⠉⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠉⠙⠒⠤⢤⣀⠠⠃⣿⣿⣿⣿⣿⣿⡿⠶⠄⠀⠀⠈⠉⠳⣄⠀⠀
+⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⡀⠀⠀⠀⠀⠀⠀⠉⡁⢛⣚⠛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⡠⠊⢠⢏⠀⠱⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠊⠀⣰⠃⣼⠀⠀⢻⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣷⣌⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣾⠃⢠⡇⠀⠀⠈⣿⣿⣿⡶⣄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠞⠀⠀⢹⣤⠞⢻⣿⣿⣼⣧⣤⠃⠀⠀⠀⠀⠀
+⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢻⣿⣿⣿⣿⣿⣿⣿⣧⡀⣰⡇⢀⡀⢷⣴⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀
+⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⢸⣇⠘⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣦⠀⠀
+⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⣿⣿⣿⣿⣿⠀⣸⣿⡀⢹⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⡆⠀
+⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⣿⣿⣿⣿⣦⣿⣿⣧⣼⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⡇⠀
+⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀
+⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣠
+
+    Na série de anime "Serial Experiments Lain," Lain Iwakura tem uma irmã mais nova chamada Mika
+Iwakura. Mika é um dos personagens secundários da série e desempenha um papel importante em alguns
+episódios. Aqui estão algumas informações sobre Mika Iwakura:
+
+    Personalidade: Mika é retratada como uma adolescente com uma personalidade mais típica em
+comparação com sua irmã mais velha, Lain. Ela é mais extrovertida e social, muitas vezes saindo
+com amigos e tentando levar uma vida mais convencional.
+
+    Preocupação: Ao longo da série, Mika demonstra preocupação com a mudança de comportamento de
+Lain. Ela fica perplexa com as ações e a atitude cada vez mais estranha de sua irmã, especialmente
+quando Lain começa a se envolver profundamente com o mundo virtual.
+
+    Papel na trama: Mika não é um personagem central na narrativa, mas seu papel é significativo
+em alguns momentos-chave. Ela é usada como um dispositivo para mostrar a diferença entre a vida de
+Lain no mundo real e sua vida no mundo virtual. A relação entre as duas irmãs também é explorada
+em alguns episódios, refletindo a alienação e a desconexão que Lain sente em relação à sua
+própria identidade.
+
+    Mudança de atitude: À medida que a série progride, Mika começa a se preocupar cada vez mais
+com a mudança de Lain e tenta entender o que está acontecendo com ela. Essa preocupação reflete
+as complexidades da dinâmica familiar na história.
+
+    Mika Iwakura desempenha um papel importante na construção do mundo e dos relacionamentos de
+Lain, mas a série ainda se concentra principalmente na jornada de autodescoberta e nas questões
+de identidade de Lain.

@@ -1,0 +1,61 @@
+ ____  ____
+|_  _||_  _|
+  \ \  / /    ,--.    .--.    __   _     .--.
+   \ \/ /    `'_\ :  ( (`\]  [  | | |  / .'`\ \
+   _|  |_    // | |,  `'.'.   | \_/ |, | \__. |
+  |______|   \'-;__/ [\__) )  '.__.'_/  '.__.'
+
+ _____                        __
+|_   _|                      [  |  _
+  | |    _   _   __   ,--.    | | / ]   __   _    _ .--.   ,--.
+  | |   [ \ [ \ [  ] `'_\ :   | '' <   [  | | |  [ `/'`\] `'_\ :
+ _| |_   \ \/\ \/ /  // | |,  | |`\ \   | \_/ |,  | |     // | |,
+|_____|   \__/\__/   \'-;__/ [__|  \_]  '.__.'_/ [___]    \'-;__/
+
+
+⠀⢀⠂⠨⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⡧⠉⢉⡽⠉⠉⠙⣏⠻⣍⠉⠉⠙⢿⣾⣿⣿⣝⠣⢍⡉⠈⠉⠁⠀⠀⠀⠀⠀⠈⠉⠹⡅⠀
+⢀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡷⠀⡼⠁⠀⠀⠀⠘⡄⠈⣷⡀⠀⠀⠈⠻⣿⣿⣷⣄⠉⠳⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⢹⡀
+⡘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⡇⡼⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⣄⠀⠀⠀⠈⠳⣍⠻⢦⡀⠀⠙⢿⣿⣶⣄⢀⣷⡀⠀⠸⡇
+⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⢻⡟⠁⠀⠀⠠⠖⠋⠉⠛⠢⢄⠀⠙⡄⠀⠀⠀⠀⠀⠀⠈⠳⠀⠀⠀⠙⢿⣿⣿⣿⣿⡀⣰⡇
+⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡿⠃⠉⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⡿⣿⣿⣧⠿⠇
+⣷⣶⣿⡀⠀⠀⠀⠀⠀⠀⣿⠟⠁⠀⠀⠀⠀⠀⠀⣠⣾⣿⠿⠿⠿⠿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠙⣿⡟⠀⠀
+⣿⣿⣿⣷⡀⠀⠀⠀⠀⢰⡟⠀⠀⠀⠀⣀⣠⡤⠾⡟⠫⠉⠉⠉⠉⠒⠒⢫⣿⣦⣄⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣶⣿⣦⡀⣿⠃⠀⠀
+⣿⣿⣿⣿⣧⠀⠀⠀⣀⣸⣧⣴⣶⣿⡿⠿⠿⣥⡏⠀⠀⠀⣀⠤⠀⢤⡈⠀⠀⠉⠛⡷⡦⡴⠦⣤⣤⣴⣿⠿⠭⠭⠍⣻⣧⣿⠀⠀⠀
+⣿⣿⣿⣿⠿⢇⠚⢿⣿⡟⠉⠉⠁⠀⠀⠀⠀⢹⡇⠀⠴⠋⠀⡎⠁⠀⢈⠆⠀⠈⡆⡇⢃⡥⠾⣧⡜⡠⢀⡀⠀⢤⡀⠈⠉⠻⣶⡄⠀
+⣿⣿⡿⡟⣦⠞⠛⣄⠈⠁⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠑⠠⠘⡀⠉⠉⠀⠀⠀⢡⣷⡟⠊⠙⣾⡇⢀⢇⣰⠀⡀⢱⠀⠀⠀⣿⠁⠀
+⣿⣿⣧⡇⠁⢀⠞⢹⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⢇⠇⠀⠀⢸⣇⠀⠑⠝⠳⢛⡁⠀⠀⢀⡏⠀⠀
+⣿⣿⣿⢸⠀⢸⣀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢦⣤⣀⣀⣀⣀⣀⣀⣠⡾⠿⠋⠀⠀⠀⠸⣿⡄⠀⠀⠀⠀⠀⠀⠀⣼⠃⠀⠀
+⣿⣿⣿⡌⠃⠀⠹⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⢣⠟⠓⠒⠶⠶⠶⠶⢾⠏⠀⠀⠀
+⠁⠀⠀⣿⣄⣶⣄⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⠀⠀⠀⠀⠀⢰⡾⠀⠀⠀⠀
+⠀⠀⠀⣿⣿⢻⡉⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠉⣉⠿⠋⠁⠀⠀⠀⠀⠀⠀⣠⣶⣶⡢⢄⣀⣤⡆⠀⠀⠀⠀⠀⣼⠇⠀⠀⠀⠀
+⠀⠀⢸⠁⠸⡄⠙⠛⠛⣿⠀⠀⠀⠀⠀⠀⠀⠀⡎⡎⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢏⠁⢀⡹⠛⠀⢦⡀⠀⠀⢠⡟⠀⠀⠀⠀⠀
+⠀⠸⡇⠀⠀⡇⠀⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⢻⠁⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⠊⠀⠀⠀⢨⡏⠀⠀⣼⠃⠀⠀⠀⠀⠀
+⠀⠀⢣⠀⠀⢹⠀⠀⠀⠈⣷⡄⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠙⠫⠍⣉⡐⠂⠀⠐⠒⠒⠒⠒⢒⡖⠋⠀⠞⠀⠀⢰⡿⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⢧⠀⠀⡇⠀⠀⠀⢿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⣠⣿⠃⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⢧⠀⢸⠀⠀⠀⠈⢎⠻⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠉⠳⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠣⡀⢃⠀⠀⠀⠈⢆⠘⠮⠳⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⢪⠞⠀⠀⠀⠈⠢⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⢮⡆⠀⠀⠀⠈⠣⠀⠀⠀⠉⠲⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣷⠁⠀⠀⠀⠀⠀⠀⠈⠑⠢⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠙⢤⡀⠀⠀⠀⠀⠀⠀⠘⠢⣄⢈⡢⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠟⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠲⢄⡀⠀⠀⠀⠀⠀⠈⠑⢿⢦⣑⢤⣀⠀⠀⠀⠀⠀⠀⣀⣤⠾⠁⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+    Na série de anime "Serial Experiments Lain," o pai de Lain Iwakura é um personagem secundário
+cujo nome não é revelado na série. Ele é referido como "Pai" ou "Sr. Iwakura" e não é tão central
+para a trama quanto alguns dos outros personagens. Aqui estão algumas informações sobre ele:
+
+    Ausência: O pai de Lain é frequentemente retratado como ausente da vida de sua filha. Ele
+raramente é mostrado interagindo com Lain ou outros membros da família. Essa ausência contribui
+para o isolamento e solidão que Lain sente no início da série.
+
+    Desconhecimento: Ao longo da série, torna-se evidente que o pai de Lain não está ciente das
+atividades de sua filha na realidade virtual e do profundo envolvimento dela com o Wired, uma rede
+virtual. Isso reflete a desconexão entre a vida de Lain no mundo real e sua vida virtual.
+
+    Papel limitado: O pai de Lain não desempenha um papel significativo na trama principal da série.
+A história se concentra mais nas experiências e desafios de Lain enquanto ela explora os aspectos
+complexos da realidade virtual e da identidade.
+
+    É importante notar que "Serial Experiments Lain" é uma série que lida com temas complexos e
+muitas vezes abstratos, como a natureza da realidade e a fusão entre o mundo real e o virtual.
+Como resultado, os personagens secundários, incluindo o pai de Lain, muitas vezes têm papéis
+limitados na narrativa, enquanto a protagonista, Lain, é o foco principal da exploração desses temas.
