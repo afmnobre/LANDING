@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Lucas Nobre Ferreira Martins">
+        <meta name="description" content="Documentação Oficial do Projeto X">
+        <meta name="keywords" content="Linux, Projeto x, tecnologia, segrefo, nano">
+        <link rel="icon" href="./favicon.png">
+        <title>Documentação do Projeto X</title>
+        <style>
+            body {
+                margin: auto;
+                width: 70em;
+                font-family: sans-serif;
+                font-size: 1.1em;
+            }
+            .precode {
+
+                background-color: #F8F8F8;
+                padding: 1%;
+                box-shadow: 1px 1px 20px #000000 ;
+            }
+            hr {
+                border: solid 5px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Documentação - Projeto X</h1>
+        <ol>
+            <li><a href='#introducao' >Introdução</a></li>
+                <ul>
+                    <li>Sub tópico 1</li>
+                    <li>Sub tópico 2</li>
+                    <li>Sub tópico 3</li>
+                    <li>Sub tópico 4</li>
+                </ul>
+            <li><a href='#opcoes_de_comando' >Opções de Comando</a></li>
+            <li><a href='#compatibilidade' >Compatibilidade</a></li>
+        </ol>
+        <hr>
+
+        <h2 id='introducao'>Introdução</h2>
+
+        <p>
+        GNU nano is a small and friendly text editor. Besides basic text editing, nano offers features
+like undo/redo, syntax coloring, interactive search-and-replace, auto-indentation, line numbers, word
+completion, file locking, backup files, and internationalization support.
+        </p>
+        <p>
+The original goal for nano was to be a complete bug-for-bug emulation of Pico. But currently the goal
+is to be as compatible as is reasonable while offering a superset of Pico’s functionality. See Pico
+Compatibility for more details on how nano and Pico differ.
+        </p>
+        <p>
+Starting with version 4.0, nano no longer hard-wraps an overlong line by default. It further uses
+linewise scrolling by default, and by default includes the line below the title bar into the editing
+area. If you want the old, Pico behavior back, you can use the following options: --breaklonglines,
+--jumpyscrolling, and --emptyline (or -bje).
+        </p>
+        <p>
+Please report bugs via https://savannah.gnu.org/bugs/?group=nano.
+        </p>
+        <p>
+For background information see https://nano-editor.org/.
+        </p>
+        <hr>
+        <h2 id='opcoes_de_comando'>Opções de Comando</h2>
+        <pre class="precode">
+nano takes the following options from the command line:
+
+-A
+--smarthome
+Make the Home key smarter. When Home is pressed anywhere but at the very beginning of non-whitespace
+characters on a line, the cursor will jump to that beginning (either forwards or backwards). If the
+cursor is already at that position, it will jump to the true beginning of the line.
+
+-B
+--backup
+When saving a file, back up the previous version of it, using the current filename suffixed with a tilde (~).
+
+-C directory
+--backupdir=directory
+Make and keep not just one backup file, but make and keep a uniquely numbered one every time a file
+is saved — when backups are enabled. The uniquely numbered files are stored in the specified directory.
+
+-D
+--boldtext
+For the interface, use bold instead of reverse video. This will be overridden by setting the options
+titlecolor, statuscolor, keycolor, functioncolor, numbercolor, and/or selectedcolor in your nanorc
+file. See set keycolor for details.
+
+-E
+--tabstospaces
+Convert each typed tab to spaces — to the number of spaces that a tab at that position would take up.
+
+-F
+--multibuffer
+Read a file into a new buffer by default.
+
+-G
+--locking
+Enable vim-style file locking when editing files.
+
+-H
+--historylog
+Save the last hundred search strings and replacement strings and executed commands, so they can be
+easily reused in later sessions.
+
+-I
+--ignorercfiles
+Don’t look at the system’s nanorc file nor at the user’s nanorc.
+
+-J
+--guidestripe
+Draw a vertical stripe at the given column, to help judge the width of the text. (The color of the
+stripe can be changed with set stripecolor in your nanorc file.)
+
+-K
+--rawsequences
+Interpret escape sequences directly, instead of asking ncurses to translate them. (If you need this
+option to get some keys to work properly, it means that the terminfo terminal description that is
+used does not fully match the actual behavior of your terminal. This can happen when you ssh into a
+BSD machine, for example.) Using this option disables nano’s mouse support.
+
+-L
+--nonewlines
+Don’t automatically add a newline when a text does not end with one. (This can cause you to save
+non-POSIX text files.)
+
+-M
+--trimblanks
+Snip trailing whitespace from the wrapped line when automatic hard-wrapping occurs or when text is
+justified.
+
+-N
+--noconvert
+Disable automatic conversion of files from DOS/Mac format.
+
+-O
+--bookstyle
+When justifying, treat any line that starts with whitespace as the beginning of a paragraph (unless
+auto-indenting is on).
+
+-P
+--positionlog
+For the 200 most recent files, log the last position of the cursor, and place it at that position
+again upon reopening such a file.
+
+-Q "regex"
+--quotestr="regex"
+Set the regular expression for matching the quoting part of a line. The default value is "^([ \t]*([!#%:;>|}]|//))+".
+(Note that \t stands for a literal Tab character.) This makes it possible to rejustify blocks of quoted
+text when composing email, and to rewrap blocks of line comments when writing source code.
+
+-R
+--restricted
+Restricted mode: don’t read or write to any file not specified on the command line. This means: don’t
+read or write history files; don’t allow suspending; don’t allow spell checking; don’t allow a file
+to be appended to, prepended to, or saved under a different name if it already has one; and don’t
+make backup files. Restricted mode can also be activated by invoking nano with any name beginning
+with r (e.g. rnano).
+
+-S
+--softwrap
+Display over multiple screen rows lines that exceed the screen’s width. (You can make this soft-wrapping
+occur at whitespace instead of rudely at the screen’s edge, by using also --atblanks.) (The old short
+option, -$, is deprecated.)
+
+-T number
+--tabsize=number
+Set the displayed tab length to number columns. The value of number must be greater than 0. The
+default value is 8.
+
+-U
+--quickblank
+Make status-bar messages disappear after 1 keystroke instead of after 20. Note that option -c (--constantshow)
+overrides this. When option --minibar or --zero is in effect, --quickblank makes a message disappear
+after 0.8 seconds instead of after the default 1.5 seconds.
+
+-V
+--version
+Show the current version number and exit.
+
+-W
+--wordbounds
+Detect word boundaries differently by treating punctuation characters as parts of words.
+
+-X "characters"
+--wordchars="characters"
+Specify which other characters (besides the normal alphanumeric ones) should be considered as parts of
+words. When using this option, you probably want to omit -W (--wordbounds).
+
+-Y name
+--syntax=name
+Specify the syntax to be used for highlighting. See Syntax Highlighting for more info.
+
+-Z
+--zap
+Let an unmodified Backspace or Delete erase the marked region (instead of a single character, and
+without affecting the cutbuffer).
+
+-a
+--atblanks
+When doing soft line wrapping, wrap lines at whitespace instead of always at the edge of the screen.
+
+-b
+--breaklonglines
+Automatically hard-wrap the current line when it becomes overlong. (This option is the opposite of -w
+(--nowrap) — the last one given takes effect.)
+
+-c
+--constantshow
+Constantly display the cursor position (line number, column number, and character number) on the
+status bar. Note that this overrides option -U (--quickblank).
+
+-d
+--rebinddelete
+Interpret the Delete and Backspace keys differently so that both work properly. You should only
+use this option when on your system either Backspace acts like Delete or Delete acts like Backspace.
+        </pre>
+        <hr>
+
+        <h2 id='compatibilidade'>Compatibilidade</h2>
+        <p>
+nano is a "modeless" editor. This means that all keystrokes, with the exception of Control and Meta sequences, enter text into the file being edited.
+        </p>
+        <p>
+Characters not present on the keyboard can be entered in two ways:
+        </p>
+        <p>
+For characters with a single-byte code, pressing the Esc key twice and then typing a three-digit decimal number (from 000 to 255) will make nano behave as if you typed the key with that value.
+For any possible character, pressing M-V (Alt+V) and then typing a series of hexadecimal digits (at most six, or concluded with Enter or Space) will enter the corresponding Unicode character into the buffer.
+For example, typing Esc Esc 2 3 4 will enter the character "ê" — useful when writing about a French party. Typing M-V 0 0 2 2 c 4 will enter the symbol "⋄", a little diamond.
+        </p>
+        <p>
+Typing M-V followed by anything other than a hexadecimal digit will enter this keystroke verbatim into the buffer, allowing the user to insert literal control codes (except ^J) or escape sequences.
+        </p>
+
+    </body>
+</html>
