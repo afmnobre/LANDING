@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>VIM E NVIM</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+	<body>
+
+		<h1 id="instalação-do-nvim-e-vim">Instalação do Nvim e Vim</h1>
+		<h2 id="necessário-instalar-o-python-para-funcionamento-de-futuros-plugins">0.1) Necessário Instalar o Python para funcionamento de futuros Plugins</h2>
+		<p>(DEBIAN)</p>
+		<pre><code>sudo apt update
+sudo apt install python3-pip</code></pre>
+		<p>O Pip 3.9 pode ser instalado assim:</p>
+		<pre><code>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3.9 get-pip.py</code></pre>
+		<h2 id="biblioteca-pynvim-para-fazer-o-neovim-utilizar-o-python.">0.2) Biblioteca pynvim (Para fazer o Neovim utilizar o Python).</h2>
+		<pre><code>pip install pynvim</code></pre>
+		<h2 id="instalação-do-nodejs">0.3) Instalação do Nodejs</h2>
+		<p>Executar os procedimentos do link abaixo para instalar o Nodejs</p>
+		<pre><code>https://github.com/nvm-sh/nvm#installing-and-updating</code></pre>
+		<p>Depois reinicie o terminal e executar o seguinte comando:</p>
+		<p>nvm install –lts</p>
+		<h2 id="instalação-do-vim-linux-debian-e-wsl">1.0) Instalação do VIM (Linux Debian e WSL)</h2>
+		<pre><code>sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim</code></pre>
+		<h2 id="instalação-do-nvimlinux-debian-e-wsl">1.1) Instalação do NVIM(Linux Debian e WSL)</h2>
+		<pre><code>sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim</code></pre>
+		<h2 id="instalação-vimarch-linux">1.2) Instalação VIM(Arch Linux)</h2>
+		<pre><code>sudo pacman -S vim</code></pre>
+		<h2 id="instalação-nvimarch-linux">1.3) Instalação NVIM(Arch Linux)</h2>
+		<pre><code>sudo pacman -S neovim</code></pre>
+		<h1 id="arquivos-de-configuração">Arquivos de Configuração</h1>
+		<h2 id="vim">2.1) VIM</h2>
+		<p>Criar no diretório ~/ o arquivo oculto .vimrc</p>
+		<h2 id="nvim">2.2) NVIM</h2>
+		<p>Criar no diretório ~/.config/ um diretório chamado nvim e depois um arquivo chamado init.vim</p>
+		<h2 id="exemplo-de-conteudo-de-arquivo-de-configuração-do-vim-e-do-nvim.">3.1) Exemplo de conteudo de arquivo de configuração do VIM e do NVIM.</h2>
+		<pre><code>&quot; Global Sets &quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+syntax on            &quot; Enable syntax highlight
+set nu               &quot; Enable line numbers
+set tabstop=4        &quot; Show existing tab with 4 spaces width
+set softtabstop=4    &quot; Show existing tab with 4 spaces width
+set shiftwidth=4     &quot; When indenting with &#39;&gt;&#39;, use 4 spaces width
+set expandtab        &quot; On pressing tab, insert 4 spaces
+set smarttab         &quot; insert tabs on the start of a line according to shiftwidth
+set smartindent      &quot; Automatically inserts one extra level of indentation in some cases
+set hidden           &quot; Hides the current buffer when a new file is openned
+set incsearch        &quot; Incremental search
+set ignorecase       &quot; Ingore case in search
+set smartcase        &quot; Consider case if there is a upper case character
+set scrolloff=8      &quot; Minimum number of lines to keep above and below the cursor
+set colorcolumn=100  &quot; Draws a line at the given line to keep aware of the line size
+set signcolumn=yes   &quot; Add a column on the left. Useful for linting
+set cmdheight=2      &quot; Give more space for displaying messages
+set updatetime=100   &quot; Time in miliseconds to consider the changes
+set encoding=utf-8   &quot; The encoding should be utf-8 to activate the font icons
+set nobackup         &quot; No backup files
+set nowritebackup    &quot; No backup files
+set splitright       &quot; Create the vertical splits to the right
+set splitbelow       &quot; Create the horizontal splits below
+set autoread         &quot; Update vim after file update from outside
+set mouse=a          &quot; Enable mouse support
+filetype on          &quot; Detect and set the filetype option and trigger the FileType Event
+filetype plugin on   &quot; Load the plugin file for the file type, if any
+filetype indent on   &quot; Load the indent file for the file type, if any</code></pre>
+		<h1 id="instalação-de-vim-plug">Instalação de VIM PLUG</h1>
+		<h2 id="">4.1) Colocar as seguintes linhas no TOPO do arquivo de configuração e de acordo com seu Plugin colocar as configurações <br>de acordo com o solicitado.</h2>
+		<pre><code>call plug#begin()
+&quot; Plugins aqui
+	&lt;nome do Plugin 1&gt;
+	&lt;nome do Plugin 2&gt;
+	...
+call plug#end() </code></pre>
+		<h2 id="vim-1">4.2) VIM</h2>
+		<pre><code>iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+	ni $HOME/vimfiles/autoload/plug.vim -Force</code></pre>
+		<h2 id="nvim-1">4.3) NVIM</h2>
+		<pre><code>iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+	ni &quot;$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim&quot; -Force    </code></pre>
+		<h2 id="fazendo-esses-passos-o-gerenciador-de-plugin-ja-esta-pronto-para-instalar-outros-plugins-com-o-comando">4.4) Fazendo esses passos o Gerenciador de Plugin ja esta pronto para instalar outros plugins com o comando:</h2>
+		<pre><code>:PlugInstall &lt;Nome do Plugin&gt;</code></pre>
+		<ul>
+			<li>Sempre que instalar e configurar um plugin no Arquivo de configuração, reinicie o VIM e NVIM para executar o comando acima.</li>
+		</ul>
+		<h2 id="para-atualizar-o-plugin">4.5) Para atualizar o Plugin:</h2>
+		<pre><code>:PlugUpdate</code></pre>
+
+	</body>
+</html>

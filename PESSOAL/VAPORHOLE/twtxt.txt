@@ -1,0 +1,77 @@
+2023-09-18T18:09:37-03:00	Primeiro teste de inserção no Microblog
+2023-09-18T18:24:49-03:00	Mudei o local padrão do arquivo do twtxt.txt para public_html
+2023-09-18T20:04:36-03:00	Estou na aula 15 do curso de shell do SlackJeff, e ta muito calor aqui
+2023-09-18T20:12:19-03:00	Fiz a mudança no .bashrc e criei um alias para o comando twtxt tweet para tweet
+2023-09-19T02:18:29-03:00	Acabei os estudos por hoje, agora vou dormir. Amanha configurar o GOPHER.
+2023-09-19T03:09:18-03:00	Achei o caminho do Gopher, agora preciso configurar e popular
+2023-09-19T16:20:42-03:00	Consegui configurar um script para matar todos os usuarios que estão ausentes no VaporServer
+2023-09-20T01:20:46-03:00	Aprendi a trocar o Logo do Gopher, coloquei o logo de uma CORP do Cyberpunk
+2023-09-20T02:30:45-03:00	Criei um arquivo chamado Cyberpunk.html e atualizei meu Github com uma nova area chamada Landing
+2023-09-20T02:32:16-03:00	Terminei a Aula 16 do curso de SHELL e agora estamos configurando o sistema de BUSCA pelo grep.
+2023-09-21T11:12:22-03:00	Terminado de fazer a busca do projeto de agenda eletronica da Aula 16.
+2023-09-21T16:28:25-03:00	Acabei de remover 2 dentes, to fudido mas pelo menos agora da pra estudar =)
+2023-09-22T00:29:02-03:00	Aula 18 concluida do curso do SlackJeff, EXPANSÃO de STRINGS
+2023-09-22T02:23:07-03:00	Indo dormir, entrei no Grupo do IRC de radio, novo do vaporhole. As musicas são maneiras. Boa Noite a todos.
+2023-09-23T02:47:38-03:00	Aprendendo sobre Glob na aula 20 do curso de Shell
+2023-09-23T02:50:02-03:00	Glob pode ser considerado um caracter coringa em REGEX. (?) e (*)
+2023-09-23T03:42:56-03:00	Glob pode ser usado para negar caracteres em buscar para filtrar por exemplo [] - Negação.
+2023-09-23T03:43:23-03:00	Para lembrar: Shell não existe expressão regular (REGEX).
+2023-09-23T05:00:40-03:00	Aula 20 de Shell terminada
+2023-09-23T05:20:06-03:00	Fui seco no servidor do VaporHole pra ver se executa PHP.. uauhauha nem o apache ta instalado
+2023-09-23T18:37:36-03:00	Terminando a aula 22 sobre PORTABILIDADE, os Shells mais comuns não ZSH, BASH e KSH
+2023-09-23T23:51:21-03:00	Finalmente terminei o Curso de Shell do SlackJeff, gostei de aprender a aplicar patchs de atualizacao
+2023-09-24T00:06:14-03:00	Agora vamos ver qual curso vou começar a fazer. Tenho que arrumar minha home do Vaporhole e do Gopher ainda.
+2023-09-24T03:34:19-03:00	Atualizei meu curriculo e mandei uns curriculos, esperando voltar pro mercado de trabalho
+2023-09-24T06:44:51-03:00	Estudando sobre Gopher, vi o video do Jedd sobre
+2023-09-24T11:58:35-03:00	Morrendo de sono, acho que vou fazer algum curso de rede/firewall ou alguma coisa com Wireshak, pensando
+2023-09-24T15:27:27-03:00	Olha que MARAVILHA, consegui pegar o conteudo do TWTXT e espelhar via JavaScript no HTML do Index.html.
+2023-09-25T04:38:20-03:00	Retirei o scritp para ler arquivo txt do Index.html e coloquei em um arquivo separado.
+2023-09-25T04:39:02-03:00	Ler o mesmo arquivo remotamente da erro, estou verificando no forum se isso é segurança ou se pode ser contornado.
+2023-09-25T12:28:54-03:00	consegui falar com o devnull sobre meu problema com o Gopher, sera que ele vai conseguir me ajuda? oremos!
+2023-09-25T18:35:24-03:00	deu ruim, parece que estou com reação alergica aos remedios que ando tomando, acordar com os pés parecidos com de gravida é foda
+2023-09-25T18:37:03-03:00	Pelo que vi com o DevNull provavelmente o meu terminal esta ocasionando o problema do TAB no gopherhole. Vou verificar.
+2023-09-26T20:03:45-03:00	O DevNull me ajudou com o Gopher e identifiquei que o TAB do meu PC não funciona da mesma maneira e é identificado como espaço no Gopher
+2023-09-26T20:04:55-03:00	Copiei um TAB criado pelo DEVNULL e funciou os direcionamentos do GOPHER.
+2023-09-26T20:06:13-03:00	Peguei um notebook que estava parado aqui em casa, formatei e estou configurando um ambiente de desenvolvimento Web
+2023-09-26T23:14:22-03:00	Fiz a primeira aula do DEV EM DOBRO, estamos desenvolvendo uma landing page simples com tema em One Piece
+2023-09-26T23:38:30-03:00	Atualizei meu perfil do GITHUB com ajuda da aula do pessoal do DEV EM DOBRO, parece que esta interessante, mas ainda preciso customizar
+2023-09-27T08:16:23-03:00	Acabei de fazer algumas coisas paginas e imagens para o GopherHole, esta com informações sobre o mundo e o anime Cyberpunk
+2023-09-27T22:30:07-03:00	Comecei um curso no youtube de LUA, o professor é aqueles que só ensina na pratica, até agora nada de teoria, vamos ver
+2023-09-28T02:06:08-03:00	A internet caiu hoje, por isso fiz um script para verificar se a internet esta ON ou OFF
+2023-09-29T11:31:44-03:00	Comecei a fazer uma landing page PESSOAL, infelizmente ainda não estou conseguindo fazer o CSS funcionar. Vamos estudar mais
+2023-09-29T11:34:00-03:00	Estava tentando instalar o librewolf(navegador) pelo YAY, ele praticametne baixo 20gb na minha maquina e falhou o MAKE INSTAL... UHAUHAU
+2023-09-29T11:35:15-03:00	Organizei alguns diretorios da area LANDING para atualizar o GIT
+2023-09-29T11:36:02-03:00	Lembrar de terminar de configurar o FREEFILESYNC, ainda preciso ver como esse programa funciona direito
+2023-09-29T11:37:01-03:00	Agora vou deixar um pouco e mexer no notebook samsung, tenho que configurar o bspwm direito]
+2023-09-29T11:39:39-03:00	Fiz um script para usar o URXVT para alterar a imagem do NEOFETCH a cada abertura do TERMINAL
+2023-09-30T00:16:44-03:00	Começando a trabalhar com o CSS da minha pagina pessoal, quando ficar decente eu up no vaporhole
+2023-09-30T01:34:48-03:00	?
+2023-09-30T02:15:34-03:00	Fiz um scriptzinho que segue todos os usuarios od TWTXT aqui do server... funcionou direitinho
+2023-09-30T03:31:48-03:00	Tentei instalar o NodeJs no servidor do Vaporhole, deu cota de disco excedita... acho que to fazendo merda
+2023-10-01T00:45:54-03:00	Descobri que a cota de disco de cada usuario no Vaporhole e estou usando 113M, mas ta dando erro de cota de disco
+2023-10-01T12:33:48-03:00	Configurei e atualizei o TMUX para ficar com as mesmas teclas de atalho do Nvim e coloquei um tema Dracula. Bem Maneiro!
+2023-10-01T14:20:04-03:00	Inclui um tema no NVIM do servidor que não precisa de highlights, o thema é mais simples mas ta funcionando ok
+2023-10-01T15:24:57-03:00	Começando o curso de HTML e CSS do SLACKJEFF, vamos ver como ele da aulas de web
+2023-10-02T00:57:58-03:00	Modifiquei meu gopher mas encontro um problema para acessr outro arquivo gopher e ainda manter a configuração padrão
+2023-10-02T06:47:40-03:00	Bom dia a todos, começando o dia colocando o LOFI no Home.
+2023-10-02T07:11:06-03:00	Começando aula 1 do curso de Web do SlackJeff
+2023-10-02T09:45:08-03:00	Comecei hoje uma rtina de exercicio, quero muito me motivar a sair do ostracismo. Preciso recobrar a minha saúde.
+2023-10-02T11:21:34-03:00	Terminei a aula 3 do curdo do JEFF de html e CSS
+2023-10-02T15:50:09-03:00	Fui no dentista e arranquei um dente, a anestecia não pegou direito, pqp QUE DORfeedfeed
+2023-10-02T19:33:35-03:00	Terminei a aula Aprenda Lua Comigo #12, faltando a repetição de jogadas do Jogo da velha
+2023-10-02T19:37:34-03:00	Olha que ironia, fiz um plano de exercicios pro mês inteiro, agora tenho que arrancar 2 dentes, la se foi levantar peso
+2023-10-04T04:47:57-03:00	Peguei um Laptop mais ou menos aqui em casa e transformei ele numa maquina de desenvolvimento web e apprendi a mexer no BSPWM nele
+2023-10-04T04:48:32-03:00	Configurar o bspwm da trabalho mas fica maneiro, ainda tenho que dar uma ajustada no RICE que fiz no KaliLinux
+2023-10-04T06:11:21-03:00	Mechi no meu gopher e decidi que tudo vai ficar separado por diretórios. Não é bem o que eu queria mas esta funcionado.
+2023-10-04T09:38:18-03:00	Fiz uma pagina no gopher com muita informação para quem gosta de NEON GENESIS EVANGELION, deem uma olhada... deu muito trabalho
+2023-10-04T10:56:50-03:00	Terminei de fazer um baita conteudo sobre Evangelion e disponibilizei no meu Gopher, o proximo sera talvez sobre LAIN
+2023-10-04T16:56:26-03:00	Aprendi um pouco mais sobre tmux hoje, e deixei meu Gopher com a cara do Goku
+2023-10-04T19:12:29-03:00	Mexi em todos os arquivos da pasta Cyberpunk para arrumar o texto, inseri quebras de linhas para melhor ler no TERMINAL e no navegador
+2023-10-05T19:13:14-03:00	Fiz um Script em Jquery que pega os dados no formato do forum IRIS e monta eles em uma tabela html, funcionou direito
+2023-10-06T00:00:46-03:00	Terminei mais ou menos a sessão sobre Lain no meu Gopher, ainda tenho que deixar os textos melhores.
+2023-10-06T00:02:08-03:00	Vi que fica maneiro pra caramba usar imagens feitas em ASCII e depois exibi-las com o lolcat.. olha um exemplo: https://envs.sh/27T.png
+2023-10-06T18:57:13-03:00	Energia caindo e calor subindo aqui em casa... Teminando a aula 4 do curso do SlackJeff de HTML5 e CSS
+2023-10-07T08:35:44-03:00	Estou com problemas na criação de um guestbook para o meu Gopher, aparentemente o servidornão executa shell
+2023-10-07T11:48:34-03:00	Terminei a aula 5 do curso de HMTL5 do SlackJeff
+2023-10-08T03:14:17-03:00	estou organizandos os meus favoritos e refazendo alguns manuais que estavam na minha pagina, mas me deu sono, então CAMA
+2023-10-08T17:12:12-03:00	Ai Slackjeff, que tudo ocorra bem ai na sua cidade, eu to vendo os noticiarios, a coisa ta feia

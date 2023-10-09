@@ -1,0 +1,84 @@
+<DOCTYPE html>
+<html lan="pt-br">
+    <head>
+    <title>Forum Iris</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+    <table border='1'>
+        <tr>
+            <th colspan="7">FORUM IRIS</th>
+
+        </tr>
+        <tr>
+            <th>hash</th>
+            <th>edit_hash</th>
+            <th>is_deleted</th>
+            <th>data.author</th>
+            <th>data.parent</th>
+            <th>data.timestamp</th>
+            <th>data.message</th>
+        </tr>
+    </table>
+
+
+    <script>
+        // Função para criar a tabela HTML a partir do JSON
+        function criarTabela(jsonData) {
+            const table = document.querySelector('table');
+
+            jsonData.forEach(objeto => {
+                const row = document.createElement('tr');
+                const cell1 = document.createElement('td');
+                const cell2 = document.createElement('td');
+                const cell3 = document.createElement('td');
+                const cell4_1 = document.createElement('td');
+                const cell4_2 = document.createElement('td');
+                const cell4_3 = document.createElement('td');
+                const cell4_4 = document.createElement('td');
+
+                cell1.textContent = objeto.hash;
+                cell2.textContent = objeto.edit_hash;
+                cell3.textContent = objeto.is_deleted;
+                cell4_1.textContent = objeto.data.author;
+                cell4_2.textContent = objeto.data.parent;
+                cell4_3.textContent = objeto.data.timestamp;
+                cell4_4.textContent = objeto.data.message;
+
+                row.appendChild(cell1);
+                row.appendChild(cell2);
+                row.appendChild(cell3);
+                row.appendChild(cell4_1);
+                row.appendChild(cell4_2);
+                row.appendChild(cell4_3);
+                row.appendChild(cell4_4);
+
+                table.appendChild(row);
+            });
+        }
+
+        // Função para fazer a solicitação AJAX
+        function carregarJSON() {
+            const xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const jsonData = JSON.parse(xhr.responseText);
+                    criarTabela(jsonData);
+                }
+            };
+
+            xhr.open('GET', 'forum_iris_completo.txt', true);
+            xhr.send();
+        }
+
+        // Chama a função para carregar o JSON
+        carregarJSON();
+
+    </script>
+    </body>
+</html>
+
+
+<!--CAMINHO DO JSON:  /home/slackjeff/.iris.messages -->

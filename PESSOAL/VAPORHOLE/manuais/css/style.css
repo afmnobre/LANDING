@@ -1,0 +1,16 @@
+body{
+	padding-left: 10%;
+	margin: auto;
+	text-align: justify;
+
+}
+
+pre {
+	padding: 1%;
+	max-width: 75%;
+	background-color: #D6D6D6;
+}
+#forte {
+
+	color: #FF0000;
+}

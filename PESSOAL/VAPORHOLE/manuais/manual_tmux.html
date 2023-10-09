@@ -1,0 +1,55 @@
+<DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Manual de Configuração do TMUX</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+	<body>
+
+	<h1>Manual de Configuração TMUX</h1>
+	<h3>Pagina de Download do Plugin:</h3>
+	https://github.com/tmux-plugins/tpm
+
+	<h3>Comando para download do Plugin:</h3>
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+	<h3>Arquivo de configuração abaixo:</h3>
+
+	<pre>
+	<code>
+	unbind r
+	bind r source-file ~/.tmux.conf
+
+	set -g prefix C-s
+
+
+	# Para navegar como o VIM e o Nvim.
+
+	setw -g mode-keys vi
+	bind-key h select pane -L
+	bind-key j select pane -D
+	bind-key k select pane -U
+	bind-key l select pane -R
+
+	# Lista de Plugins
+	set -g @plugin 'tmux-plugin/tpm'
+	set -g @plugin 'christoomey/vim-tmux-navigator'
+	set -g @plugin 'dracula/tmux'
+
+
+	# configuração do tema DRACULA do STATUS BAR.
+
+	set -g @dracula-show-powerline true
+	set -g @dracula-fixed-location "<São Paulo>"
+	set -g @dracula-plugins "weather"
+	set -g @dracula-show-flags true
+	set -g @gracula-show-left-icon session
+	set -g status-position top
+
+	# Inicialização do PLUGIN MANAGER ( TEM QUE FICAR NO FINAL DO ARQUIVO)
+	run '~/.tmux/plugins/tpm/tpm'
+	</code>
+	</pre>
+	</body>
+</html>
