@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>INSTALAÇÃO - MYSQL e PHPMYADMIN - ARCH LINUX</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+	<body>
+		<h4 class="cyber-h">Instalação do MYSQL - ARCH Linux</h4>
+		<p>Comando para instalação:</p>
+		<pre><span class="code-block">sudo pacman -S mariadb</span></pre>
+		<p>A instalação cria os seguintes diretórios:</p>
+		<pre><span class="code-block">/var/lib/mysql
+/usr/share/mysql
+/usr/bin/mysql
+/usr/include/mysql
+/usr/include/mysql/mysql
+/usr/include/mysql/server/mysql
+/usr/lib/mysql</span class="code-block"></pre>
+		<p>Comando para registrar o serviço:</p>
+		<pre><span class="code-block">sudo systemctl enable mariadb</span></pre>
+		<p>Dominando o arquivo do banco de dados antes de criar a base de dados:</p>
+		<pre><span class="code-block">sudo chown lucas /var/lib/mysql
+
+sudo chmod 777 /var/lib/mysql</span class="code-block"></pre>
+		<h6 id="forte"><strong><em>SAIR DO TERMINAL E ABRIR NOVAMENTE</em></strong></h6>
+		<p>Inicializando os arquivos do banco de dados:</p>
+		<pre><span class="code-block">sudo mysql_install_db --user=mysql --ldata=/var/lib/mysql</span></pre>
+		<p>Resultado:</p>
+		<pre><span class="code-block">Installing MariaDB/MySQL system tables in &#39;/var/lib/mysql&#39; ...
+OK
+
+To start mysqld at boot time you have to copy
+support-files/mysql.server to the right place for your system
+
+Two all-privilege accounts were created.
+One is root@localhost, it has no password, but you need to
+be system &#39;root&#39; user to connect. Use, for example, sudo mysql
+The second is mysql@localhost, it has no password either, but
+you need to be the system &#39;mysql&#39; user to connect.
+After connecting you can set the password, if you would need to be
+able to connect as any of these users with a password and without sudo
+
+See the MariaDB Knowledgebase at [MariaDB Knowledge Base](https://mariadb.com/kb)
+
+You can start the MariaDB daemon with:
+cd &#39;/usr&#39; ; /usr/bin/mysqld_safe --datadir=&#39;/var/lib/mysql&#39;
+
+You can test the MariaDB daemon with mysql-test-run.pl
+cd &#39;/usr/mysql-test&#39; ; perl mysql-test-run.pl
+
+Please report any problems at [System Dashboard - Jira](https://mariadb.org/jira)
+
+The latest information about MariaDB is available at [https://mariadb.org/](https://mariadb.org/).
+
+Consider joining MariaDB&#39;s strong and vibrant community:
+[Contribute - MariaDB.org](https://mariadb.org/get-involved/)</span class="code-block"></pre>
+		<p>Iniciando o Banco de dados:</p>
+		<pre><span class="code-block">sudo systemctl start mariadb</span></pre>
+		<p>Verificando o Status do Banco de dados:</p>
+		<pre><span class="code-block">sudo systemctl status mariadb</span></pre>
+		<p>Resultado:</p>
+		<pre><span class="code-block">● mariadb.service - MariaDB 10.8.4 database server
+     Loaded: loaded (/usr/lib/systemd/system/mariadb.service; enabled; preset: disabled)
+     Active: active (running) since Sat 2022-08-27 13:34:52 -03; 6s ago
+
+       Docs: man:mariadbd(8)
+             [systemd - MariaDB Knowledge Base](https://mariadb.com/kb/en/library/systemd/)
+    Process: 512289 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (span class="code-block"=exited, status=0/SUCCESS)
+    Process: 512290 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] &amp;&amp; VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq&gt;
+    Process: 512371 ExecStartPost=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (span class="code-block"=exited, status=0/SUCCESS)
+
+   Main PID: 512322 (mariadbd)
+     Status: &quot;Taking your SQL requests now...&quot;
+      Tasks: 21 (limit: 19093)
+     Memory: 186.7M
+        CPU: 129ms
+
+     CGroup: /system.slice/mariadb.service
+             └─512322 /usr/bin/mariadbd
+
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] InnoDB: Setting file &#39;./ibtmp1&#39; size to 12.000MiB. Physically writing the &gt;
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] InnoDB: File &#39;./ibtmp1&#39; size is now 12.000MiB.
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] InnoDB: log sequence number 46633; transaction id 15
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] Server socket created on IP: &#39;0.0.0.0&#39;.
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] Server socket created on IP: &#39;::&#39;.
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] InnoDB: Buffer pool(s) load completed at 220827 13:34:52
+Aug 27 13:34:52 archlinux mariadbd[512322]: 2022-08-27 13:34:52 0 [Note] /usr/bin/mariadbd: ready for connections.
+Aug 27 13:34:52 archlinux mariadbd[512322]: Version: &#39;10.8.4-MariaDB&#39;  socket: &#39;/run/mysqld/mysqld.sock&#39;  port: 3306  Arch Linux
+Aug 27 13:34:52 archlinux systemd[1]: Started MariaDB 10.8.4 database server.
+lines 1-26/26 (END)</span class="code-block"></pre>
+		<p>Criando senha para usuario root no banco:</p>
+		<p>Desative o banco:</p>
+		<pre><span class="code-block">sudo systemctl stop mariadb</span></pre>
+		<p>Habilite para entrar no banco em safe mode:</p>
+		<pre><span class="code-block">sudo mysql_safe --skip-grant-tables --skip-networking &amp;</span></pre>
+		<p>Acesse o banco como root:</p>
+		<pre><span class="code-block">mysql -u root</span></pre>
+		<p>Execute os comandos abaixo:</p>
+		<pre><span class="code-block">use mysql
+flush privileges;</span class="code-block"></pre>
+		<p>Executar a query abaixo para mudar a senha do Root:</p>
+		<pre><span class="code-block">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;SuaSenhaAqui&#39;;</span></pre>
+		<p>E sair:</p>
+		<pre><span class="code-block">EXIT;</span></pre>
+		<p>Fazer teste com a nova senha:</p>
+		<pre><span class="code-block">mysql -u root -p</span></pre>
+		<h4 class="cyber-h">CASO TENHA PROBLEMAS</h4>
+		<h4 id="com-o-serviço-do-mariadb-ativo">Com o serviço do MARIADB ativo:</h4>
+		<pre><span class="code-block">└─(15:06:33)──&gt; sudo mysql                                                                                                      1 ↵ ──(Sat,Aug27)─┘
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+
+Your MariaDB connection id is 11
+
+Server version: 10.8.4-MariaDB Arch Linux
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type &#39;help;&#39; or &#39;\h&#39; for help. Type &#39;\c&#39; to clear the current input statement.
+
+MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;localhost&#39;;
+
+Query OK, 0 rows affected (0.004 sec)
+
+MariaDB [(none)]&gt; set password for &#39;root&#39;@&#39;localhost&#39;=password(&#39;SuaSenhaAqui&#39;);
+
+Query OK, 0 rows affected (0.003 sec)
+
+MariaDB [(none)]&gt; exit;
+
+Bye</span></pre>
+		<h4 class="cyber-h">INSTALANDO O PHPMYADMIN</h4>
+		<p>Comando para instalação:</p>
+		<pre><span class="code-block">sudo pacman -S phpmyadmin</span></pre>
+		<p>Copiar o arquivo do phpmyadmin para o diretório /srv/http/</p>
+		<pre><span class="code-block">cp -r /usr/share/webapps/phpMyAdmin /srv/http/</span></pre>
+		<p>No diretório /etc/httpd/conf/ modificar o arquivo httpd.conf e inserir as seguintes linhas:</p>
+		<pre><span class="code-block">#Modulo do PHPMYADMIN 
+Include conf/extra/phpmyadmin.conf</span class="code-block"></pre>
+		<p>No diretório /etc/httpd/conf/extra criar o arquivo phpmyadmin.conf a seguinte informação:</p>
+		<pre><span class="code-block">Alias /phpmyadmin &quot;/srv/http/phpMyAdmin&quot;
+&lt;Directory &quot;/srv/http/phpMyadmin&quot;&gt;
+		DirectoryIndex index.php
+		AllowOverride All
+		Options FollowSymLinks
+		Require all granted
+&lt;/Directory&gt;</span class="code-block"></pre>
+		<p>No diretório /etc/php alterar o arquivo php.ini e descomentar a linha:</p>
+		<pre><span class="code-block">;extension=mysqli</span></pre>
+		<p>Reiniciar o apache:</p>
+		<pre><span class="code-block">sudo systemctl restart httpd</span></pre>
+
+	</body>
+</html>

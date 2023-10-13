@@ -75,3 +75,10 @@
 2023-10-07T11:48:34-03:00	Terminei a aula 5 do curso de HMTL5 do SlackJeff
 2023-10-08T03:14:17-03:00	estou organizandos os meus favoritos e refazendo alguns manuais que estavam na minha pagina, mas me deu sono, então CAMA
 2023-10-08T17:12:12-03:00	Ai Slackjeff, que tudo ocorra bem ai na sua cidade, eu to vendo os noticiarios, a coisa ta feia
+2023-10-10T10:57:16-03:00	tentando fazer um guestbook desde ontem no Vaporhole, primeiro tentei com Node mas vi que não vai dar certo, agora tento com PHP.
+2023-10-11T00:13:02-03:00	Refiz as configurações do meu Desktop, atualizei o TEMA dele para o Cyberpunk(amarelo) e reconfigurei o Lightdm que estava crachado
+2023-10-11T00:14:06-03:00	Eu estava usando somente o i3wm mas tinha instalado o Awesome e tinha configurado algumas coisas. acessei novamente e atualizei meu awesome
+2023-10-12T18:49:51-03:00	hoje ta sendo um dia estranho, mesmo com o TMUX minha conexão com o vaporhole ta caindo direto
+2023-10-12T18:50:28-03:00	redefini bastante o meu site no vaporhole, agora vou arranjar uma forma de colocar uma musica no inicio
+2023-10-13T03:03:47-03:00	Coloquei a musica do Edgerunners no inicio da pagaina, ainda não sei como colocar o autoplay, isso é pra proxima
+2023-10-13T03:04:24-03:00	Estou comelando a deixar o site do vaporhole de uma forma boa(eu acho)
