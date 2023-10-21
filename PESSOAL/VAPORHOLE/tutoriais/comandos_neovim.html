@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Atalhos Vim - Para Decorar</title>
+
+	</head>
+	<body>
+		<h4 class="cyber-h" id="comandos-neovim">Comandos Neovim</h4>
+		<br><strong>Criação de Linha:</strong><br>
+		<table class="cyber-table">
+			<thead>
+				<tr>
+					<th>Comando</th>
+					<th>Descrição</th>
+				</tr>
+			</thead>
+			<tbody><tr>
+					<td>Ctrl + o</td>
+					<td>Cria uma nova linha ABAIXO.</td>
+				</tr>
+				<tr>
+					<td>Crtl + O</td>
+					<td>Cria uma nova Linha ACIMA.</td>
+				</tr>
+				<tr>
+					<td>gg + = + G</td>
+					<td>Identa todo o arquivo atutomáticamente.</td>
+				</tr>
+			</tbody></table>
+			<br><br><br><strong>Movimentação:</strong><br>
+			<table class="cyber-table">
+				<thead>
+					<tr>
+						<th align="center">Comando</th>
+						<th>Descrição</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td align="center">i</td>
+						<td>Modo de Inserção antes do cursor.</td>
+					</tr>
+					<tr>
+						<td align="center">I</td>
+						<td>Modo de Inserção no começo da linha.</td>
+					</tr>
+					<tr>
+						<td align="center">a</td>
+						<td>Modo de Inserção depois do cursor.</td>
+					</tr>
+					<tr>
+						<td align="center">A</td>
+						<td>Modo de inserção no Final da Linha.</td>
+					</tr>
+					<tr>
+						<td align="center">gg</td>
+						<td>Inicio do arquivo.</td>
+					</tr>
+					<tr>
+						<td align="center">G</td>
+						<td>Final do Arquivo.</td>
+					</tr>
+					<tr>
+						<td align="center">Ctrl + u</td>
+						<td>Move pagina acima.</td>
+					</tr>
+					<tr>
+						<td align="center">Ctrl + d</td>
+						<td>Mode pagina abaixo.</td>
+					</tr>
+					<tr>
+						<td align="center">&lt;num&gt; + gg</td>
+						<td>Navega até a linha especifica no arquivo.</td>
+					</tr>
+					<tr>
+						<td align="center">&lt;num&gt; + %</td>
+						<td>Navega até a posição em porcentagem do arquivo.</td>
+					</tr>
+					<tr>
+						<td align="center">(</td>
+						<td>Pula para a frase anterior.</td>
+					</tr>
+					<tr>
+						<td align="center">)</td>
+						<td>Pula para a proxima frase.</td>
+					</tr>
+					<tr>
+						<td align="center">{</td>
+						<td>Pula para o paragrafo anterior.</td>
+					</tr>
+					<tr>
+						<td align="center">}</td>
+						<td>Pula para o próximo paragrafo.</td>
+					</tr>
+					<tr>
+						<td align="center">w</td>
+						<td>Pula pra proxima palavra.</td>
+					</tr>
+					<tr>
+						<td align="center">W</td>
+						<td>Pula pra proxima palavra em "Programação." (só considera espaços como quebra de plavras).</td>
+					</tr>
+					<tr>
+						<td align="center">b</td>
+						<td>Pula pra palavra anterior.</td>
+					</tr>
+					<tr>
+						<td align="center">B</td>
+						<td>Pula pra palabra anterior em "Programação." (só considera espaços como quebra de plavras).</td>
+					</tr>
+					<tr>
+						<td align="center">e</td>
+						<td>Pula pro final da palavra.</td>
+					</tr>
+					<tr>
+						<td align="center">$</td>
+						<td>Pula pro Final da Linha(sem entrar no modo de edição).</td>
+					</tr>
+					<tr>
+						<td align="center">^</td>
+						<td>Pula pro começo da Linha (sem entrar no modo de edição).</td>
+					</tr>
+					<tr>
+						<td align="center">0</td>
+						<td>Vai pro inicio da Linha ABSOLUTO, incluindo espaços.</td>
+					</tr>
+					<tr>
+						<td align="center">zz</td>
+						<td>Centraliza a tela aonde o cursor esta.</td>
+					</tr>
+					<tr>
+						<td align="center">zb</td>
+						<td>Movimenta para cima.</td>
+					</tr>
+					<tr>
+						<td align="center">zt</td>
+						<td>Movimenta para baixo.</td>
+					</tr>
+					<tr>
+						<td align="center">H</td>
+						<td>Salta para o inicio da Tela.</td>
+					</tr>
+					<tr>
+						<td align="center">M</td>
+						<td>Salta para o meio da Tela.</td>
+					</tr>
+					<tr>
+						<td align="center">L</td>
+						<td>Salta para o final da Tela.</td>
+					</tr>
+					<tr>
+						<td align="center">[m</td>
+						<td>Salta para o proximo método.</td>
+					</tr>
+					<tr>
+						<td align="center">]m</td>
+						<td>Salta para o método anterior.</td>
+					</tr>
+					<tr>
+						<td align="center">&lt;num&gt; [m</td>
+						<td>Salta para o proximo método de acordo com o numero.</td>
+					</tr>
+					<tr>
+						<td align="center">&lt;num&gt; ]m</td>
+						<td>Salta para o método anterior de acordo com o numero.</td>
+					</tr>
+					<tr>
+						<td align="center">[[</td>
+						<td>salta para a proxima classe.</td>
+					</tr>
+					<tr>
+						<td align="center">]]</td>
+						<td>salta para a classe anterior.</td>
+					</tr>
+					<tr>
+						<td align="center">%</td>
+						<td>Vai para o começo ou o fim do entre pares: {} [] ()</td>
+					</tr>
+					<tr>
+						<td align="center">gi</td>
+						<td>Volta a tela para onde vc estava inserindo.</td>
+					</tr>
+					<tr>
+						<td align="center">Ctrl + o</td>
+						<td>Volta para o ultimo salto de linha.</td>
+					</tr>
+					<tr>
+						<td align="center">Ctrl + i</td>
+						<td>Avança um salto de linha ja feito.</td>
+					</tr>
+					<tr>
+						<td align="center"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="center"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="center"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td align="center"></td>
+						<td></td>
+					</tr>
+				</tbody></table>
+				<br><br><br><strong>Buffers:</strong><br>
+				<table class="cyber-table">
+					<thead>
+						<tr>
+							<th>Comando</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>:ls</td>
+							<td>Lista todos os Buffers abertos</td>
+						</tr>
+						<tr>
+							<td>:b&lt;num&gt;</td>
+							<td>Vai para o Buffer definido.</td>
+						</tr>
+						<tr>
+							<td>:bn</td>
+							<td>Vai para o próximo Buffer.</td>
+						</tr>
+						<tr>
+							<td>:bp</td>
+							<td>Vai para o Buffer anterior.</td>
+						</tr>
+						<tr>
+							<td>:bufdo</td>
+							<td>Fazer um comando em todos os buffers.</td>
+						</tr>
+						<tr>
+							<td>Ctrl + w + v</td>
+							<td>Split de Tela Vertical</td>
+						</tr>
+						<tr>
+							<td>Ctrl + w + s</td>
+							<td>Split de Tela Horizontal</td>
+						</tr>
+						<tr>
+							<td>Ctrl + w + q</td>
+							<td>Fecha o Buffer</td>
+						</tr>
+						<tr>
+							<td>Ctrl + w + (hjkl)</td>
+							<td>Faz a movimentação entre os SPLITS.</td>
+						</tr>
+						<tr>
+							<td>:Tabnew</td>
+							<td>Criando uma Tab</td>
+						</tr>
+						<tr>
+							<td>:Tabs</td>
+							<td>Listando as Tabs</td>
+						</tr>
+						<tr>
+							<td>:set foldmethod=indent</td>
+							<td>Miniza Classes e Funções para "melhorar" a visualizaçao do código (za = Abre e fecha a FOLD)</td>
+						</tr>
+						<tr>
+							<td>za</td>
+							<td>Abre e fecha a estrutura fold.</td>
+						</tr>
+						<tr>
+							<td>zr</td>
+							<td>Abre todas as Estruturas&nbsp; Fold</td>
+						</tr>
+						<tr>
+							<td>zm</td>
+							<td>Fecha todas as Estrutura Fold</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody></table>
+					<br><br><br><strong>Manipulação:</strong><br>
+					<table class="cyber-table">
+						<thead>
+							<tr>
+								<th align="center">Comando</th>
+								<th>Descrição</th>
+							</tr>
+						</thead>
+						<tbody><tr>
+								<td align="center">s</td>
+								<td>Exclui o caracter que o cursor esta em cima e entra no modo de inserção.</td>
+							</tr>
+							<tr>
+								<td align="center">S</td>
+								<td>Exclui a linha que o cursor esta e entra no modo de inserção.</td>
+							</tr>
+							<tr>
+								<td align="center">C</td>
+								<td>Exclui o resto da linha a frente do curso e entra no modo de inserção.</td>
+							</tr>
+							<tr>
+								<td align="center">dw</td>
+								<td>Apaga Palavra.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt;dw</td>
+								<td>Apaga x palavras a frente do cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">di (</td>
+								<td>Deleta tudo que esta dentro dos Parenteses.</td>
+							</tr>
+							<tr>
+								<td align="center">cit</td>
+								<td>Apaga o conteudo da TAG HTML e entra no modo de inserção dentro da TAG HTML.</td>
+							</tr>
+							<tr>
+								<td align="center">cat</td>
+								<td>Apaga a TAG HTML inteira.</td>
+							</tr>
+							<tr>
+								<td align="center">dt&lt;carater&gt;</td>
+								<td>Apaga tudo até o caracter especificado.</td>
+							</tr>
+							<tr>
+								<td align="center">r</td>
+								<td>replace de caracter.</td>
+							</tr>
+							<tr>
+								<td align="center">R</td>
+								<td>Entra no modo de REPLACE de catater para toda a linha a frente do Cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">yy</td>
+								<td>Copia a linha inteira.</td>
+							</tr>
+							<tr>
+								<td align="center">Y</td>
+								<td>Copia o resto da linha inteira depois do cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">p</td>
+								<td>Cola após o cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">P</td>
+								<td>Cola antes do cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">u</td>
+								<td>desfaz alterações.</td>
+							</tr>
+							<tr>
+								<td align="center">J</td>
+								<td>agrupa uma função mutilinha em uma unica linha.</td>
+							</tr>
+							<tr>
+								<td align="center">x</td>
+								<td>Deleta 1 caracter.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt;x</td>
+								<td>Deleta x caracteres a frente do cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">X</td>
+								<td>Deleta 1 caracter anterior ao cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt;X</td>
+								<td>Deleta x caracteres anteriores ao cursor.</td>
+							</tr>
+							<tr>
+								<td align="center">n</td>
+								<td>Proxima ocorrencia encontrada depois de fazer a BUSCA</td>
+							</tr>
+							<tr>
+								<td align="center">N</td>
+								<td>Ocorrencia anterior depois de fazer a BUSCA.</td>
+							</tr>
+							<tr>
+								<td align="center">#</td>
+								<td>Realiza uma busca anterior da palavra que o cursor esta em cima.</td>
+							</tr>
+							<tr>
+								<td align="center">*</td>
+								<td>Realiza uma busca a frente da palavra que o cursor esta em cima.</td>
+							</tr>
+							<tr>
+								<td align="center">Ctrl + a</td>
+								<td>Incremento numerico.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt; Ctrl + a</td>
+								<td>incrementa o numero pelo número especificado.</td>
+							</tr>
+							<tr>
+								<td align="center">Ctrl + i</td>
+								<td>Decremento numérico.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt; Ctrl + i</td>
+								<td>Decrementa o numero pelo número especificado.</td>
+							</tr>
+							<tr>
+								<td align="center">Ctrl x + Ctrl n</td>
+								<td>Autocompleta palavras de acordo com o arquivo que esta aberto.</td>
+							</tr>
+							<tr>
+								<td align="center">Ctrl x + Ctrl l</td>
+								<td>Mostra todas as incidencia de uma função e completa a linha inteira. (segurar o control e apertar o L para selecionar a que vc quer).</td>
+							</tr>
+							<tr>
+								<td align="center">.</td>
+								<td>Quando vc faz qualquer alteração vc pode entrar no modo normal e digitar (.) ponto que a alteração sera repetida.</td>
+							</tr>
+							<tr>
+								<td align="center">~</td>
+								<td>Transforma o caracter MAIÚSCULO ou MINÚSCULO.</td>
+							</tr>
+							<tr>
+								<td align="center">&lt;num&gt;~</td>
+								<td>Transforma os proximos X caracteres em MAIÚSCULOS ou MINÚSCULOS.</td>
+							</tr>
+							<tr>
+								<td align="center">retab</td>
+								<td>retabula todos os arquivos de acordo com sua configuração de TAB.</td>
+							</tr>
+							<tr>
+								<td align="center">:g/&lt;palavra&gt;/d</td>
+								<td>Deleta a linha que possui a palabra procurada.</td>
+							</tr>
+							<tr>
+								<td align="center">:normal + comandos</td>
+								<td>Faz o comando como se fosse no modo normal em 1 linha.</td>
+							</tr>
+							<tr>
+								<td align="center">:%normal + comandos</td>
+								<td>Faz o comando no modo normal no arquivo inteiro.</td>
+							</tr>
+							<tr>
+								<td align="center"></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td align="center">$</td>
+								<td></td>
+							</tr>
+						</tbody></table>
+						<br><br><br><strong>Macro(passo a passo):</strong><br>
+						<table class="cyber-table">
+							<thead>
+								<tr>
+									<th align="center">Comando</th>
+									<th>Descrição</th>
+								</tr>
+							</thead>
+							<tbody><tr>
+									<td align="center">q</td>
+									<td>Começa a criar a macro.</td>
+								</tr>
+								<tr>
+									<td align="center">a</td>
+									<td>Nomeia a macro, pode ser qualquer letra, no caso aqui é "a".</td>
+								</tr>
+								<tr>
+									<td align="center">&lt;comandos&gt;</td>
+									<td>Faça o que a macro tem que fazer.</td>
+								</tr>
+								<tr>
+									<td align="center">q</td>
+									<td>Grave a macro.</td>
+								</tr>
+								<tr>
+									<td align="center">@&lt;nome da macro&gt;</td>
+									<td>Executa a macro.</td>
+								</tr>
+								<tr>
+									<td align="center">&lt;num&gt;@&lt;nome da macro&gt;</td>
+									<td>Executa a macro X vezes.</td>
+								</tr>
+							</tbody></table>
+							<br><br><br><strong>Dicionário:</strong><br>
+							<table class="cyber-table">
+								<thead>
+									<tr>
+										<th align="center">Comando</th>
+										<th>Descrição</th>
+									</tr>
+								</thead>
+								<tbody><tr>
+										<td align="center"></td>
+										<td>:set spelllang=pt_br</td>
+									</tr>
+									<tr>
+										<td align="center">[s</td>
+										<td>Proximo erro de português.</td>
+									</tr>
+									<tr>
+										<td align="center">]s</td>
+										<td>Erro de porguês anterior.</td>
+									</tr>
+									<tr>
+										<td align="center">z=</td>
+										<td>Com o cursor em cima da palavra errada ele mostra as sugestões de correção.</td>
+									</tr>
+								</tbody></table>
+								<br><br><br><strong>Seleção:</strong><br>
+								<table class="cyber-table">
+									<thead>
+										<tr>
+											<th align="center">Comando</th>
+											<th>Descrição</th>
+										</tr>
+									</thead>
+									<tbody><tr>
+											<td align="center">v</td>
+											<td>Entra no modo de seleção de Caracter.</td>
+										</tr>
+										<tr>
+											<td align="center">V</td>
+											<td>Entra no modo de seleção de Linhas.</td>
+										</tr>
+										<tr>
+											<td align="center">Ctrl + V</td>
+											<td>Entra no modo de seleção em Bloco.</td>
+										</tr>
+									</tbody></table>
+									<br><br><br><strong>Integração com Bash:</strong><br>
+									<table class="cyber-table">
+										<thead>
+											<tr>
+												<th>Comando</th>
+												<th>Descrição</th>
+											</tr>
+										</thead>
+										<tbody><tr>
+												<td>:r!sudo ifconfig</td>
+												<td>Pega o resultado do comando ifconfig e coloca no arquivo.</td>
+											</tr>
+											<tr>
+												<td>:!sudo infconfig</td>
+												<td>Só mostra a saida do comando mas não coloca no arquivo.</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody></table>
+										</article>
+	</body>
+</html>

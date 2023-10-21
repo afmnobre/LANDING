@@ -24,5 +24,12 @@
 				Siga esse Tutorial.</p>
 				</span>
 		</a>
-
+		&nbsp;&nbsp;
+		<a href="index.php?pagina=tutoriais&codigo=nvim_manual">
+			<img width="300" src="./src/img/tutoriais/NVIM.png">
+				<span class="code-block"id="code0" data-title="NVIM COMANDOS:">
+				<p>Bancos de dados sempre foram importantes<br> para aquele que quer aprender a programar<br>
+				Irei ensinar como instalar e configurar o<br> MARIADB e o gerenciador web <br>PHPMYADMIN.
+				Siga esse Tutorial.</p>
+		</a>&nbsp;&nbsp;
 </div>

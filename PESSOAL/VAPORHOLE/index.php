@@ -111,8 +111,9 @@
 						include('./tutoriais/manual_mysql.html');
 					}else if($codigo == 'tmux'){
 						include('./tutoriais/manual_tmux.html');
+					}else if($codigo == 'nvim_manual'){
+						include('./tutoriais/comandos_neovim.html');
 					}
-
 
 					break;
 				default:
