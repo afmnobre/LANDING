@@ -6,27 +6,30 @@
 		<title>Manual Basico de PHP</title>
 	</head>
 	<body>
-		<div class="cabecalho">
+		<div class="cabecalho_php">
 			<h4 class="cyber-h">Manual Básico de PHP</h4>
-
-			<?php
-				$diretorio = scandir("../85Bits/");
-				$qtd = count($diretorio) - 3;
 			
+		<ul class="menu_php">
+			<?php
+				$diretorio = scandir("./php/");
+				$qtd = count($diretorio) - 3;
 				for($i=1; $i<=$qtd; $i++){
-					echo "<a href=./AULAS.php?pagina=".$i.">Link_".$i."</a><br>";
+					echo "<li><a href=./index.php?pagina=php&codigo=".$i.">Aula-".$i."</a></li>";
 				}
 			?>
+		</ul>
+
 		</div>
-		<div class="corpo">
+		<div class="conteudo_php">
 			<?php 
 
-			@$pagina = 'Aula_'.$_GET['pagina'].'.html';
+				@$pagina = 'Aula_'.$_GET['codigo'].'.html';
 
 				if($pagina <> "Aulas.html"){
+					//echo $pagina;
 					include $pagina;
 				}else{
-					include "AULAS.html";
+					include "AULAS.php";
 				}
 
 			?>

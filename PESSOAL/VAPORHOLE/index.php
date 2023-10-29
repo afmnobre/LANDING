@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset=UTF-8>
@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" lang="pt-br">
 
 
+	<link rel="stylesheet" type="text/css" href="./src/css/php.css" />
 	<link rel="stylesheet" type="text/css" href="./src/css/cyberpunk.css" />
 	<link rel="stylesheet" type="text/css" href="./src/css/guest.css" />
 	<link rel="stylesheet" type="text/css" href="./src/css/home.css" />
@@ -13,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/tutoriais.css" />
 	<link rel="stylesheet" type="text/css" href="./src/css/twtxt.css" />
 	<link rel="stylesheet" type="text/css" href="./music/music.css" />
-
 
 	<title>Manual de Instalação </title>
 
@@ -70,6 +70,12 @@
 						<span class="glitchtext">.rice</span>
 						<span class="tag">XYX</span>
                     </button>
+				</li>				<li>
+					<button class="cyber-button-small bg-blue fg-white m-2 vt-bot">
+						<a href="index.php?pagina=php">.php</a>
+						<span class="glitchtext">.php</span>
+						<span class="tag">87#</span>
+                    </button>
 				</li>
 				<li>
 					<button class="cyber-button-small bg-blue fg-white m-2 vt-bot">
@@ -114,9 +120,11 @@
 					}else if($codigo == 'nvim_manual'){
 						include('./tutoriais/comandos_neovim.html');
 					}
-
 					break;
-				default:
+			case 'php':
+					include('./php/AULAS.php');
+					break;
+			default:
 					include('./home.html');
 			}
 

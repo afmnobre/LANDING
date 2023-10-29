@@ -1,0 +1,29 @@
+.cabecalho_php {
+	height: 150px;
+	padding: 1%;
+	background-image:url(https://c4.wallpaperflare.com/wallpaper/395/580/926/cyberpunk-cyberpunk-2077-science-fiction-video-game-girls-video-games-hd-wallpaper-preview.jpg);
+}
+
+.menu_php {
+	/*background-color: black;*/
+}
+
+ul.menu_php li {
+    display: inline; /* Isso torna os itens de lista em linha horizontal */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+ul.menu_php li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px 15px; /* Espaçamento interno do link */
+    background-color: yellow; /* Fundo amarelo */
+    color: #000; /* Cor do texto preto */
+    border: 1px solid #000; /* Borda preta fina */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+ul.menu_php li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
