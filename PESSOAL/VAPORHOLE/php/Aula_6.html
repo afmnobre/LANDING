@@ -1,275 +1,266 @@
-<?php
+<h1 class="cyber-h">Aula 6 de PHP</h1>
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+<h4 class="cyber-h">Classes, Objetos, Atributos, Herança, Visibilidade e Encapsulamento.</h4>
 
+<h4 class="cyber-h">1. Atributos Estáticos.</h4>
 
-##################################################################################################
-echo "<h1>Aula 6 de PHP</h1>";
-echo "<hr>";
-echo "<h4>Classes, Objetos, Atributos, Herança, Visibilidade e Encapsulamento.</h4>";
+<pre><span class="code-block">
+class Teste {
+	public $nome;
+	public static $status = "online";
+}
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>1. Atributos Estáticos.</h4>";
+$t1 = new Teste();
+$t1->nome = "Teste 1";
 
-echo "class Teste {<br>";
-echo "public \$nome;<br>";
-echo "public static \$status = \"online\";<br>";
-echo "}<p>";
+$t2 = new Teste();
+$t2->nome = "Teste 2";
 
-echo "\$t1 = new Teste();<br>";
-echo "\$t1->nome = \"Teste 1\";<p>";
+$t1->status = "Offline";
+RESULTADO: Notice: Accessing static property Teste::$status as non static in /srv/http/programacao/PHP/85Bits/Aula-06.php on line 26
 
-echo "\$t2 = new Teste();<br>";
-echo "\$t2->nome = \"Teste 2\";<p>";
+Valor do atributo estático
+echo $t1::$status;
+RESULTADO: online
 
-echo "\$t1->status = \"Offline\";<br>";
-echo "RESULTADO: Notice: Accessing static property Teste::\$status as non static in /srv/http/programacao/PHP/85Bits/Aula-06.php on line 26<p>";
+Alterando o valor do atributo estático
+$t1::$status = "offline";
 
-echo "Valor do atributo estático<br>";
-echo "echo \$t1::\$status;<br>";
-echo "RESULTADO: online<p>";
+Mostrando o valor do atributo estático alterado.
+echo $t2::$status;
+echo Teste::$status;
+RESULTADO: offline
 
-echo "Alterando o valor do atributo estático<br>";
-echo "\$t1::\$status = \"offline\";<p>";
+</span></pre>
+<h4 class="cyber-h">2. Métodos Estáticos.</h4>
 
-echo "Mostrando o valor do atributo estático alterado.<br>";
-echo "echo \$t2::\$status;<br>";
-echo "echo Teste::\$status;<br>";
-echo "RESULTADO: offline<p>";
+<p>Dentro de FUNÇÕES com METODO STATIC não podemos chamar variaves com $this->variavel.
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>2. Métodos Estáticos.</h4>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "Dentro de FUNÇÕES com METODO STATIC não podemos chamar variaves com \$this->variavel.<p>";
 
-echo "<strong>EXEMPLO:</strong><p>";
+<pre><span class="code-block">
+class Util{
+	public static function hoje(){
+		return date("d/m/y");
+	}
+}
 
+echo Util::hoje();
+$util = new Util();
+echo $util->hoje();
 
-echo "class Util{<br>";
-echo "public static function hoje(){<br>";
-echo "return date(\"d/m/y\");<br>";
-echo "}<br>";
-echo "}<p>";
+</span></pre>
 
-echo "echo Util::hoje();<br>";
-echo "\$util = new Util();<br>";
-echo "echo \$util->hoje();<p>";
 
+<h4 class="cyber-h">3. Class Constants (const).</h4>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>3. Class Constants (const).</h4>";
+<p><strong>REGRAS:</strong></p>
+<p>1. No codigo usamos o SELF para chamar o nome da função que estamos dentro sem precisar repetir o nome da função.</p>
+<p>2. Se eu definir como uma PRIVATE CONST então ela só vai poder ser acessada e exibida dentro da função ou método.</p>
+<p>3. Valor não pode ser alterado e pra ser acessado precisa usar o :: sem o $.</p>
 
-echo "REGRAS:<br>";
-echo "1. No codigo usamos o SELF para chamar o nome da função que estamos dentro sem precisar repetir o nome da função.<br>";
-echo "2. Se eu definir como uma PRIVATE CONST então ela só vai poder ser acessada e exibida dentro da função ou método.<br>";
-echo "3. Valor não pode ser alterado e pra ser acessado precisa usar o :: sem o \$.<p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "<strong>EXEMPLO:</strong><p>";
+<pre><span class="code-block">
+class Matematica{
+	const PI = 3.14;
 
-echo "class Matematica{<br>";
-echo "const PI = 3.14;<p>";
+	function valorDePi(){
+		echo self::PI;
+	}
+}
 
-echo "function valorDePi(){<br>";
-echo "echo self::PI;<br>";
-echo "}<br>";
-echo "}<p>";
+echo Matematica::PI;
 
-echo "echo Matematica::PI;<p>";
 
+$mat = new Matematica();
+$mat->valorDePi();
 
-echo "\$mat = new Matematica();<br>";
-echo "\$mat->valorDePi();<p>";
+</span></pre>
 
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>4. FINAL.</h4>";
+<h4 class="cyber-h">4. FINAL.</h4>
 
-echo "REGRAS:<br>";
-echo "1.Uma classe que não pode ser feita OVERRIDE<p>";
+<p><strong>REGRAS:</strong></p>
+<p>1.Uma classe que não pode ser feita OVERRIDE
 
-echo "<strong>EXEMPLO:</strong><p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "class Pai {<br>";
-echo "final public function fazAlgo {<br>";
-echo "echo \"oi\";<br>";
-echo "}<br>";
-echo "}<p>";
+<pre><span class="code-block">
+class Pai {
+	final public function fazAlgo {
+		echo "oi";
+	}
+}
 
+class Filho extends Pai {
+	public function fazAlgo(){
+		echo "Olá";
+	}
+}
 
-echo "class Filho extends Pai {<br>";
-echo "public function fazAlgo(){<br>";
-echo "echo \"Olá\";<br>";
-echo "}<br>";
-echo "}<p>";
+echo "RESULTADO: Cannot override final method Pai::fazAlgo()
 
+</span></pre>
 
-Echo "RESULTADO: Cannot override final method Pai::fazAlgo()<p>";
 
+<h4 class="cyber-h">5. CLASSE ABSTRATA.</h4>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>5. CLASSE ABSTRATA.</h4>";
+<p><strong>REGRAS:</strong></p>
+<p>Quando não precisa fazer uma tabela pessoa mas é possivel juntar as duas classes em uma abstrata.
 
-echo "REGRAS:<br>";
-echo "Quano não precisa fazer uma tabela pessoa mas é possivel juntar as duas classes em uma abstrata.<p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "<strong>EXEMPLO:</strong><p>";
+<pre><span class="code-block">
+abstract class Pessoa {
+	public $nome;
+}
 
-echo "abstract class Pessoa {<br>";
-echo "public \$nome;<br>";
-echo "}<p>";
+public $cpf;
+}
 
-echo "public \$cpf;<br>";
-echo "}<p>";
+class PessoaJuridica extends Pessoa {
+	public $cnpj;
+}
 
-echo "class PessoaJuridica extends Pessoa {<br>";
-echo "public \$cnpj;<br>";
-echo "}<p>";
+$pf = new PessoaFisica();
+$pj = new PessoaJuridica();
+$p = new Pessoa();
 
-echo "\$pf = new PessoaFisica();<br>";
-echo "\$pj = new PessoaJuridica();<br>";
-echo "\$p = new Pessoa();<p>";
+<p>QUANDO SE TENTA ESTANCIAR A CLASSE ABSTRATA:</p>
+Fatal error: Uncaught Error: Cannot instantiate abstract class Pessoa in /srv/http/programacao/PHP/85Bits/Aula-06.php:136 Stack trace: #0 {main} thrown in /srv/http/programacao/PHP/85Bits/Aula-06.php on line 136
 
-echo "QUANDO SE TENTA ESTANCIAR A CLASSE ABSTRATA:<br>";
-echo "Fatal error: Uncaught Error: Cannot instantiate abstract class Pessoa in /srv/http/programacao/PHP/85Bits/Aula-06.php:136 Stack trace: #0 {main} thrown in /srv/http/programacao/PHP/85Bits/Aula-06.php on line 136";
+</span></pre>
 
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>6. MÉTODO ABSTRATO.</h4>";
+<h4 class="cyber-h">6. MÉTODO ABSTRATO.</h4>
 
-echo "REGRAS:<br>";
-echo "Todas os Métodos abstratos que estiverem no PAI por padrão dever estar nos FILHOS.<p>";
+<p><strong>REGRAS:</strong></p>
+<p>Todas os Métodos abstratos que estiverem no PAI por padrão dever estar nos FILHOS.</p>
 
 
-echo "abstract class Pessoa{<br>";
-echo "public \$nome;<br>";
-echo "public function fazAlgo(){<br>";
+<pre><span class="code-block">
+abstract class Pessoa{
+	public $nome;
+	public function fazAlgo(){
+		echo "oi";
+	}
+	abstract public function dizDocumento();
+}
 
-echo "echo \"oi\";<br>";
-echo "}<br>";
-echo "abstract public function dizDocumento();<br>";
-echo "}<p>";
+class PessoaFisica extends Pessoa{
+	public $cpf;
+	function dizDocumento(){
+		echo  $this->cpf;
+	}
+}
 
-echo "class PessoaFisica extends Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "function dizDocumento(){<br>";
-echo "echo  \$this->cpf;<br>";
-echo "}<br>";
-echo "}<br>";
+class PessoaJuridica extends Pessoa{
+	public $cnpj;
+	function dizDocumento(){
+		echo $this->cnpj;
+	}
+}
 
-echo "class PessoaJuridica extends Pessoa{<br>";
-echo "public \$cnpj;<br>";
-echo "function dizDocumento(){<br>";
-echo "echo \$this->cnpj;<br>";
-echo "}<br>";
-echo "}<br>";
-echo "\$p1 = new PessoaFisica();<br>";
-echo "\$p1->cpf = 123;<br>";
-echo "\$p1->dizDocumento();<br>";
+$p1 = new PessoaFisica();
+$p1->cpf = 123;
+$p1->dizDocumento();
 
+</span></pre>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>7. INTERFACES.</h4>";
 
-echo "REGRAS:<br>";
-echo "1. É como se fosse um MODELO DEFAULT para uma função.<br>";
-echo "2. Intefaces permitem a criação de códigos que especificam quais métodos uma classe deve implantar, sem definir como esses metodos são tratados.<br>";
-echo "3. Todas os Métodos da interface devem ser Publicos.<p>";
+<h4 class="cyber-h">7. INTERFACES.</h4>
 
-echo "<strong>EXEMPLO:</strong><p>";
+<p><strong>REGRAS:</strong></p>
+<p>1. É como se fosse um MODELO DEFAULT para uma função.</p>
+<p>2. Intefaces permitem a criação de códigos que especificam quais métodos uma classe deve implantar, sem definir como esses metodos são tratados.</p>
+<p>3. Todas os Métodos da interface devem ser Publicos.</p>
 
-echo "interface Formatador{<br>";
-echo "public function formatar();<br>";
-echo "public function executar();<br>";
-echo "}<p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "class Html implements Formatador{<br>";
-echo "public function formatar(){}<br>";
-echo "public function executar(){}<br>";
+<pre><span class="code-block">
+interface Formatador{
+	public function formatar();
+	public function executar();
+}
 
-echo "}<p>";
+class Html implements Formatador{
+	public function formatar(){}
+	public function executar(){}
+}
 
+</span></pre>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>8. INTERFACES COM HERANÇA MULTIPLA.</h4>";
 
-echo "<strong>EXEMPLO:</strong><p>";
+<h4 class="cyber-h">8. INTERFACES COM HERANÇA MULTIPLA.</h4>
 
-echo "interface Paginador{<br>";
-echo "public function paginar();<br>";
-echo "}<p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "interface Arvore{<br>";
-echo "public function getNoRaiz();<br>";
-echo "}<p>";
+<pre><span class="code-block">
+interface Paginador{
+	public function paginar();
+}
 
-echo "interface ArvorePaginavel extends Paginador, Arvore {<br>";
-echo "}<p>";
+interface Arvore{
+	public function getNoRaiz();
+}
 
-echo "class TabelaPessoa implements ArvorePaginavel{<br>";
-echo "public function paginar(){}<br>";
-echo "public function getNoRaiz(){}<br>";
-echo "};<p>";
+interface ArvorePaginavel extends Paginador, Arvore {
+}
 
+class TabelaPessoa implements ArvorePaginavel{
+	public function paginar(){}
+	public function getNoRaiz(){}
+};
 
+</span></pre>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>9. A FUNERÁRIA.</h4>";
 
-echo "<strong>EXEMPLO:</strong><p>";
 
-echo "interface Sepultavel {<br>";
-echo "public function calcularValorDoCaixao(float \$valor):float;<br>";
-echo "}<p>";
+<h4 class="cyber-h">9. A FUNERÁRIA.</h4>
 
-echo "class Felino implements Sepultavel {<br>";
-echo "public \$peso;<br>";
-echo "public function calcularValorDoCaixao(float \$valor):float{<br>";
-echo "return \$valor * (\$this->peso * 0.3);<br>";
-echo "}<br>";
-echo "}<p>";
+<p><strong>EXEMPLO:</strong></p>
 
-echo "class Pessoa implements Sepultavel {<br>";
-echo "public \$altura;<br>";
-echo "public \$peso;<br>";
-echo "public \$circunferenciaAbdominal;<p>";
+<pre><span class="code-block">
+interface Sepultavel {
+	public function calcularValorDoCaixao(float $valor):float;
+}
 
+class Felino implements Sepultavel {
+	public $peso;
+	public function calcularValorDoCaixao(float $valor):float{
+		return $valor * ($this->peso * 0.3);
+	}
+}
 
-echo "return \$valor * ((\$this->altura * \$this->peso) / 2 + \$this->circunferenciaAbdominal);<br>";
-echo "}<br>";
-echo "}<p>";
+class Pessoa implements Sepultavel {
+	public $altura;
+	public $peso;
+	public $circunferenciaAbdominal;
+	return $valor * (($this->altura * $this->peso) / 2 + $this->circunferenciaAbdominal);
+}
 
-echo "class Sepultamento {<br>";
-echo "public \$cotacao = \"4.05\";<p>";
+class Sepultamento {
+	public $cotacao = "4.05";
+	public function enterrar(Sepultavel $sepultavel):float{
+		return $sepultavel->calcularValorDoCaixao($this->cotacao);
+	}
+}
 
-echo "public function enterrar(Sepultavel \$sepultavel):float{<br>";
-echo "return \$sepultavel->calcularValorDoCaixao(\$this->cotacao);<br>";
-echo "}<br>";
-echo "}<p>";
+$gato = new Felino();
+$gato->peso = 3.4;
+$s = new Sepultamento();
+echo $s->enterrar($gato);
 
-echo "\$gato = new Felino();<br>";
-echo "\$gato->peso = 3.4;<br>";
-echo "\$s = new Sepultamento();<br>";
-echo "echo \$s->enterrar(\$gato);<p>";
+$homem = new Pessoa();
+$homem->peso = 70;
+$homem->altura = 1.70;
+$homem->circunferenciaAbdominal = 90;
+$y = new Sepultamento();
+echo $y->enterrar($homem);
 
-echo "\$homem = new Pessoa();<br>";
-echo "\$homem->peso = 70;<br>";
-echo "\$homem->altura = 1.70;<br>";
-echo "\$homem->circunferenciaAbdominal = 90;<br>";
-echo "\$y = new Sepultamento();<br>";
-echo "echo \$y->enterrar(\$homem);<p>";
+RESULTADO GATO: 4.131
+RESULTADO HOMEM: 605.475
 
-
-echo "RESULTADO GATO: 4.131<br>";
-echo "RESULTADO HOMEM: 605.475<p>";
-
-?>
+</span></pre>

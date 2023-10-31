@@ -1,748 +1,822 @@
 <h1 class="cyber-h">Aula 4 de PHP</h1>
 
 <h4 class="cyber-h">Arrays</h4>
-
-
 <h4 class="cyber-h">1. Array Simples</h4>
 
-<strong>Exemplo:</strong><p>
+<p><p><strong>Exemplo:</strong></p>
 
-PHP 5.3<br>
-$array = array("maria", "joão", 2, 3.5);<p>
+<pre><span class="code-block">
 
-PHP 5.4<br>
-$array = ["maria", "joão", 2, 3.5];<p>
+PHP 5.3
+$array = array("maria", "joão", 2, 3.5);
 
-Se não informado todo indice do Array começa com 0(zero).<br>
+PHP 5.4
+$array = ["maria", "joão", 2, 3.5];
 
-<table class="cyber-table"border=1>
+</span></pre>
+
+<p>Se não informado todo indice do Array começa com 0(zero).</p>
+
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th><th>3</th></tr>
 <tr><td>"maria"</td><td>"joão"</td><td>2</td><td>3.5</td></tr>
-</table><p>
+</table>
 
-Mas podemos definir o indice do array manualmente.<p>
+<p>Mas podemos definir o indice do array manualmente.</p>
 
-$array = [ 1 => "maria", 2 => "joão", 3 => 2, 4 => 3.5 ];<p>
+<pre><span class="code-block">
+$array = [ 1 => "maria", 2 => "joão", 3 => 2, 4 => 3.5 ];
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>1</th><th>2</th><th>3</th><th>4</th></tr>
 <tr><td>"maria"</td><td>"joão"</td><td>2</td><td>3.5</td></tr>
-</table><p>
+</table>
 
-A chave de ARRAYS não precisa ser numerica como nos exemplos abaixo.<p>
+<p>A chave de ARRAYS não precisa ser numerica como nos exemplos abaixo.</p>
 
-$array = [ 1 => "maria", 2 => "joão", 'valor' => 2, null => 3.5 ];<p>
+<pre><span class="code-block">
+$array = [ 1 => "maria", 2 => "joão", 'valor' => 2, null => 3.5 ];
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>1</th><th>2</th><th>'valor'</th><th>null</th></tr>
 <tr><td>"maria"</td><td>"joão"</td><td>2</td><td>3.5</td></tr>
-</table><p>
+</table>
 
-echo $array[0];<br>
-echo $array[1];<br>
-echo $array['valor'];<br>
-echo $array[null];<br>
+<pre><span class="code-block">
+echo $array[0];
+echo $array[1];
+echo $array['valor'];
+echo $array[null];
 
-
+</span></pre>
 
 <h4 class="cyber-h">2. Array Bi Dimensionais</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
 
-$shop = [<br>
-["camisa", 9.25, 15],<br>
-["short", 19.75, 25],<br>
-["tênis", 89.15, 7]<br>
-];<p>
+<pre><span class="code-block">
+$shop = [
+	["camisa", 9.25, 15],
+	["short", 19.75, 25],
+	["tênis", 89.15, 7]
+];
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th></tr>
 <tr>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "0
-        echo "</th>
-        echo "<th>
-        echo "1
-        echo "</td>
-        echo "<th>
-        echo "2
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""camisa"
-        echo "</td>
-        echo "<td>
-        echo "9.25
-        echo "</td>
-        echo "<td>
-        echo "15
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        0
+        </th>
+        <th>
+        1
+        </td>
+        <th>
+        2
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "camisa"
+        </td>
+        <td>
+        9.25
+        </td>
+        <td>
+        15
+        </td>
+        </tr>
+        </table>
 </td>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "0
-        echo "</th>
-        echo "<th>
-        echo "1
-        echo "</th>
-        echo "<th>
-        echo "2
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""short"
-        echo "</td>
-        echo "<td>
-        echo "19.75
-        echo "</td>
-        echo "<td>
-        echo "25
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        0
+        </th>
+        <th>
+        1
+        </th>
+        <th>
+        2
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "short"
+        </td>
+        <td>
+        19.75
+        </td>
+        <td>
+        25
+        </td>
+        </tr>
+        </table>
 </td>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "0
-        echo "</th>
-        echo "<th>
-        echo "1
-        echo "</th>
-        echo "<th>
-        echo "2
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""tênis"
-        echo "</td>
-        echo "<td>
-        echo "89.15
-        echo "</td>
-        echo "<td>
-        echo "7
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        0
+        </th>
+        <th>
+        1
+        </th>
+        <th>
+        2
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "tênis"
+        </td>
+        <td>
+        89.15
+        </td>
+        <td>
+        7
+        </td>
+        </tr>
+        </table>
 </td>
 </tr>
-</table><p>
+</table></p>
 
-$shop[0][0]." custa ".$shop[0][1]." e existem ".$shop[0][2]." em estoque";<br>
-$shop[1][0]." custa ".$shop[1][1]." e existem ".$shop[1][2]." em estoque";<br>
-$shop[2][0]." custa ".$shop[2][1]." e existem ".$shop[2][2]." em estoque";<p>
+<pre><span class="code-block">
+$shop[0][0]." custa ".$shop[0][1]." e existem ".$shop[0][2]." em estoque";
+$shop[1][0]." custa ".$shop[1][1]." e existem ".$shop[1][2]." em estoque";
+$shop[2][0]." custa ".$shop[2][1]." e existem ".$shop[2][2]." em estoque";
 
-camisa custa 9.25 e existem 15 em estoque<br>
-short custa 19.75 e existem 25 em estoque<br>
-tênis custa 89.15 e existem 7 em estoque<p>
+camisa custa 9.25 e existem 15 em estoque
+short custa 19.75 e existem 25 em estoque
+tênis custa 89.15 e existem 7 em estoque
 
+</span></pre>
 
 
 <h4 class="cyber-h">3. Array Bi Dimensional Associativo</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
 
-$shop = [<br>
-[ "Produto" => "camisa", "Preco" => 9.25,   "Quantidade" => 15],<br>
-[ "Produto" => "short",  "Preco" => 19.75,  "Quantidade" => 25],<br>
-[ "Produto" => "tênis",  "Preco" => 89.15,  "Quantidade" => 7]<br>
-];<p>
+<pre><span class="code-block">
+$shop = [
+	[ "Produto" => "camisa", "Preco" => 9.25,   "Quantidade" => 15],
+	[ "Produto" => "short",  "Preco" => 19.75,  "Quantidade" => 25],
+	[ "Produto" => "tênis",  "Preco" => 89.15,  "Quantidade" => 7]
+];
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th></tr>
 <tr>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "Produto
-        echo "</th>
-        echo "<th>
-        echo "Preco
-        echo "</td>
-        echo "<th>
-        echo "Quantidade
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""camisa"
-        echo "</td>
-        echo "<td>
-        echo "9.25
-        echo "</td>
-        echo "<td>
-        echo "15
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        Produto
+        </th>
+        <th>
+        Preco
+        </td>
+        <th>
+        Quantidade
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "camisa"
+        </td>
+        <td>
+        9.25
+        </td>
+        <td>
+        15
+        </td>
+        </tr>
+        </table>
 </td>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "Produto
-        echo "</th>
-        echo "<th>
-        echo "Preco
-        echo "</th>
-        echo "<th>
-        echo "Quantidade
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""short"
-        echo "</td>
-        echo "<td>
-        echo "19.75
-        echo "</td>
-        echo "<td>
-        echo "25
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        Produto
+        </th>
+        <th>
+        Preco
+        </th>
+        <th>
+        Quantidade
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "short"
+        </td>
+        <td>
+        19.75
+        </td>
+        <td>
+        25
+        </td>
+        </tr>
+        </table>
 </td>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "Produto
-        echo "</th>
-        echo "<th>
-        echo "Preco
-        echo "</th>
-        echo "<th>
-        echo "Quantidade
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo ""tênis"
-        echo "</td>
-        echo "<td>
-        echo "89.15
-        echo "</td>
-        echo "<td>
-        echo "7
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        Produto
+        </th>
+        <th>
+        Preco
+        </th>
+        <th>
+        Quantidade
+        </th>
+        </tr>
+        <tr>
+        <td>
+        "tênis"
+        </td>
+        <td>
+        89.15
+        </td>
+        <td>
+        7
+        </td>
+        </tr>
+        </table>
 </td>
 </tr>
-</table><p>
+</table>
 
-echo $shop[0]["Produto"]." custa ".$shop[0]["Preco"]." e existem ".$shop[0]["Quantidade"]." em estoque";<br>
-echo $shop[1]["Produto"]." custa ".$shop[1]["Preco"]." e existem ".$shop[1]["Quantidade"]." em estoque";<br>
-echo $shop[2]["Produto"]." custa ".$shop[2]["Preco"]." e existem ".$shop[2]["Quantidade"]." em estoque";<p>
+<pre><span class="code-block">
+echo $shop[0]["Produto"]." custa ".$shop[0]["Preco"]." e existem ".$shop[0]["Quantidade"]." em estoque";
+echo $shop[1]["Produto"]." custa ".$shop[1]["Preco"]." e existem ".$shop[1]["Quantidade"]." em estoque";
+echo $shop[2]["Produto"]." custa ".$shop[2]["Preco"]." e existem ".$shop[2]["Quantidade"]." em estoque";
 
-camisa custa 9.25 e existem 15 em estoque<br>
-short custa 19.75 e existem 25 em estoque<br>
-tênis custa 89.15 e existem 7 em estoque<p>
+camisa custa 9.25 e existem 15 em estoque
+short custa 19.75 e existem 25 em estoque
+tênis custa 89.15 e existem 7 em estoque
 
+</span></pre>
 
 
 <h4 class="cyber-h">4. Array com Loop - FOR</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$array =[ "Brasil", "Argentina", "Bolívia", "Venezuela" ];<p>
+<pre><span class="code-block">
+$array =[ "Brasil", "Argentina", "Bolívia", "Venezuela" ];</p>
 
-for($i = 0; $i < count($array); $i++){<br>
-echo $array[$i];<br>
-}<br>
+for($i = 0; $i < count($array); $i++){
+echo $array[$i];
+}
 
+</span></pre>
 
 
 <h4 class="cyber-h">5. Array com FOREACH</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$array =[ "Brasil", "Argentina", "Bolívia", "Venezuela" ];<p>
+<pre><span class="code-block">
+$array =[ "Brasil", "Argentina", "Bolívia", "Venezuela" ];
 
-foreach($array as $row){<br>
-echo $a;<br>
-}<p>
+foreach($array as $row){
+	echo $a;
+}
 
+</span></pre>
 
 
 <h4 class="cyber-h">6. Array com FOREACH - CHAVE E VALOR</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$array = [10 => "Brasil", 20 => "Argentina", 30 => "Bolívia", 99 => "Venezuela"];<p>
+<pre><span class="code-block">
+$array = [10 => "Brasil", 20 => "Argentina", 30 => "Bolívia", 99 => "Venezuela"];
 
-foreach($array as $key => $pais){<br>
-echo "$key - $pais";<br>
-}<p>
+foreach($array as $key => $pais){
+	$key - $pais";
+}
 
-Resultado<br>
-10 - Brasil<br>
-20 - Argentina<br>
-30 - Bolívia<br>
-99 - Venezuela<p>
+Resultado
+10 - Brasil
+20 - Argentina
+30 - Bolívia
+99 - Venezuela
 
+</span></pre>
 
 
 <h4 class="cyber-h">7. Array Multidimensional</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$pessoas = [<br>
-["nome" => "João", "cpf" => 123],<br>
-["nome" => "Maria", "cpf" => 452],<br>
-];<p>
+<pre><span class="code-block">
+$pessoas = [
+	["nome" => "João", "cpf" => 123],
+	["nome" => "Maria", "cpf" => 452],
+];
 
-foreach($pessoas as $pessoa){<br>
-echo "nome: " . $pessoa["nome"];<br>
-}<p>
+foreach($pessoas as $pessoa){
+	nome: " . $pessoa["nome"];
+}
 
+</span></pre>
 
 
 <h4 class="cyber-h">8. Iteração de Arrays Multidimensionais</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$turmas = [<br>
-["nome" => "PHP", "Alunos" => [ "Marta", "Maria", "Lucas"]],<br>
-["nome" => "BD", "Alunos" => [ "Pedro", "Thiago", "João"]]<br>
-];<p>
+<pre><span class="code-block">
+$turmas = [
+	["nome" => "PHP", "Alunos" => [ "Marta", "Maria", "Lucas"]],
+	["nome" => "BD", "Alunos" => [ "Pedro", "Thiago", "João"]]
+];
 
+</span></pre>
 
-<table class="cyber-table"border=1>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th></tr>
 <tr>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "Nome
-        echo "</th>
-        echo "<th>
-        echo "Alunos
-        echo "</td>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo "PHP
-        echo "</td>
-        echo "<td>
-            echo "<table class="cyber-table"border=1>
-            echo "<tr><th>0</th><th>1</th><th>2</th></tr>
-            echo "<tr><td>"Marta"</td><td>"Maria"</td><td>"Lucas"</td></tr>
-            echo "</table>
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        Nome
+        </th>
+        <th>
+        Alunos
+        </td>
+        </tr>
+        <tr>
+        <td>
+        PHP
+        </td>
+        <td>
+            <br><table class="cyber-table"border=1>
+            <tr><th>0</th><th>1</th><th>2</th></tr>
+            <tr><td>"Marta"</td><td>"Maria"</td><td>"Lucas"</td></tr>
+            </table>
+        </td>
+        </tr>
+        </table>
 </td>
 <td>
-        echo "<table class="cyber-table"border=1>
-        echo "<tr>
-        echo "<th>
-        echo "Nome
-        echo "</th>
-        echo "<th>
-        echo "Alunos
-        echo "</th>
-        echo "</tr>
-        echo "<tr>
-        echo "<td>
-        echo "BD
-        echo "</td>
-        echo "<td>
-            echo "<table class="cyber-table"border=1>
-            echo "<tr><th>0</th><th>1</th><th>2</th></tr>
-            echo "<tr><td>"Pedro"</td><td>"Thiago"</td><td>"João"</td></tr>
-            echo "</table>
-        echo "</td>
-        echo "</tr>
-        echo "</table>
+        <br><table class="cyber-table"border=1>
+        <tr>
+        <th>
+        Nome
+        </th>
+        <th>
+        Alunos
+        </th>
+        </tr>
+        <tr>
+        <td>
+        BD
+        </td>
+        <td>
+            <br><table class="cyber-table"border=1>
+            <tr><th>0</th><th>1</th><th>2</th></tr>
+            <tr><td>"Pedro"</td><td>"Thiago"</td><td>"João"</td></tr>
+            </table>
+        </td>
+        </tr>
+        </table>
 </td>
 </tr>
-</table><p>
+</table></p>
 
-echo count($turmas);<br>
-echo $turmas[1]["Alunos"][0];<p>
+<pre><span class="code-block">
+echo count($turmas);
+echo $turmas[1]["Alunos"][0];
 
 
-foreach($turmas as $turma){<br>
-echo "nome: ". $turma["nome"]. " &lt;br&gt; ";<br>
-echo "alunos: ";<br>
-foreach($turma["Alunos"] as $aluno){<br>
-echo $aluno ." &lt;br&gt; ";<br>
-}<br>
-}<p>
+foreach($turmas as $turma){
+	nome: ". $turma["nome"]. " &lt;br&gt; ";
+	alunos: ";
+	foreach($turma["Alunos"] as $aluno){
+		echo $aluno ." &lt;br&gt; ";
+	}
+}
 
+</span></pre>
 
 
 <h4 class="cyber-h">9. DEBUG - (print_r, var_dump, var_export).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$var = [ "", false, 42, ["42"] ];<p>
+<pre><span class="code-block">
+$var = [ "", false, 42, ["42"] ];
 
-print_r($var);<br>
-var_dump($var);<br>
-var_export($var);<p>
+print_r($var);
+var_dump($var);
+var_export($var);
 
 Resultado:
 
-<br>
-Array ( [0] => [1] => [2] => 42 [3] => Array ( [0] => 42 ) )<br>
-array(4) { [0]=> string(0) "" [1]=> bool(false) [2]=> int(42) [3]=> array(1) { [0]=> string(2) "42" } }<br>
-array ( 0 => '', 1 => false, 2 => 42, 3 => array ( 0 => '42', ), )<p>
+
+Array ( [0] => [1] => [2] => 42 [3] => Array ( [0] => 42 ) )
+array(4) { [0]=> string(0) "" [1]=> bool(false) [2]=> int(42) [3]=> array(1) { [0]=> string(2) "42" } }
+array ( 0 => '', 1 => false, 2 => 42, 3 => array ( 0 => '42', ), )
 
 
+</span></pre>
 
 <h4 class="cyber-h">10. ORDENAÇÃO DE ARRAYS - (sort, rsort).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$carros = ["Chevete","BMW","Ferrari"];<p>
+<pre><span class="code-block">
+$carros = ["Chevete","BMW","Ferrari"];
 
-Ordem crescente (sort)<br>
-sort($carros);<br>
-var_dump($carros);<br>
+Ordem crescente (sort)
+sort($carros);
+var_dump($carros);
 RESULTADO: array(3) { [0]=> string(3) "BMW" [1]=> string(7) "Chevete" [2]=> string(7) "Ferrari" }
 
-<p>
-Ordem decrescente (rsort)<br>
-rsort($carros);<br>
-var_dump($carros);<br>
+
+Ordem decrescente (rsort)
+rsort($carros);
+var_dump($carros);
 RESULTADO: array(3) { [0]=> string(7) "Ferrari" [1]=> string(7) "Chevete" [2]=> string(3) "BMW" }
 
+</span></pre>
 
 
 <h4 class="cyber-h">11. ORDENAÇÃO DE ARRAYS ASSOCIATIVOS - (asort, arsort).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$pessoas =["Matheus" => "35", "Marcos" => "37", "Lucas" => "43"];<p>
+<pre><span class="code-block">
+$pessoas =["Matheus" => "35", "Marcos" => "37", "Lucas" => "43"];
 
-Ordem crescente "valor" (asort):<br>
-asort($pessoas);<br>
-RESULTADO: array(3) { ["Matheus"]=> string(2) "35" ["Marcos"]=> string(2) "37" ["Lucas"]=> string(2) "43" }<p>
+Ordem crescente "valor" (asort):
+asort($pessoas);
+RESULTADO: array(3) { ["Matheus"]=> string(2) "35" ["Marcos"]=> string(2) "37" ["Lucas"]=> string(2) "43" }
 
 
-Ordem decrescente "valor" (arsort):<br>
-arsort($pessoas);<br>
-RESULTADO: array(3) { ["Lucas"]=> string(2) "43" ["Marcos"]=> string(2) "37" ["Matheus"]=> string(2) "35" }<p>
+Ordem decrescente "valor" (arsort):
+arsort($pessoas);
+RESULTADO: array(3) { ["Lucas"]=> string(2) "43" ["Marcos"]=> string(2) "37" ["Matheus"]=> string(2) "35" }
 
+</span></pre>
 
 
 <h4 class="cyber-h">12. ORDENAÇÃO DE ARRAYS ASSOCIATIVOS PELA KEY - (ksort, krsort).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$pessoas =["Matheus" => "35", "Marcos" => "37", "Lucas" => "43"];<p>
+<pre><span class="code-block">
+$pessoas =["Matheus" => "35", "Marcos" => "37", "Lucas" => "43"];
 
-Ordem crescente "key" (ksort):<br>
-ksort($pessoas);<br>
-RESULTADO: array(3) { ["Lucas"]=> string(2) "43" ["Marcos"]=> string(2) "37" ["Matheus"]=> string(2) "35" }<p>
+Ordem crescente "key" (ksort):
+ksort($pessoas);
+RESULTADO: array(3) { ["Lucas"]=> string(2) "43" ["Marcos"]=> string(2) "37" ["Matheus"]=> string(2) "35" }
 
 
-Ordem decrescente "key" (krsort):<br>
-krsort($pessoas);<br>
-RESULTADO: array(3) { ["Matheus"]=> string(2) "35" ["Marcos"]=> string(2) "37" ["Lucas"]=> string(2) "43" }<p>
+Ordem decrescente "key" (krsort):
+krsort($pessoas);
+RESULTADO: array(3) { ["Matheus"]=> string(2) "35" ["Marcos"]=> string(2) "37" ["Lucas"]=> string(2) "43" }
 
+</span></pre>
 
 
 <h4 class="cyber-h">13. Array para String - (impode).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$array = ["uva", "pera", "abacate"];<br>
-$texto = implode(",", $array);<p>
+<pre><span class="code-block">
+$array = ["uva", "pera", "abacate"];
+$texto = implode(",", $array);
 
-echo $texto;<p>
+echo $texto;
 
-RESUTADO: uva,pera,abacate<p>
+RESUTADO: uva,pera,abacate
 
+</span></pre>
 
 
 <h4 class="cyber-h">14. String para Array - (explode).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$texto = "uva pêra abacate";<br>
-$array = explode(" ", $texto);<p>
+<pre><span class="code-block">
+$texto = "uva pêra abacate";
+$array = explode(" ", $texto);
 
 echo $array[0];
-<br>
+
 echo $array[1];
-<br>
+
 echo $array[2];
-<p>
 
-var_dump($array);<p>
 
-RESULTADO: array(3) { [0]=> string(3) "uva" [1]=> string(5) "pêra" [2]=> string(7) "abacate" }<p>
+var_dump($array);
 
+RESULTADO: array(3) { [0]=> string(3) "uva" [1]=> string(5) "pêra" [2]=> string(7) "abacate" }
+
+</span></pre>
 
 
 <h4 class="cyber-h">15. VERIFICAR VALOR DENTRO DE ARRAY - (in_array).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$frutas =["uva", "pêra", "abacaxi", "laranja"];<p>
+<pre><span class="code-block">
+$frutas =["uva", "pêra", "abacaxi", "laranja"];</p>
 
-if(in_array("uva", $frutas)){<br>
-echo "Tem Uva!";<br>
-}<p>
+if(in_array("uva", $frutas)){
+	Tem Uva!";
+}</p>
 
+</span></pre>
 
 
 <h4 class="cyber-h">16. VERIFICAR VALOR DE UMA KEY DE ARRAY - (array_key_exists).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$frutas =["uva" => 10.99, "pêra" => 4.00, "abacaxi" => 3.99, "laranja" => 2.50];<p>
+<pre><span class="code-block">
+$frutas =["uva" => 10.99, "pêra" => 4.00, "abacaxi" => 3.99, "laranja" => 2.50];
 
-if(array_key_exists("uva", $frutas)){<br>
-echo "Tem a KEY uva dentro do ARRAY!";<br>
-}<p>
+if(array_key_exists("uva", $frutas)){
+Tem a KEY uva dentro do ARRAY!";
+}
 
+</span></pre>
 
 
 <h4 class="cyber-h">17. Executar uma função dentro de cada elemento do Array - (array_map).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$array=["PHP","Arrays","Funções"];<p>
+<pre><span class="code-block">
+$array=["PHP","Arrays","Funções"];
 
-function hashtag($x){<br>
-return "#".$x;<br>
-}<p>
+function hashtag($x){
+return "#".$x;
+}
 
-print_r(array_map("hashtag", $array));<br>
+print_r(array_map("hashtag", $array));
 
-RESULTADO: Array ( [0] => #PHP [1] => #Arrays [2] => #Funções )<p>
+RESULTADO: Array ( [0] => #PHP [1] => #Arrays [2] => #Funções )
 
-$y = array_map(function($x){<br>
-return "#".$x;<br>
-}, $array);<p>
+$y = array_map(function($x){
+return "#".$x;
+}, $array);
 
-print_r($y);<br>
-RESULTADO: Array ( [0] => #PHP [1] => #Arrays [2] => #Funções )<p>
+print_r($y);
+RESULTADO: Array ( [0] => #PHP [1] => #Arrays [2] => #Funções )
 
+</span></pre>
 
 
 <h4 class="cyber-h">18. Filtrar Arrays por condição - (array_filter).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$alunos = [<br>
-["nome " => "João", "nota" => 8],<br>
-["nome " => "Maria", "nota" => 4.5],<br>
-["nome " => "Thiago", "nota" => 7]<br>
-];<p>
+<pre><span class="code-block">
+$alunos = [
+	["nome " => "João", "nota" => 8],
+	["nome " => "Maria", "nota" => 4.5],
+	["nome " => "Thiago", "nota" => 7]
+];</p>
 
-$alunosAprovados = array_filter($alunos, function($aluno){<br>
-return $aluno["nota"]>=7;<br>
-});<p>
+$alunosAprovados = array_filter($alunos, function($aluno){
+return $aluno["nota"]>=7;
+});</p>
 
-var_dump($alunosAprovados);<p>
+var_dump($alunosAprovados);</p>
 
 
-array(2) {<br>
-[0]=><br>
-array(2) {<br>
-["nome "]=><br>
-string(5) "João"<br>
-["nota"]=><br>
-int(8)<br>
-}<br>
-[2]=><br>
-array(2) {<br>
-["nome "]=><br>
-string(6) "Thiago"<br>
-["nota"]=><br>
-int(7)<br>
-}<br>
-}<p>
+array(2) {
+[0]=>
+array(2) {
+["nome "]=>
+string(5) "João"
+["nota"]=>
+int(8)
+}
+[2]=>
+array(2) {
+["nome "]=>
+string(6) "Thiago"
+["nota"]=>
+int(7)
+}
+}</p>
 
+</span></pre>
 
 
 <h4 class="cyber-h">19. Variáveis para ARRAY - (compact).</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$nome = "João";<br>
-$cpf = "325.251.455.45";<br>
-$rg = "25.715.658.1";<br>
-$filhos = ["Maria", "Thiago"];<p>
+<pre><span class="code-block">
+$nome = "João";
+$cpf = "325.251.455.45";
+$rg = "25.715.658.1";
+$filhos = ["Maria", "Thiago"];
 
-$result = compact("nome","cpf","rg","filhos");<br>
-print_r($result);<p>
+$result = compact("nome","cpf","rg","filhos");
+print_r($result);
 
-RESULTADO: Array ( [nome] => João [cpf] => 325.251.455.45 [rg] => 25.715.658.1 [filhos] => Array ( [0] => Maria [1] => Thiago ) )<p>
+RESULTADO: Array ( [nome] => João [cpf] => 325.251.455.45 [rg] => 25.715.658.1 [filhos] => Array ( [0] => Maria [1] => Thiago ) )
 
+</span></pre>
 
 
 <h4 class="cyber-h">20. ARRAY para variáveis - (list)</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$info = ["Camiseta","Azul",30.65];<p>
+<pre><span class="code-block">
+$info = ["Camiseta","Azul",30.65];
 
-list($produto, $modelo, $preco) = $info;<p>
+list($produto, $modelo, $preco) = $info;
 
-echo "A $produto $modelo custa R$ $preco.n";<p>
+A $produto $modelo custa R$ $preco.n";
 
-RESULTADO: A Camiseta Azul custa R$ 30.65.<p>
+RESULTADO: A Camiseta Azul custa R$ 30.65.
 
-
-
-<h4 class="cyber-h">20. ARRAY Collumn - (Criar novo Array com base da KEY de outro Array)</h4>
-
-<strong>Exemplo:</strong><p>
+</span></pre>
 
 
-$pessoas = [<br>
-    [<br>
-    "id"    =>  1,<br>
-    "nome"  =>  "João",<br>
-    "idade" =>  34,<br>
-    ],<br>
-    [<br>
-    "id"    =>  2,<br>
-    "nome"  =>  "Maria",<br>
-    "idade" =>  22,<br>
-    ],<br>
-    [<br>
-    "id"    =>  3,<br>
-    "nome"  =>  "Lucas",<br>
-    "idade" =>  60,<br>
-    ],<br>
- ];<p>
+<h4 class="cyber-h">21. ARRAY Collumn - (Criar novo Array com base da KEY de outro Array)</h4>
 
-$nomes = array_column($pessoas, "nome");<p>
+<p><strong>Exemplo:</strong></p>
 
-<table class="cyber-table"border=1>
+
+<pre><span class="code-block">
+$pessoas = [
+    [
+    "id"    =>  1,
+    "nome"  =>  "João",
+    "idade" =>  34,
+    ],
+    [
+    "id"    =>  2,
+    "nome"  =>  "Maria",
+    "idade" =>  22,
+    ],
+    [
+    "id"    =>  3,
+    "nome"  =>  "Lucas",
+    "idade" =>  60,
+    ],
+ ];
+
+$nomes = array_column($pessoas, "nome");
+
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th></tr>
 <tr><td>"João"</td><td>"Maria"</td><td>"Lucas"</td></tr>
-</table><p>
+</table>
 
-print_r($nomes);<p>
+<pre><span class="code-block">
+print_r($nomes);
 
-RESULTADO: Array ( [0] => João [1] => Maria [2] => Lucas )<p>
+RESULTADO: Array ( [0] => João [1] => Maria [2] => Lucas )
 
 
-$idades = array_column($pessoas, "idade");<p>
+$idades = array_column($pessoas, "idade");
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th></tr>
 <tr><td>34</td><td>22</td><td>60</td></tr>
-</table><p>
+</table></p>
 
-print_r($idades);<p>
+<pre><span class="code-block">
+print_r($idades);
 
-RESULTADO: Array ( [0] => 34 [1] => 22 [2] => 60 )<p>
+RESULTADO: Array ( [0] => 34 [1] => 22 [2] => 60 )
 
-
-
-<h4 class="cyber-h">20. ARRAY Collumn - (Recuperar dados por key com index)</h4>
-
-<strong>Exemplo:</strong><p>
+</span></pre>
 
 
-$pessoas = [<br>
-    [<br>
-    "id"    =>  6789,<br>
-    "nome"  =>  "João",<br>
-    "idade" =>  34,<br>
-    ],<br>
-    [<br>
-    "id"    =>  7089,<br>
-    "nome"  =>  "Maria",<br>
-    "idade" =>  22,<br>
-    ],<br>
-    [<br>
-    "id"    =>  3000,<br>
-    "nome"  =>  "Lucas",<br>
-    "idade" =>  60,<br>
-    ],<br>
- ];<p>
+<h4 class="cyber-h">22. ARRAY Collumn - (Recuperar dados por key com index)</h4>
 
-$nomes = array_column($pessoas, "nome","id");<p>
+<p><strong>Exemplo:</strong></p>
 
-<table class="cyber-table"border=1>
+
+<pre><span class="code-block">
+$pessoas = [
+    [
+    "id"    =>  6789,
+    "nome"  =>  "João",
+    "idade" =>  34,
+    ],
+    [
+    "id"    =>  7089,
+    "nome"  =>  "Maria",
+    "idade" =>  22,
+    ],
+    [
+    "id"    =>  3000,
+    "nome"  =>  "Lucas",
+    "idade" =>  60,
+    ],
+ ];
+
+$nomes = array_column($pessoas, "nome","id");
+
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>6789</th><th>7089</th><th>3000</th></tr>
 <tr><td>"João"</td><td>"Maria"</td><td>"Lucas"</td></tr>
-</table><p>
+</table>
 
-print_r($nomes);<p>
-RESULTADO: Array ( [6789] => João [7089] => Maria [3000] => Lucas )<p>
+<pre><span class="code-block">
+print_r($nomes);
+RESULTADO: Array ( [6789] => João [7089] => Maria [3000] => Lucas )
+
+</span></pre>
 
 
+<h4 class="cyber-h">23. ARRAY como Pilha  - (Recuperar dados por key com index)</h4>
 
-<h4 class="cyber-h">20. ARRAY como Pilha  - (Recuperar dados por key com index)</h4>
+<p><strong>Exemplo:</strong></p>
 
-<strong>Exemplo:</strong><br>
+<pre><span class="code-block">
+ARRAY_POP() - elimina o ultimo elemento do ARRAY.
 
-ARRAY_POP() - elimina o ultimo elemento do ARRAY.<p>
+$alunos = ["Maria", "João"];
 
-$alunos = ["Maria", "João"];<p>
+array_push($alunos, "Carlos", "Lucas");
+print_r($alunos);
 
-array_push($alunos, "Carlos", "Lucas");<br>
-print_r($alunos);<br>
-
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th><th>3</th></tr>
 <tr><td>"Maria"</td><td>"João"</td><td>"Carlos"</td><td>"Lucas"</td></tr>
 </table>
 
-RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos [3] => Lucas )<p>
+<pre><span class="code-block">
+RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos [3] => Lucas )
 
-array_pop($alunos);<br>
-print_r($alunos);<br>
+array_pop($alunos);
+print_r($alunos);
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th><th>3</th></tr>
 <tr><td>"Maria"</td><td>"João"</td><td>"Carlos"</td><td></td></tr>
 </table>
 
-RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos )<p>
+
+<pre><span class="code-block">
+RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos )
+
+</span></pre>
 
 
+<h4 class="cyber-h">24. ARRAY como Pilha  - (Recuperar dados por key com index)</h4>
 
-<h4 class="cyber-h">20. ARRAY como Pilha  - (Recuperar dados por key com index)</h4>
+<p><strong>Exemplo:</strong></p>
+<pre><span class="code-block">
+ARRAY_SHIFT() - elimina o primeiro elemento do ARRAY.
 
-<strong>Exemplo:</strong><br>
-ARRAY_SHIFT() - elimina o primeiro elemento do ARRAY.<p>
+$alunos = ["Maria", "João"];
 
-$alunos = ["Maria", "João"];<p>
+array_push($alunos, "Carlos", "Lucas");
+print_r($alunos);
 
-array_push($alunos, "Carlos", "Lucas");<br>
-print_r($alunos);<br>
-
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>0</th><th>1</th><th>2</th><th>3</th></tr>
 <tr><td>"Maria"</td><td>"João"</td><td>"Carlos"</td><td>"Lucas"</td></tr>
 </table>
 
-RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos [3] => Lucas ) <p>
+<pre><span class="code-block">
+RESULTADO: Array ( [0] => Maria [1] => João [2] => Carlos [3] => Lucas ) 
 
 
-array_shift($alunos);<br>
-print_r($alunos);<br>
+array_shift($alunos);
+print_r($alunos);
 
-<table class="cyber-table"border=1>
+</span></pre>
+<br><table class="cyber-table"border=1>
 <tr><th>" "</th><th>0</th><th>1</th><th>2</th></tr>
 <tr><th>" "</th><td>"João"</td><td>"Carlos"</td><td>"Lucas"</td></tr>
 </table>
 
-RESULTADO: Array ( [0] => João [1] => Carlos [2] => Lucas ) <p>
+<pre><span class="code-block">
+RESULTADO: Array ( [0] => João [1] => Carlos [2] => Lucas ) 
+</span></pre>

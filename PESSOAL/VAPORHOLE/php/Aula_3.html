@@ -2,214 +2,237 @@
 
 <h4 class="cyber-h">Funções</h4>
 
-
 <h4 class="cyber-h">1. Criando uma função Simples</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function minhafuncao(){<br>
-echo "Ola Mundo com Função";<br>
-}<p>
+<pre><span class="code-block">
+function minhafuncao(){
+	echo "Ola Mundo com Função";
+}
 
-Chamando a função:<br>
-minhafuncao();<br>
-Resultado: Ola Mundo com Função<p>
+Chamando a função:
+minhafuncao();
+Resultado: Ola Mundo com Função</p>
 
-
+</span></pre>
 
 <h4 class="cyber-h">2. Criando uma função com Parametros</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function imprimeNome($nome){<br>
-echo "Meu nome é $nome!";<br>
-}<p>
+<pre><span class="code-block">
+function imprimeNome($nome){
+	echo "Meu nome é $nome!";
+}
 
-Chamando a função:<br>
-imprimeNome("Lucas");<br>
-imprimeNome("João");<br>
-Resultado: Meu nome é Lucas!<br>
-Resultado: Meu nome é João!<p>
+Chamando a função:
+imprimeNome("Lucas");
+imprimeNome("João");
+Resultado: Meu nome é Lucas!
+Resultado: Meu nome é João!
 
+</span></pre>
 
 
 <h4 class="cyber-h">3. Criando uma função com mais de um Parametro</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function imprimeNomeInteiro($nome, $sobrenome){<br>
-echo "Meu nome inteiro é $nome $sobrenome!";<br>
-}<p>
+<pre><span class="code-block">
+function imprimeNomeInteiro($nome, $sobrenome){
+	echo "Meu nome inteiro é $nome $sobrenome!";
+}
 
-Chamando a função:<br>
-imprimeNomeInteiro("Lucas", "Nobre Ferreira Martins");<br>
-imprimeNomeInteiro("João", "da Silva Sauro");<br>
-Resultado: Meu nome é Lucas Nobre Ferreira Martins!<br>
-Resultado: Meu nome é João da Silva Sauro!<p>
+Chamando a função:
+imprimeNomeInteiro("Lucas", "Nobre Ferreira Martins");
+imprimeNomeInteiro("João", "da Silva Sauro");
+Resultado: Meu nome é Lucas Nobre Ferreira Martins!
+Resultado: Meu nome é João da Silva Sauro!
 
+</span></pre>
 
 
 <h4 class="cyber-h">4. Criando uma função com Parametro DEFAULT</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function imprimeNomeInteiro($nome, $sobrenome = "Maciel"){<br>
-echo "Meu nome inteiro é $nome $sobrenome!";<br>
-}<p>
+<pre><span class="code-block">
+function imprimeNomeInteiro($nome, $sobrenome = "Maciel"){
+	echo "Meu nome inteiro é $nome $sobrenome!";
+}
 
-Chamando a função:<br>
-imprimeNomeInteiro("Lucas");<br>
-imprimeNomeInteiro("João", "da Silva Sauro");<br>
-Resultado: Meu nome é Lucas Maciel!<br>
-Resultado: Meu nome é João da Silva Sauro!<p>
+Chamando a função:
+imprimeNomeInteiro("Lucas");
+imprimeNomeInteiro("João", "da Silva Sauro");
+Resultado: Meu nome é Lucas Maciel!
+Resultado: Meu nome é João da Silva Sauro!
 
+</span></pre>
 
 
 <h4 class="cyber-h">5. Criando uma função com Parametro SPLAT OPERATOR "..."</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function valores(...$numeros){<br>
-echo array_sum($numeros);<br>
-}<p>
+<pre><span class="code-block">
+function valores(...$numeros){
+	echo array_sum($numeros);
+}
 
-Chamando a função:<br>
-valores(1);<br>
-valores(1,2);<br>
-valores(1,2,3);<br>
-Resultado: 1<br>
-Resultado: 3<br>
-Resultado: 6<p>
+Chamando a função:
+valores(1);
+valores(1,2);
+valores(1,2,3);
+Resultado: 1
+Resultado: 3
+Resultado: 6
 
+</span></pre>
 
 
 <h4 class="cyber-h">6. Desempacotar array com SPLAT OPERATOR "..."</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma($a, $b, $c) {<br>
-echo $a + $b + $c;<br>
-}<p>
+<pre><span class="code-block">
+function soma($a, $b, $c) {
+	echo $a + $b + $c;
+}
 
-$args = array(2,3);<br>
-soma(1, ...$args);<p>
+$args = array(2,3);
+soma(1, ...$args);
 
+</span></pre>
 
 <h4 class="cyber-h">7. Função Return</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma($x, $y){<br>
-$z = $x + $y;<br>
-return $z;<br>
-}<p>
+<pre><span class="code-block">
+function soma($x, $y){
+	$z = $x + $y;
+	return $z;
+}
 
-echo "5 + 10 = " . soma(5, 10);<br>
+echo "5 + 10 = " . soma(5, 10);
 
+</span></pre>
 
 
 <h4 class="cyber-h">8. Função Recursiva</h4>
 
-É uma função que chama ela mesma, precisa ter cuidado para não fazer um loop infinito.<br>
+<p>É uma função que chama ela mesma, precisa ter cuidado para não fazer um loop infinito.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
 
-function fatorial($numero){<br><br>
+<pre><span class="code-block">
+function fatorial($numero){
+	echo "Numero Atual: ".$numero;
 
-echo "Numero Atual: ".$numero." ";<br><br>
+	if($numero <2) {
+		return 1;
+	}else{
+		return ($numero * fatorial($numero-1));
+	}
+}
 
-if($numero <2) {<br>
-return 1;<br>
-}else{<br>
-return ($numero * fatorial($numero-1));<br>
-}<br>
-}<p>
+echo "Resultado: ".fatorial(4);
 
-echo "Resultado: ".fatorial(4);<br>
-
+</span></pre>
 
 
 <h4 class="cyber-h">9. Tipar variavel dentro de função - TypeHint</h4>
 
-Podemos determinar o tipo de variavel sera aceita no parametro da função.<br>
-Se passarmos um valor FLOAT nesse caso ele convertera para inteiro arredondando para cima ou para baixo de acordo com o numero.<br>
+<p>Podemos determinar o tipo de variavel sera aceita no parametro da função.</p>
+<p>Se passarmos um valor FLOAT nesse caso ele convertera para inteiro arredondando para cima ou para baixo de acordo com o numero.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma(int $a, int $b){<br>
-return $a + $b;<br>
-}<p>
+<pre><span class="code-block">
+function soma(int $a, int $b){
+	return $a + $b;
+}
 
-soma(1,2);<br>
+soma(1,2);
 
+</span></pre>
 
 
 <h4 class="cyber-h">10. TypeHint + Splash OPERATOR</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma(int ...$numeros){<br>
-echo array_sum($numeros);<br>
-}<p>
+<pre><span class="code-block">
+function soma(int ...$numeros){
+	echo array_sum($numeros);
+}
 
-soma(1,2,3,4);<br>
-soma(1,2,3,4,5,6,7);<br>
+soma(1,2,3,4);
+soma(1,2,3,4,5,6,7);
 
+</span></pre>
 
 <h4 class="cyber-h">11. Determinando que a saida de uma função vai ser inteiro.</h4>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma(float $a, float $b) : int {<br>
-return intval($a + $b);<br>
-}<p>
+<pre><span class="code-block">
+function soma(float $a, float $b) : int {
+	return intval($a + $b);
+}
 
-echo soma(1.2,2.5);<br>
-echo soma(1.8,2.2);<br>
+echo soma(1.2,2.5);
+echo soma(1.8,2.2);
 
-
+</span></pre>
 
 <h4 class="cyber-h">12. Nullable Types (php 7.1 >=) "?".</h4>
 
-Determina que o valor do parametro ou retorno da função pode receber ou retornar NULO(NULL).<br>
-Mesmo assim é obrigado a passar um valor ou NULLO.<br>
+<p>Determina que o valor do parametro ou retorno da função pode receber ou retornar NULO(NULL).</p>
+<p>Mesmo assim é obrigado a passar um valor ou NULLO.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function soma(float $a, float $b, ?int $c) : float {<br>
-return $a + $b + $c;<br>
-}<p>
+<pre><span class="code-block">
+function soma(float $a, float $b, ?int $c) : float {
+	return $a + $b + $c;
+}
 
-echo soma(5.6,2.6,null);<br>
+echo soma(5.6,2.6,null);
 
+</span></pre>
 
 
 <h4 class="cyber-h">13. Strict Types</h4>
 
-Força o PHP a checar a tipagem de todas as variaveis e não aceitar mais valores não consistentes com o tipo da variavel.<br>
+<p>Força o PHP a checar a tipagem de todas as variaveis e não aceitar mais valores não consistentes com o tipo da variavel.</p>
 
-<strong>Exemplo de declaração:</strong><p>
+<p><strong>Exemplo de declaração:</strong></p>
 
-declare(strict_types=1);<p>
+<pre><span class="code-block">
+declare(strict_types=1);
 
+</span></pre>
 
 
 <h4 class="cyber-h">14. Passagem de valor por referencia "&"</h4>
 
-Cria um vinculo com o valor da variavel e modifica o valor da variavel de acordo com o que é determinado na função.<br>
-Sem isso ele só copia o valor da variavel dentro do PARAMETRO e fica sem vinculo com a variavel.<br>
+<p>Cria um vinculo com o valor da variavel e modifica o valor da variavel de acordo com o que é determinado na função.</p>
+<p>Sem isso ele só copia o valor da variavel dentro do PARAMETRO e fica sem vinculo com a variavel.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-function somar($var1, &$var2){<br>
-$var2 += 2;<br>
-return $var1 + $var2;<br>
-}<p>
+<pre><span class="code-block">
+function somar($var1, &$var2){
+	$var2 += 2;
+	return $var1 + $var2;
+}
 
-$x = 5;<br>
-echo somar(3, $x);<br>
-echo $x;<p>
+$x = 5;
+echo somar(3, $x);
+echo $x;
 
 
 function somar($var1, &$var2){
@@ -218,118 +241,132 @@ function somar($var1, &$var2){
 }
 
 $x = ". $x = 5;
-<br>
+
 Chamando a função = ".somar(3, $x);
-<br>
+
 valor de $x modificado = ".$x;
 
-
+</span></pre>
 
 <h4 class="cyber-h">15. Função anônima (Closure) - Função sem nome.</h4>
 
-Cria uma função sem nome que pode ser chamada por uma variavel.<br>
+<p>Cria uma função sem nome que pode ser chamada por uma variavel.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-$x = function($txt){<br>
-echo ("Hello $txt !");<br>
-};<p>
+<pre><span class="code-block">
+$x = function($txt){
+	echo ("Hello $txt !");
+};
 
-$x("World");<br>
-$x("PHP");<br>
+$x("World");
+$x("PHP");
 
+</span></pre>
 
 <h4 class="cyber-h">16. Chamando variavel externa dentro de CLOSURE função.</h4>
 
-Adiciona variavel externa dentro de função.<br>
+Adiciona variavel externa dentro de função.
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
 
-$x = 10;<p>
+<pre><span class="code-block">
+$x = 10;
 
-$texto = function() use ($x) { <br>
-echo "Olá minha CLOSURE! $x";<br>
-};<p>
+$texto = function() use ($x) { 
+	echo "Olá minha CLOSURE! $x";
+};
 
-$texto();<p>
+$texto();
 
+</span></pre>
 
 
 <h4 class="cyber-h">17. Função anônima como parametro de outra função.</h4>
 
-Determina o valor de uma função CLOSURE e executa a closure em outra função com valor definido.<br>
+Determina o valor de uma função CLOSURE e executa a closure em outra função com valor definido.
 
-<strong>Exemplo 1:</strong><p>
+<p><strong>Exemplo 1:</strong></p>
 
-function teste_closure(callable $a){<br>
-$b = 20;<br>
-return $a($b);<br>
-}<p>
+<pre><span class="code-block">
+function teste_closure(callable $a){
+	$b = 20;
+	return $a($b);
+}
 
-teste_closure(function($x){<br>
-echo($x+10);<br>
-});<p>
+teste_closure(function($x){
+	echo($x+10);
+});
 
-<strong>Exemplo 2:</strong><p>
+</span></pre>
+<p><strong>Exemplo 2:</strong></p>
 
-function calculaimposto(callable $formula){<br>
-$impostos = [10,22,34,46,58];<p>
+<pre><span class="code-block">
+function calculaimposto(callable $formula){
+	$impostos = [10,22,34,46,58];
 
-for($i = 0; $i < count($impostos); $i++){<br>
-$imposto[$i] = $formula($impostos[$i]);<br>
-}<br>
-return $impostos;<br>
-}<p>
+	for($i = 0; $i < count($impostos); $i++){
+		$imposto[$i] = $formula($impostos[$i]);
+	}
+	return $impostos;
+}
 
-$resultado = calculaimposto(function($valor){<br>
-return $valor * 0.1;<br>
-});<p>
+$resultado = calculaimposto(function($valor){
+	return $valor * 0.1;
+});
 
+</span></pre>
 
-<strong>Exemplo 3:</strong><p>
+<p><strong>Exemplo 3:</strong></p>
 
-function add($x,$y){<br>
-return $x + $y();<br>
-}<p>
+<pre><span class="code-block">
+function add($x,$y){
+	return $x + $y();
+}
 
-echo add(3, function(){ return 5; });<p>
+echo add(3, function(){ return 5; });
 
+</span></pre>
 
 
 <h4 class="cyber-h">18. Constantes.</h4>
 
-Diferente de uma variavel as contantes não alteram o valor e podem ser acessadas sem uso do cifrão.<br>
+<p>Diferente de uma variavel as contantes não alteram o valor e podem ser acessadas sem uso do cifrão.</p>
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-define("MINHA_CONSTANTE","nunca vai mudar");<br>
-define("OUTRA_CONSTANTE","não importa o case", true);<br>
-define("PI",3.141592);<p>
+<pre><span class="code-block">
+define("MINHA_CONSTANTE","nunca vai mudar");
+define("OUTRA_CONSTANTE","não importa o case", true);
+define("PI",3.141592);
 
-echo MINHA_CONSTANTE;<br>
-echo outra_constante;<br>
-echo PI;<p>
+echo MINHA_CONSTANTE;
+echo outra_constante;
+echo PI;
 
+</span></pre>
 
 
 <h4 class="cyber-h">19. DATE e DATETIME.</h4>
 
-Função que retorna Data e Hora em diversos formatos.<br>
+Função que retorna Data e Hora em diversos formatos.
 
-<strong>Exemplo:</strong><p>
+<p><strong>Exemplo:</strong></p>
 
-## Definindo TIMEZONE:<br>
-date_default_timezone_set('America/Sao_Paulo');<p>
+<pre><span class="code-block">
+## Definindo TIMEZONE:
+date_default_timezone_set('America/Sao_Paulo');
 
-## Data:<br>
-echo date("d");<br>
-echo date("d/m/y");<p>
+## Data:
+echo date("d");
+echo date("d/m/y");
 
-## Hora:<br>
-echo date("h:i:s");<br>
-echo date("d/m/y h:i:s");<p>
+## Hora:
+echo date("h:i:s");
+echo date("d/m/y h:i:s");
 
+</span></pre>
 
 
 

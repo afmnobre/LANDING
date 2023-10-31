@@ -1,334 +1,325 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+<h1 class="cyber-h">Aula 5 de PHP</h1>
 
+<h4 class="cyber-h">Classes, Objetos, Atributos, Herança, Visibilidade e Encapsulamento.</h4>
 
-##################################################################################################
-echo "<h1>Aula 5 de PHP</h1>";
-echo "<hr>";
-echo "<h4>Classes, Objetos, Atributos, Herança, Visibilidade e Encapsulamento.</h4>";
+<h4 class="cyber-h">1. PHP OO - PHP ORIENTADO A OBJETO.</h4>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>1. PHP OO - PHP ORIENTADO A OBJETO.</h4>";
+<p><strong>CLASSE</strong></p>
 
-echo "<strong>CLASSE</strong><p>";
+<pre><span class="code-block">
+<p>NOME:</p> 
+<ol><ul>+ Pessoa</ul></ol>
+<p>ATRIBUTOS:</p>
+<ol><ul>+ Nome</ul><ul>+ Sobrenome</ul><ul>+ dataNascimento</ul><ul>+ cpf </ul></ol>
+<p>MÉTODOS:</p>
+<ol><ul>+ nomeCompleto()</ul><ul>+ idade()</ul></ol>
 
-echo "NOME: ";
-echo "<ol><ul>+ Pessoa</ul></ol>";
-echo "ATRIBUTOS:";
-echo "<ol><ul>+ Nome</ul><ul>+ Sobrenome</ul><ul>+ dataNascimento</ul><ul>+ cpf </ul></ol>";
+</span></pre>
 
-echo "MÉTODOS:";
-echo "<ol><ul>+ nomeCompleto()</ul><ul>+ idade()</ul></ol>";
+<p><strong>CLASSE EM PHP</strong></p>
 
+<pre><span class="code-block">
+class Pessoa{ 
+	public $nome;
+	public $sobrenome;
+	public $dataNascimento;
+	public $cpf;
+		public function nomeCompleto(){
+			return $this->nome." ".$this->sobrenome;
+		}
+}
 
-echo "<strong>CLASSE EM PHP</strong><p>";
+</span></pre>
 
-echo "class Pessoa{ <p>";
+<p><strong>Estanciando a classe pessoa em uma variável.</strong></p>
 
-echo "public \$nome;<br>";
-echo "public \$sobrenome;<br>";
-echo "public \$dataNascimento;<br>";
-echo "public \$cpf;<p>";
+<pre><span class="code-block">
+$pessoa1 = new Pessoa();
+$pessoa1->nome = "Lucas";
+$pessoa1->sobrenome = "Nobre Ferreira Martins";
+$pessoa1->dataNascimento = "15/09/1987";
+$pessoa1->cpf = "358.525.145-45";
 
-echo "public function nomeCompleto(){<p>";
-echo "return \$this->nome.\" \".\$this->sobrenome;<p>";
+var_dump($pessoa1);
+RESULTADO: object(Pessoa)#1 (4) { ["nome"]=> string(5) "Lucas" ["sobrenome"]=> string(22) "Nobre Ferreira Martins" ["dataNascimento"]=> string(10) "15/09/1987" ["cpf"]=> string(14) "358.525.145-45" }
 
-echo "}<p>";
-echo "}<p>";
+$pessoa2 = new Pessoa();
+$pessoa2->nome = "Matheus";
+$pessoa2->sobrenome = "Nobre Martins Manuel";
+$pessoa2->dataNascimento = "02/07/1989";
+$pessoa2->cpf = "258.289.122-05";
 
-echo "<strong>Estanciando a classe pessoa em uma variável.</strong><p>";
+var_dump($pessoa2);
+object(Pessoa)#2 (4) { ["nome"]=> string(7) "Matheus" ["sobrenome"]=> string(20) "Nobre Martins Manuel" ["dataNascimento"]=> string(10) "02/07/1989" ["cpf"]=> string(14) "258.289.122-05" }
 
-echo "\$pessoa1 = new Pessoa();<br>";
-echo "\$pessoa1->nome = \"Lucas\";<br>";
-echo "\$pessoa1->sobrenome = \"Nobre Ferreira Martins\";<br>";
-echo "\$pessoa1->dataNascimento = \"15/09/1987\";<br>";
-echo "\$pessoa1->cpf = \"358.525.145-45\";<p>";
+</span></pre>
 
-echo "var_dump(\$pessoa1);<br>";
-echo "RESULTADO: object(Pessoa)#1 (4) { [\"nome\"]=> string(5) \"Lucas\" [\"sobrenome\"]=> string(22) \"Nobre Ferreira Martins\" [\"dataNascimento\"]=> string(10) \"15/09/1987\" [\"cpf\"]=> string(14) \"358.525.145-45\" }<p>";
+<h4 class="cyber-h">2. OBJETOS (Instâncias).</h4>
 
+<p><strong>CLASSE</strong></p>
 
 
-echo "\$pessoa2 = new Pessoa();<br>";
-echo "\$pessoa2->nome = \"Matheus\";<br>";
-echo "\$pessoa2->sobrenome = \"Nobre Martins Manuel\";<br>";
-echo "\$pessoa2->dataNascimento = \"02/07/1989\";<br>";
-echo "\$pessoa2->cpf = \"258.289.122-05\";<p>";
+<pre><span class="code-block">
+class Pessoa{
+	public $cpf;
+	public $nome;
+}
 
+$x = new Pessoa();
+$y = new Pessoa();
 
-echo "var_dump(\$pessoa2);<br>";
-echo "object(Pessoa)#2 (4) { [\"nome\"]=> string(7) \"Matheus\" [\"sobrenome\"]=> string(20) \"Nobre Martins Manuel\" [\"dataNascimento\"]=> string(10) \"02/07/1989\" [\"cpf\"]=> string(14) \"258.289.122-05\" }<p>";
 
+$x->nome = "maria";
+$x->cpf  = "123";
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>2. OBJETOS (Instâncias).</h4>";
+$y->nome = "joão";
+$y->cpf  = "345";
 
-echo "<strong>CLASSE</strong><p>";
+$z = $y;
+$z->cpf = "567";
 
 
-echo "class Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "public \$nome;<br>";
-echo "}<p>";
+var_dump($x);
 
-echo "\$x = new Pessoa();<br>";
-echo "\$y = new Pessoa();<p>";
+var_dump($y);
 
+var_dump($z);
 
-echo "\$x->nome = \"maria\";<br>";
-echo "\$x->cpf  = \"123\";<p>";
 
-echo "\$y->nome = \"joão\";<br>";
-echo "\$y->cpf  = \"345\";<p>";
+object(Pessoa)#1 (2) { ["cpf"]=> string(3) "123" ["nome"]=> string(5) "maria" }
+object(Pessoa)#2 (2) { ["cpf"]=> string(3) "567" ["nome"]=> string(5) "joão" }
+object(Pessoa)#2 (2) { ["cpf"]=> string(3) "567" ["nome"]=> string(5) "joão" }
 
-echo "\$z = \$y;<br>";
-echo "\$z->cpf = \"567\";<p>";
+</span></pre>
 
 
-echo "var_dump(\$x);";
-echo "<br>";
-echo "var_dump(\$y);";
-echo "<br>";
-echo "var_dump(\$z);<p>";
+<h4 class="cyber-h">3. MÉTODOS.</h4>
 
+<p><strong>CLASSE</strong></p>
 
-echo "object(Pessoa)#1 (2) { [\"cpf\"]=> string(3) \"123\" [\"nome\"]=> string(5) \"maria\" }<br>";
-echo "object(Pessoa)#2 (2) { [\"cpf\"]=> string(3) \"567\" [\"nome\"]=> string(5) \"joão\" }<br>";
-echo "object(Pessoa)#2 (2) { [\"cpf\"]=> string(3) \"567\" [\"nome\"]=> string(5) \"joão\" }<p>";
 
+<pre><span class="code-block">
+class Pessoa{
+	public $cpf;
+	public $nome;
+	function falar(){
+		echo "Oi!";
+	}
+}
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>3. MÉTODOS.</h4>";
 
-echo "<strong>CLASSE</strong><p>";
+$pessoa1 = new Pessoa();
+$pessoa1->nome = "Lucas";
 
+echo $pessoa1->falar()." ".$pessoa1->nome;
 
-echo "class Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "public \$nome;<br>";
-echo "function falar(){<br>";
-echo "echo \"Oi!\";<br>";
-echo "}<br>";
-echo "}<p>";
+RESULTADO: Oi! Lucas
 
+</span></pre>
 
-echo "\$pessoa1 = new Pessoa();<br>";
-echo "\$pessoa1->nome = \"Lucas\";<p>";
 
-echo "echo \$pessoa1->falar().\" \".\$pessoa1->nome;<p>";
+<h4 class="cyber-h">4. REFERÊNCIA AO OBJETO ($this).</h4>
 
-echo "RESULTADO: Oi! Lucas<p>";
+<p><strong>EXEMPLO</strong></p>
 
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>4. REFERÊNCIA AO OBJETO (\$this).</h4>";
+<pre><span class="code-block">
+class Pessoa{
+	public $cpf;
+	public $nome;
+	public $sobreNome;
+	function nomeCompleto(){
+		return $this->nome." ".$this->sobreNome;
+	}
+}
 
-echo "<strong>EXEMPLO</strong><p>";
+$pessoa = new Pessoa();
+$pessoa->nome = "João";
+$pessoa->sobreNome = "da Silva";
 
+echo $pessoa->nomeCompleto();
 
-echo "class Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "public \$nome;<br>";
-echo "public \$sobreNome;<br>";
-echo "function nomeCompleto(){<br>";
-echo "return \$this->nome.\" \".\$this->sobreNome;<br>";
-echo "}<br>";
-echo "}<p>";
+RESULTADO: João da Silva
 
-echo "\$pessoa = new Pessoa();<br>";
-echo "\$pessoa->nome = \"João\";<br>";
-echo "\$pessoa->sobreNome = \"da Silva\";<p>";
+</span></pre>
 
-echo "echo \$pessoa->nomeCompleto();<p>";
 
-echo "RESULTADO: João da Silva<p>";
+<h4 class="cyber-h">5. MÉTODO CONSTRUTOR (__construct).</h4>
 
+<p>Uma função executada quando é estanciado o OBJETO.</p>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>5. MÉTODO CONSTRUTOR (__construct).</h4>";
+<p><strong>EXEMPLO</strong></p>
 
-echo "Uma função executada quando é estanciado o OBJETO.<p>";
+<pre><span class="code-block">
+class Pessoa{
+	public $cpf;
+	public $nome;
+	function __construct(){
+		echo "Nova Pessoa";
+	}
+}
 
-echo "<strong>EXEMPLO</strong><p>";
 
-echo "class Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "public \$nome;<br>";
-echo "function __construct(){<br>";
-echo "echo \"Nova Pessoa\";<br>";
-echo "}<br>";
-echo "}<p>";
+$pessoa = new Pessoa();
+$pessoa->nome = "maria";
+$pessoa->cpf = "123";
 
+print $pessoa->nome;
 
-echo "\$pessoa = new Pessoa();<br>";
-echo "\$pessoa->nome = \"maria\";<br>";
-echo "\$pessoa->cpf = \"123\";<p>";
+</span></pre>
 
-echo "print \$pessoa->nome;<p>";
 
+<h4 class="cyber-h">6. MÉTODO DESTRUTOR (__destruct).</h4>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>6. MÉTODO DESTRUTOR (__destruct).</h4>";
+<p>Uma função executada quando é estanciado o OBJETO.</p>
 
-echo "Uma função executada quando é estanciado o OBJETO.<p>";
+<p><strong>EXEMPLO</strong></p>
 
-echo "<strong>EXEMPLO</strong><p>";
+<pre><span class="code-block">
+class Pessoa{
+	public $cpf;
+	public $nome;
+	function __construct(){
+		echo "Nova Pessoa";
+	}
+	function __destruct(){
+		echo "Objeto Removido";
+	}
+}
 
-echo "class Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "public \$nome;<br>";
-echo "function __construct(){<br>";
-echo "echo \"Nova Pessoa\";<br>";
-echo "}<br>";
-echo "function __destruct(){<br>";
-echo "echo \"Objeto Removido\";<br>";
-echo "}<br>";
-echo "}<p>";
 
+$pessoa = new Pessoa();
+$pessoa->nome = "maria";
+$pessoa->cpf = "123";
 
-echo "\$pessoa = new Pessoa();<br>";
-echo "\$pessoa->nome = \"maria\";<br>";
-echo "\$pessoa->cpf = \"123\";<p>";
+print $pessoa->nome;
 
-echo "print \$pessoa->nome;<p>";
+</span></pre>
 
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>7. HERANÇA (extends).</h4>";
+<h4 class="cyber-h">7. HERANÇA (extends).</h4>
 
-echo "Uma classe herda características com outra.<p>";
+<p>Uma classe herda características com outra.</p>
 
-echo "<strong>EXEMPLO</strong><p>";
+<p><strong>EXEMPLO</strong></p>
 
-echo "class Pessoa{<br>";
-echo "public \$nome;<br>";
-echo "}<p>";
+<pre><span class="code-block">
+class Pessoa{
+	public $nome;
+}
 
-echo "class PessoaFisica extends Pessoa{<br>";
-echo "public \$cpf;<br>";
-echo "}<p>";
+class PessoaFisica extends Pessoa{
+	public $cpf;
+}
 
-echo "\$a = new PessoaFisica();<br>";
-echo "\$a->nome = \"MARIA\";<br>";
-echo "\$a->cpf = 123;<p>";
+$a = new PessoaFisica();
+$a->nome = "MARIA";
+$a->cpf = 123;
 
-echo "var_dump(\$a);<p>";
+var_dump($a);
 
-echo "RESULTADO: object(PessoaFisica)#1 (2) { [\"nome\"]=> string(5) \"MARIA\" [\"cpf\"]=> int(123) }";
+RESULTADO: object(PessoaFisica)#1 (2) { ["nome"]=> string(5) "MARIA" ["cpf"]=> int(123) }
 
+</span></pre>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>8. HERANÇA com parent ( parent::função() ).</h4>";
 
-echo "Chamando a classe da função na função filho.<p>";
+<h4 class="cyber-h">8. HERANÇA com parent ( parent::função() ).</h4>
 
-echo "<strong>EXEMPLO</strong><p>";
+<p>Chamando a classe da função na função filho.</p>
 
-echo "class Pessoa{<br>";
-echo "public \$nome;<br>";
-echo "public function falar(){<br>";
-echo "return \"Oi meu nome é \".\$this->nome;<br>";
-echo "}<br>";
-echo "}<p>";
+<p><strong>EXEMPLO</strong></p>
 
-echo "class PessoaFisica extends Pessoa {<br>";
-echo "public \$cpf;<br>";
-echo "public function falar(){<br>";
-echo "return parent::falar(). \" e meu CPF é \".\$this->cpf;<br>";
-echo "}<br>";
-echo "}<p>";
+<pre><span class="code-block">
+class Pessoa{
+	public $nome;
+	public function falar(){
+		return "Oi meu nome é ".$this->nome;
+	}
+}
 
-echo "class PessoaJuridica extends Pessoa{<br>";
-echo "public \$cnpj;<br>";
-echo "}<p>";
+class PessoaFisica extends Pessoa {
+	public $cpf;
+	public function falar(){
+		return parent::falar(). " e meu CPF é ".$this->cpf;
+	}
+}
 
+class PessoaJuridica extends Pessoa{
+public $cnpj;
+}
 
-echo "\$pf1 = new PessoaFisica();<br>";
-echo "\$pf1->nome = \"Maria\";<br>";
-echo "\$pf1->cpf = 123;<br>";
-echo "echo \$pf1->falar();<p>";
 
-echo "RESULTADO: Oi meu nome é Maria e meu CPF é 123";
+$pf1 = new PessoaFisica();
+$pf1->nome = "Maria";
+$pf1->cpf = 123;
+echo $pf1->falar();
 
+RESULTADO: Oi meu nome é Maria e meu CPF é 123
 
+</span></pre>
 
-##################################################################################################
-echo "<hr>";
-echo "<h4>9. TIPOS DE VARIÁVEIS DENTRO DE UMA FUNÇÃO.</h4>";
 
-echo "Chamando a classe da função na função filho.<p>";
 
-echo "<strong>public:</strong><br>";
-echo " Torna uma variável / método disponível em qualquer lugar, outras classes e instâncias do objeto.<p>";
+<h4 class="cyber-h">9. TIPOS DE VARIÁVEIS DENTRO DE UMA FUNÇÃO.</h4>
 
-echo "<strong>protected:</strong><br>";
-echo "escopo para fazer a sua função / variavel ser visivel em todas as classes que estendem a classe atual, incluindo a classe pai.<p>";
+<p>Chamando a classe da função na função filho.</p>
 
-echo "<strong>private:</strong><br>";
-echo "A função / variável só pode ser acessada dentro da propria classe.<p>";
+<p><strong>public:</strong></p>
+<p>Torna uma variável / método disponível em qualquer lugar, outras classes e instâncias do objeto.</p>
 
-echo "<strong>EXEMPLO</strong><p>";
+<p><strong>protected:</strong></p>
+<p>escopo para fazer a sua função / variavel ser visivel em todas as classes que estendem a classe atual, incluindo a classe pai.</p>
 
+<p><strong>private:</strong></p>
+<p>A função / variável só pode ser acessada dentro da propria classe.</p>
 
-echo "class Pai{<br>";
-echo "public \$publico;<br>";
-echo "protected \$protegido;";
-echo "private \$privado;<p>";
+<p><strong>EXEMPLO</strong></p>
 
-echo "public function setProtegido(\$protegido){<br>";
-echo "\$this->protegido = \$protegido.\"!\";<br>";
-echo "}<p>";
 
-echo "public function getProtegido(){<br>";
-echo "return \$this->protegido();<br>";
-echo "}<p>";
+<pre><span class="code-block">
+class Pai{
+	public $publico;
+	protected $protegido;
+	private $privado;
+		public function setProtegido($protegido){
+			$this->protegido = $protegido."!";
+		}
 
-echo "private function segredo(){<br>";
-echo "return \"segredo\";<br>";
-echo "}<p>";
+		public function getProtegido(){
+			return $this->protegido();
+		}
 
+		private function segredo(){
+			return "segredo";
+		}
+}
 
-echo "}<p>";
+class Filho extends Pai{
+	public function revelarSegredo(){
+		return parent::segredo();
+	}
+}
 
+$pai = new Pai();
+$filho = new Filho();
+$pai->publico = "abc";
+$filho->publico = 123;
+$filho->setProtegido("Legal");
 
+echo $filho->getProtegido();
+echo $filho->protegido;
+echo $filho->revelarSegredo();
 
-echo "class Filho extends Pai{<br>";
+RESULTADO: Fatal error: Uncaught Error: Cannot access protected property Filho::$protegido in /srv/http/programacao/PHP/85Bits/Aula-05.php:327 Stack trace: #0 {main} thrown in /srv/http/programacao/PHP/85Bits/Aula-05.php on line 327
 
-echo "public function revelarSegredo(){<br>";
-echo "return parent::segredo();<br>";
-echo "}<br>";
-echo "}<p>";
+var_dump($pai);
+var_dump($filho);
 
-echo "\$pai = new Pai();<br>";
-echo "\$filho = new Filho();<br>";
-echo "\$pai->publico = \"abc\";<br>";
-echo "\$filho->publico = 123;<br>";
-echo "\$filho->setProtegido(\"Legal\");<p>";
+RESULTADO: object(Pai)#1 (3) { ["publico"]=> string(3) "abc" ["protegido":protected]=> NULL ["privado":"Pai":private]=> NULL } 
+RESULTADO: object(Filho)#2 (3) { ["publico"]=> int(123) ["protegido":protected]=> string(6) "Legal!" ["privado":"Pai":private]=> NULL } 
 
 
-echo "echo \$filho->getProtegido();<br>";
-echo "echo \$filho->protegido;<br>";
-echo "echo \$filho->revelarSegredo();<p>";
-
-echo "RESUTADO: Fatal error: Uncaught Error: Cannot access protected property Filho::\$protegido in /srv/http/programacao/PHP/85Bits/Aula-05.php:327 Stack trace: #0 {main} thrown in /srv/http/programacao/PHP/85Bits/Aula-05.php on line 327<p>";
-
-echo "var_dump(\$pai);<br>";
-echo "var_dump(\$filho);<p>";
-
-
-echo "RESULTADO: object(Pai)#1 (3) { [\"publico\"]=> string(3) \"abc\" [\"protegido\":protected]=> NULL [\"privado\":\"Pai\":private]=> NULL } <br>";
-echo "RESULTADO: object(Filho)#2 (3) { [\"publico\"]=> int(123) [\"protegido\":protected]=> string(6) \"Legal!\" [\"privado\":\"Pai\":private]=> NULL } <p>";
-
-
+</span></pre>
 
 
 
