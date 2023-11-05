@@ -47,3 +47,278 @@ cpf : 323.455.321-54
 idade : 38
 
 </span></pre>
+
+<h4 class="cyber-h">2.1 Iteração com exemplo FIBONACCI.</h4>
+
+<p>Exemplo abaixo:</p>
+<pre><span class="code-block">
+
+class Fibonacci implements \Iterator {
+	
+	private $anterior = 1;
+	private $atual = 0;
+	private $key = 0;
+	
+	public function __contruct(int $max = 100) {
+		$this->max = $max;	
+	}
+	
+	public function current() {
+		echo __FUNCTION__."\n";
+		return $this->atual;
+	}
+	
+	public function key(){
+		echo __FUNCTION__."\n";
+		return $this->key;
+	}
+	
+	public function next(): void {
+		echo __FUNCTION__."\n";
+		$novo_atual = $this->atual;
+		$this->atual += $this->anterior;
+		$this->anterior = $novo_atual;
+		$this->key++;
+	}
+	
+	public function rewind(): void{
+		echo __FUNCTION__."\n";
+		$this->anterior = 1;
+		$this->atual = 0;
+		$this->key = 0;
+	}
+	
+	public function valid(): bool {
+		echo __FUNCTION__."\n";
+		if($this->atual > 100){
+			return false;
+		}
+		return true;
+	}
+}
+
+$sequencia = new Fibonacci();
+
+foreach($sequencia as $value) {
+	echo "<br>Valor: $value e Chave: $key <br>";
+}
+
+RESULTADO:
+
+rewind valid current
+Valor: 0 e Chave:
+next valid current
+Valor: 1 e Chave:
+next valid current
+Valor: 1 e Chave:
+next valid current
+Valor: 2 e Chave:
+next valid current
+Valor: 3 e Chave:
+next valid current
+Valor: 5 e Chave:
+next valid current
+Valor: 8 e Chave:
+next valid current
+Valor: 13 e Chave:
+next valid current
+Valor: 21 e Chave:
+next valid current
+Valor: 34 e Chave:
+next valid current
+Valor: 55 e Chave:
+next valid current
+Valor: 89 e Chave:
+next valid
+
+</span></pre>
+
+<h4 class="cyber-h">3.1 Generator</h4>
+
+<p>Segue para os proximos resultados com o Generator.</p>
+<pre><span class="code-block">
+function meuGenerator() {
+	echo "Um\n";
+	yield 1;
+	echo "Dois\n";
+	yield 2;
+	echo "Três\n";
+	yield 3;	
+}
+
+$iterator = meuGenerator();
+var_dump($iterator);
+
+$passo = $iterator->current();
+echo $passo;
+
+$iterator->next();
+$passo = $iterator->current();
+echo $passo;
+
+$iterator->next();
+$passo = $iterator->current();
+echo $passo;
+
+RESULTADO:
+
+object(Generator)#1 (0) {
+}
+Um
+1
+Dois
+2
+Três
+3
+
+</span></pre>
+
+<h4 class="cyber-h">3.2 Generator (yield from)</h4>
+
+<p>Generator com outro Generator.</p>
+<pre><span class="code-block">
+function contar10() {
+	yield 1;
+	yield 2;
+	yield from [3,4];
+	yield from new ArrayIterator([5,6]);
+	yield from sete_oito();
+	yield 9;
+	yield 10;
+}
+
+function sete_oito() {
+	yield 7;
+	yield from oito();
+}
+
+function oito() {
+	yield 8;
+}
+
+foreach (contar10() as $num){
+	echo "$num ";
+}
+
+RESULTADO:
+
+1 2 3 4 5 6 7 8 9 10
+
+</span></pre>
+
+<h4 class="cyber-h">3.3 Iterator to Array</h4>
+
+<p>Colocando o resultado do Iterator em um array.</p>
+<pre><span class="code-block">
+class Fibonacci implements \Iterator {
+	
+	private $anterior = 1;
+	private $atual = 0;
+	private $key = 0;
+	
+	public function __contruct(int $max = 100) {
+		$this->max = $max;	
+	}
+	
+	public function current() {
+		return $this->atual;
+	}
+	
+	public function key(){
+		return $this->key;
+	}
+	
+	public function next(): void {
+		$novo_atual = $this->atual;
+		$this->atual += $this->anterior;
+		$this->anterior = $novo_atual;
+		$this->key++;
+	}
+	
+	public function rewind(): void {
+		$this->anterior = 1;
+		$this->atual    = 0;
+		$this->key      = 0;
+	}
+	
+	public function valid(): bool {
+		if($this->atual > 100){
+			return false;
+		}
+		return true;
+	}
+}
+
+$sequencia = new Fibonacci();
+
+$array = iterator_to_array($sequencia);
+var_dump($array);
+
+RESULTADO:
+
+array(12) {
+  [0]=>
+  int(0)
+  [1]=>
+  int(1)
+  [2]=>
+  int(1)
+  [3]=>
+  int(2)
+  [4]=>
+  int(3)
+  [5]=>
+  int(5)
+  [6]=>
+  int(8)
+  [7]=>
+  int(13)
+  [8]=>
+  int(21)
+  [9]=>
+  int(34)
+  [10]=>
+  int(55)
+  [11]=>
+  int(89)
+}
+
+</span></pre>
+
+<h4 class="cyber-h">4.1 Classe DateTime</h4>
+
+<p>Classe DateTime é uma alternativa a função date().</p>
+<pre><span class="code-block">
+$data = new dateTime();
+echo $data->format("d/m/y h:i:s");
+
+RESULTADO:
+
+05/11/23 10:13:39
+
+</span></pre>
+
+<h4 class="cyber-h">4.2 DateTimeZone (Fuso Horário)</h4>
+
+<p>Alteração de Fuso Horário.</p>
+<pre><span class="code-block">
+date_default_timezone_set('America/Sao_Paulo');
+
+$dateTimeAgora = new DateTime();
+
+echo $dateTimeAgora->format('d/m/Y H:i:s')."\n";
+
+$dateTime = new DateTime('2016-12-31 12:03:00', new DateTimeZone('America/Sao_Paulo'));
+
+echo $dateTime->format('d/m/Y H:i:s');
+
+RESULTADO:
+
+05/11/2023 19:21:44
+31/12/2016 12:03:00
+
+</span></pre>
+
+
+
+
