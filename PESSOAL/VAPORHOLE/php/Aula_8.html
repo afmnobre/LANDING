@@ -1,0 +1,362 @@
+<h1 class="cyber-h">Aula 8 de PHP</h1>
+
+<h4 class="cyber-h">1. Autoload (Carregamento Automatico de Classes).</h4>
+
+<p>Podemos fazer a inclusão de arquivos de classes automaticamente com spl_autoload_register.</p>
+<p>O exemplo esta gravado dentro do diretório: /Aula_8/.</p>
+<br>
+<p>Arquivo classes/Pessoa.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+	class Pessoa {
+		public $nome;
+	}
+
+?&gt;
+</span></pre>
+
+<br>
+<p>Arquivo classes/Veiculo.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+	class Veiculo {
+		public $placa;
+	}
+
+?&gt;
+</span></pre>
+
+<br>
+<p>Arquivo exemplo.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+function meu_autoloader($class) {
+	include_once 'classes'.$class.'.php';
+}
+
+spl_autoload_register('meu_autoloader');
+
+$pessoa1  = new Pessoa();
+$veiculo1 = new Veiculo();
+
+?&gt;
+
+</span></pre>
+
+<h4 class="cyber-h">2.1 Reflection.</h4>
+
+<p>Pode ser usada para visualizar ou modificar um programa em execução.</p>
+<p>Pode ser usado para criar bibliotecas genéricas para exibir dados, agrupar dados e outros.</p>
+<p>No exemplo abaixo podemos pegar as informações das classes que o Objeto faz parte</p>
+<pre><span class="code-block">
+class Animal {}
+
+class Felino extends Animal {}
+
+class Gato extends Felino {}
+
+$classe = new ReflectionClass(Gato::class);
+
+while($parent = $classe->getParentClass()){
+	$parents[] = $parent->getName();
+	$classe = $parent;
+}
+
+var_dump($parents);
+
+RESULTADO:
+
+ array(2) {
+  [0]=>
+  string(6) "Felino"
+  [1]=>
+  string(6) "Animal"
+}
+
+</span></pre>
+<h4 class="cyber-h">2.2 Reflection.</h4>
+
+<p>No exemplo abaixo vamos visualizar os atributos da classe Aluno.</p>
+<pre><span class="code-block">
+class Aluno {
+	public $nome;
+	protected $endereco;
+	private $telefone;
+}
+
+$aluno1 = new Aluno();
+$reflection = new ReflectionClass($aluno1);
+//$atributos = $reflection->getProperties(); // Aqui traz todos os atributos
+$atributos = $reflection->getProperties(ReflectionProperty::IS_PUBLIC); // Aqui somente traz os atributos publicos.
+
+foreach($atributos as $atributo){
+	echo $atributo->getName()."\n";
+}
+
+RESULTADO:
+
+nome
+endereco
+telefone
+
+</span></pre>
+
+<h4 class="cyber-h">2.3 Reflection (Alterando a Visibilidade).</h4>
+
+<p>Nesse exemplo conseguimos alterar a visibilidade de elementos da Classe.</p>
+<pre><span class="code-block">
+class Teste {
+
+	private $propriedade = "ola";
+	
+	private function dizSegredo(){
+		echo $this->propriedade. "! 1234";
+	}
+}
+
+$reflection = new ReflectionClass("Teste");
+$verAtributo   = $reflection->getProperty("propriedade");
+$verAtributo->setAccessible(true);
+
+$teste1 = new Teste();
+//echo $teste1->propriedade; //Não é acessivel por é Private
+echo $verAtributo->getValue($teste1);
+
+$verMetodo = new ReflectionMethod("Teste", "dizSegredo");
+$verMetodo->setAccessible(true);
+echo $verMetodo->invoke($teste1);
+
+RESULTADO:
+
+olaola! 1234
+
+</span></pre>
+
+<h4 class="cyber-h">2.4 Reflection + newInstanceWithoutConstructor.</h4>
+
+<p>Pode criar novas instancias da Classe sem carregar o método construtor.</p>
+<pre><span class="code-block">
+class Pessoa {
+	private function __construct(){
+		
+	}
+	public function digaOi(){
+		return "oi\n";
+	}
+}
+
+//com Reflection
+$reflector = new ReflectionClass("Pessoa");
+$instancia = $reflector->newInstanceWithoutConstructor();
+$metodo    = $reflector->getMethod('digaOi');
+echo $metodo->invoke($instancia);
+
+var_dump($instancia);
+
+RESULTADO:
+
+oi
+object(Pessoa)#2 (0) {
+}
+
+</span></pre>
+
+<h4 class="cyber-h">2.5 Reflection (Recuperar comentários).</h4>
+
+<p>Podemos usar o reflection para recupear os comentarios das classes.</p>
+<pre><span class="code-block">
+/**
+ * Esta é uma classe de exemplo
+ */
+ 
+ class Exemplo{
+		/**
+		 * Esta é uma função de exemplo
+ 		*/
+	public function fazNada(){}
+  }
+
+$reflector = new ReflectionClass(Exemplo::class);
+
+echo $reflector->getDocComment();
+
+echo $reflector->getMethod("fazNada")->getDocComment();
+
+RESULTADO:
+
+/**
+ * Esta é uma classe de exemplo
+ *//**
+ * Esta é uma função de exemplo
+ */
+
+</span></pre>
+
+<h4 class="cyber-h">3.1 Namespace</h4>
+
+<p>Uma maneira de organizar as classes PHP e evitar conflitos de codigos.</p>
+<p>Namespace usam (\) backslash como separador.</p>
+<p>Apelidos e conflitos podem ser resolvidos usando alias "as"</p>
+<br>
+<p>Arquivo \Exemplo\Aula_8\Namespace\Pessoa.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+namespace Modelo;
+class Pessoa{}
+
+?&gt;
+
+</span></pre>
+<br>
+<p>Arquivo \Exemplo\Aula_8\Namespace\exemplo.php</p>
+
+<pre><span class="code-block">
+&lt;?php
+
+require Pessoa.php;
+
+/*
+	Não Funciona Mais:
+	$pessoa1 = new Pessoa();
+ */
+
+$pessoa1 = new Modelo\Pessoa();
+
+?&gt;
+
+</span></pre>
+
+<h4 class="cyber-h">3.2 Namespace (Modelos Homônimos)</h4>
+
+<p>Uma maneira de organizar as classes PHP e evitar conflitos de codigos.</p>
+<br>
+<p>Arquivo \Exemplo\Aula_8\Namespace_Homonimos\Modelo\Literatura\manga.php</p>
+<pre><span class="code-block">
+&lt;?php
+namespace Modelo\Literatura;
+
+class Manga {
+	public $autor;
+	public $editora;
+}
+
+?&gt;
+
+</span></pre>
+<br>
+<p>Arquivo \Exemplo\Aula_8\Namespace_Homonimos\Modelo\Fruta\manga.php</p>
+<pre><span class="code-block">
+&lt;?php
+namespace Modelo\Fruta;
+
+class Manga {
+	public $vitaminas = ["A","C"];
+}
+
+?&gt;
+
+</span></pre>
+<br>
+<p>Arquivo \Exemplo\Aula_8\Namespace_Homonimos\exemplo.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+require "Modelo\Fruta\Manga.php";
+require "Modelo\Literatura\Manga.php";
+
+$manga1 = new Modelo\Literatura\Manga();
+$manga2 = new Modelo\Fruta\Manga();
+
+?&gt;
+
+</span></pre>
+<h4 class="cyber-h">3.3 Namespace com USE</h4>
+
+<p>Uma maneira de não precisar usar constantemente o nome completo da classe(FQN).</p>
+<br>
+<p>Exemplo sem USE:</p>
+<pre><span class="code-block">
+
+require "Pessoa.php";
+
+$pessoa1 = new Modelo\Pessoa();
+$pessoa2 = new Modelo\Pessoa();
+$pessoa3 = new Modelo\Pessoa();
+
+</span></pre>
+<br>
+<p>Exemplo com USE:</p>
+
+<pre><span class="code-block">
+require "Pessoa.php";
+
+use Modelo\Pessoa;
+
+$pessoa1 = new Pessoa();
+$pessoa2 = new Pessoa();
+$pessoa3 = new Pessoa();
+
+</span></pre>
+
+<h4 class="cyber-h">3.4 Namespace (USE + AS)</h4>
+
+<p>Pode ser usado para sanar problemas de conflitos de nomes.</p>
+<pre><span class="code-block">
+require "Modelo\Fruta\Manga.php";
+use Modelo\Fruta\Manga as FrutaManga;
+
+$manga2 = new FrutaManga();
+
+</span></pre>
+
+<h4 class="cyber-h">3.4 Namespace com autoloader</h4>
+
+<p>Insere automaticamente os arquivos das classes com os namespaces corretos.</p>
+<p>A estrutura do diretório tem que ser igual ao namespace</p>
+<pre><span class="code-block">
+&lt;?php
+
+function meu_autoloader($class){
+	include_once $class . ".php";
+}
+
+spl_autoload_register("meu_autoloader");
+
+use Modelo\Fruta\Manga as frutaManga;
+use Modelo\Literatura\Manga;
+
+$manga1 = new Modelo\Literatura\Manga();
+$manga2 = new FrutaManga();
+
+?&gt;
+
+</span></pre>
+
+<h4 class="cyber-h">3.5 Namespace com Group USE</h4>
+
+<p>Insere automaticamente os arquivos das classes com os namespaces corretos.</p>
+<p>A estrutura do diretório tem que ser igual ao namespace</p>
+<pre><span class="code-block">
+&lt;?php
+
+function meu_autoloader($class){
+	include_once $class . ".php";
+}
+
+spl_autoload_register("meu_autoloader");
+
+use Modelo\Fruta\Manga as frutaManga;
+use Modelo\Literatura\{Conto, Manga, Ficcao};
+
+$manga1 = new Modelo\Literatura\Manga();
+$manga2 = new FrutaManga();
+$ficcao1 = new Ficcao();
+
+
+?&gt;
+
+</span></pre>

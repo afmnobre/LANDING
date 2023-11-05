@@ -1,0 +1,49 @@
+<h1 class="cyber-h">Aula 9 de PHP</h1>
+
+<h4 class="cyber-h">1.1 Iteração de Atributos do Objeto.</h4>
+
+<p>Toda a iteração respeita o escopo dos atributos da classe:</p>
+<pre><span class="code-block">
+class Pessoa {
+	public $nome = "Maria da Silva";
+	private $cpf = "323.455.321-54";
+	protected $idade = "38";
+}
+
+$pessoa1 = new Pessoa();
+
+foreach ($pessoa1 as $key => $value) {
+	echo "$key : $value";
+}
+
+RESULTADO:
+
+nome : Maria da Silva
+
+</span></pre>
+<br>
+<p>Fazendo o retorno dos atributos que são protegidos ou privados.</p>
+<pre><span class="code-block">
+class Pessoa {
+	public $nome = "Maria da Silva";
+	private $cpf = "323.455.321-54";
+	protected $idade = "38";
+	
+	public function iterar(){
+		foreach($this as $key => $value){
+			echo "$key : $value \n";
+		}
+	}
+}
+
+$pessoa1 = new Pessoa();
+
+$pessoa1->iterar();
+
+RESULTADO:
+
+nome : Maria da Silva 
+cpf : 323.455.321-54 
+idade : 38
+
+</span></pre>

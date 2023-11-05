@@ -92,10 +92,233 @@ A pessoa Lucas Nobre Ferreira Martins tem o carro modelo HONDA e placa ABC 1234
 
 </span></pre>
 
-<h4 class="cyber-h">4. Composiçãp.</h4>
+<h4 class="cyber-h">4. Composição.</h4>
 
 <p>Enquanto existir o Objeto Rei os outros tambem existem.</p>
 <p><strong>EXEMPLO:</strong></p>
 
 <pre><span class="code-block">
+class Assunto {
+	public $texto;
+}
+
+class Corpo {
+	public $texto;
+	public $formato;
+}
+
+class Destinatario {
+	public $nome;
+}
+
+class Email {
+	private $assunto;
+	private $corpo;
+	private $destinatario;
+	
+	public function __construct(){
+		$this->assunto		 = new Assunto();
+		$this->corpo		 = new Corpo();
+		$this->destinatario    = new Destinatario();
+	}
+}
+
+$email1 = new Email();
+var_dump($email1);
+
+RESULTADO:
+
+object(Email)#1 (3) {
+  ["assunto":"Email":private]=>
+  object(Assunto)#2 (1) {
+    ["texto"]=>
+    NULL
+  }
+  ["corpo":"Email":private]=>
+  object(Corpo)#3 (2) {
+    ["texto"]=>
+    NULL
+    ["formato"]=>
+    NULL
+  }
+  ["destinatario":"Email":private]=>
+  object(Destinatario)#4 (1) {
+    ["nome"]=>
+    NULL
+  }
+}
+
+</span></pre>
+
+<h4 class="cyber-h">5. Agregação.</h4>
+
+<p>Pode ser acessado por outros objetos sem passar pelo agregado.</p>
+<p>Não participa do ciclo de vida do componente.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+abstract class Motor {}
+
+class MotorV8 extends Motor{
+	
+}
+
+class carro {
+	private $motor;
+	public function __construct(Motor $motor) {
+		$this->motor = $motor;
+	}
+}
+
+$motorV8 = new MotorV8();
+$carro1  = new Carro($motorV8);
+unset($carro1);
+var_dump($motorV8);
+
+RESULTADO:
+
+object(MotorV8)#1 (0) {
+}
+
+</span></pre>
+
+<h4 class="cyber-h">6. Associação. (1 para N)</h4>
+
+<p>Onde do lado esquerdo tem zero ou mais instancias de outra classe.</p>
+<p>Pode ser usado array para representar.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+class Editora {
+	public $nome;
+	public $website;
+	public $publicacoes = [];
+}
+
+class Livro {
+	public $titulo;
+	public $edicao;
+}
+
+$editora = new Editora();
+$editora->nome = "Editora do Lucas";
+
+$livro1 = new Livro();
+$livro1->titulo = "Livro 1";
+
+$livro2 = new Livro();
+$livro2->titulo = "Livro 2";
+
+$editora->publicacoes[] = $livro1;
+$editora->publicacoes[] = $livro2;
+
+foreach($editora->publicacoes as $livro){
+	echo "O Livro publicado tem o título: $livro->titulo \n";
+}
+
+RESULTADO:
+O Livro publicado tem o título: Livro 1 
+O Livro publicado tem o título: Livro 2 
+</span></pre>
+
+<h4 class="cyber-h">7. Classe Associativa. (N para N)</h4>
+
+<p>A classe associativa faz parte de um relacionamento de Associação entre duas outras classes.</p>
+<p>É possivel anexar uma classe associativa para fornecer informações adicionais sobre os relacionamentos.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+
+class Ator {
+	public $nome;
+	public $atuacoes = [];
+}
+
+class Filme {
+	public $titulo;
+	public $atuacoes = [];
+}
+
+class Atuacao {
+	public $ator;
+	public $filme;
+	public $papel;
+
+	public function __construct (Ator $ator, Filme $filme, string $papel){
+		$this->ator = $ator;
+		$this->filme = $filme;
+		$this->papel = $papel;
+	}
+}
+
+
+$ator1 = new Ator();
+$ator1->nome = "Lucas";
+
+$atriz1 = new Ator();
+$atriz1->nome = "Maria";
+
+$filme1 = new Filme();
+$filme1->titulo = "Exemplo de Filme";
+
+$filme1->atuacoes[] = new Atuacao($ator1, $filme1, "Mocinho");
+$filme1->atuacoes[] = new Atuacao($atriz1, $filme1, "Vilã");
+
+var_dump($filme1);
+
+foreach($filme1->atuacoes as $atuacao){
+	echo $atuacao->ator->nome . " fez o papel de " . $atuacao->papel."\n";
+}
+
+RESULTADO:
+
+object(Filme)#3 (2) {
+  ["titulo"]=>
+  string(16) "Exemplo de Filme"
+  ["atuacoes"]=>
+  array(2) {
+    [0]=>
+    object(Atuacao)#4 (3) {
+      ["ator"]=>
+      object(Ator)#1 (2) {
+        ["nome"]=>
+        string(5) "Lucas"
+        ["atuacoes"]=>
+        array(0) {
+        }
+      }
+      ["filme"]=>
+      *RECURSION*
+      ["papel"]=>
+      string(7) "Mocinho"
+    }
+    [1]=>
+    object(Atuacao)#5 (3) {
+      ["ator"]=>
+      object(Ator)#2 (2) {
+        ["nome"]=>
+        string(5) "Maria"
+        ["atuacoes"]=>
+        array(0) {
+        }
+      }
+      ["filme"]=>
+      *RECURSION*
+      ["papel"]=>
+      string(5) "Vilã"
+    }
+  }
+}
+
+Lucas fez o papel de Mocinho
+Maria fez o papel de Vilã
+
+</span></pre>
+
+
+
+
 
