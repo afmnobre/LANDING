@@ -34,7 +34,7 @@ RESULTADO: offline
 </span></pre>
 <h4 class="cyber-h">2. Métodos Estáticos.</h4>
 
-<p>Dentro de FUNÇÕES com METODO STATIC não podemos chamar variaves com $this->variavel.
+<p>Dentro de FUNÇÕES com METODO STATIC não podemos chamar variaves com $this->variavel.</p>
 
 <p><strong>EXEMPLO:</strong></p>
 
@@ -264,3 +264,106 @@ RESULTADO GATO: 4.131
 RESULTADO HOMEM: 605.475
 
 </span></pre>
+
+<h4 class="cyber-h">10. TRAIT.</h4>
+
+<p>Faz a herança de maneira diferente do Extends.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+trait MinhaTrait{
+	public function oi() {
+		echo "Ola eu sou a TRAIT";
+	}
+}
+
+class Teste {
+	use MinhaTrait;
+}
+
+$t1 = new Teste();
+$t1->();
+
+RESULTADO:
+Ola eu sou a TRAIT
+
+</span></pre>
+
+<h4 class="cyber-h">11. TRAIT - Multiplo Uso.</h4>
+
+<p>Faz a herança de maneira diferente do Extends.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+trait Telefone {
+	public function ligar(){
+		echo "Alo...";
+	}
+}
+
+trait Camera {
+	public function filmar(){
+		echo "Filmando...";
+	}
+}
+
+class Smartphone {
+	use Telefone, Camera;
+	
+	public function videoChamada(){
+		echo $this->ligar().$this->filmar();
+	}
+}
+
+$usar = new Smartphone();
+$usar->videoChamada();
+
+RESULTADO:
+Alo...Filmando...
+
+</span></pre>
+
+<h4 class="cyber-h">12. TRAIT - Com métodos iguais.</h4>
+
+<p>Faz a herança de maneira diferente do Extends de multiplos metodos.</p>
+
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+trait Video {
+	public function tag(){
+		echo "&lt;video&gt;";
+	}
+}
+
+trait Audio {
+	public function tag(){
+		echo "&lt;audio&gt;";
+	}
+	
+}
+
+class Media {
+	use Audio, Video{
+		Video::tag insteadof Audio;
+		Audio::tag as tagAudio;
+	}
+}
+
+// Na classe Media determinamos que o Trait Video vai ser valor Default 
+// e adicionamos um apelido para o Trait Audio.
+
+$Tocar = new Media();
+$Tocar->tag();
+$Tocar->tagAudio();
+
+RESULTADO:
+&lt;video&gt;&lt;audio&gt;
+
+</span></pre>
+
+
+
+

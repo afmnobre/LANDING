@@ -1,0 +1,101 @@
+<h1 class="cyber-h">Aula 7 de PHP</h1>
+
+<h4 class="cyber-h">1. Classes Anônimas.</h4>
+
+<p>Podemos atriubir uma classe Anônima a uma variavel.</p>
+
+<pre><span class="code-block"> 
+$pessoa = new class {
+	public $nome	=	"Maria";
+	public $cpf		=	"325.154.144-55";
+
+	public function getNome() {
+		return strtoupper($this->nome);
+	}
+};
+
+echo $pessoa->getNome();
+
+$pessoa2 = new $pessoa();
+$pessoa2->nome = "Lucas";
+$pessoa2->cpf = "158.151.884-11";
+
+echo $pessoa2->getNome();
+
+RESULTADO:
+MARIA LUCAS
+
+</span></pre>
+
+
+
+<h4 class="cyber-h">2. Classe Anônima (VIA FUNCTION).</h4>
+
+<p>Podemos atribuir uma classe Anônima via função.</p>
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+function Pessoa_oo() {
+	return new class(){
+		public $nome	= "Maria";
+		public $cpf		= "345.345.123-55";
+		
+		public function getNome(){
+			return strtoupper($this->nome);
+		}
+	};
+}
+
+$pessoa = Pessoa_oo();
+var_dump($pessoa); 
+
+RESULTADO:
+oibject(class@anonymous)#1 (2) {
+  ["nome"]=>
+  string(5) "Maria"
+  ["cpf"]=>
+  string(14) "345.345.123-55"
+}
+
+</span></pre>
+
+<h4 class="cyber-h">3. Associações entre objetos.</h4>
+
+<p>Cardinalidade entre objetos.</p>
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+class Pessoa {
+	public $nome;
+	public $veiculo;
+}
+
+class Veiculo { 
+	public $placa;
+	public $modelo;
+}
+
+
+$proprietario1 = new Pessoa();
+$proprietario1->nome = "Lucas Nobre Ferreira Martins";
+
+$automovel1 = new Veiculo();
+$automovel1->placa = "ABC 1234";
+$automovel1->modelo = "HONDA";
+
+$proprietario1->veiculo = $automovel1;
+
+echo "A pessoa {$proprietario1->nome} tem o carro modelo {$proprietario1->veiculo->modelo} e placa {$proprietario1->veiculo->placa}";
+
+RESULTADO:
+A pessoa Lucas Nobre Ferreira Martins tem o carro modelo HONDA e placa ABC 1234
+
+</span></pre>
+
+<h4 class="cyber-h">4. Composiçãp.</h4>
+
+<p>Enquanto existir o Objeto Rei os outros tambem existem.</p>
+<p><strong>EXEMPLO:</strong></p>
+
+<pre><span class="code-block">
+
