@@ -45,4 +45,37 @@ echo "&lt;br&gt;Seja bem vindo(a) ". $_POST['nome'];
 ?&gt;
 
 </span></pre>
+<h4 class="cyber-h">1.2 Entrada de Dados (Form HTML)</h4>
 
+<p>Array com parametros (Formulário).</p>
+<br>
+<p>Arquivo sanduba_formulario.html</p>
+<pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Formulário Sandubão&lt;/title&gt;
+		&lt;meta charset="UTF-8"&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form action="sanduba.php" method="post"&gt;
+			Quais adicionais você deseja?&lt;br /&gt;
+			&lt;input type="checkbox" name="adicionais[]" value="queijo" /&gt;Queijo&lt;br /&gt;
+			&lt;input type="checkbox" name="adicionais[]" value="bacon" /&gt;Bacon&lt;br /&gt;
+			&lt;input type="checkbox" name="adicionais[]" value="ovo" /&gt;Ovo&lt;br /&gt;
+			&lt;input type="submit" name="Adicionar"/&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</span></pre>
+<br>
+<p>Arquivo sanduba.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+foreach($_REQUEST['adicionais'] as $adicional){
+	echo $adicional."&lt;br /&gt;";
+}
+
+?&gt;
+</span></pre>
