@@ -319,6 +319,174 @@ RESULTADO:
 
 </span></pre>
 
+<h4 class="cyber-h">4.3 DateTime (createFromFormat)</h4>
 
+<p>Manipulação de datas.</p>
+<pre><span class="code-block">
+$dateBr = DateTime::createFromFormat('d/m/Y','31/12/2003');
+echo $dateBr->format('d/m/Y')."\n";
 
+//Mais 1 dia Corrido.
+$dateBr->modify('+1 day');
+echo $dateBr->format('d/m/Y')."\n";
+//Mais 10 dias Uteis. (Segunda a Sexta).
+$dateBr->modify('+10 weekdays');
+echo $dateBr->format('d/m/Y')."\n";
+//Mais 1 mês e menos 3 Dias
+$dateBr->modify('+1 month -3 days');
+echo $dateBr->format('d/m/Y')."\n";
+//Mostrar a segunda-feira da Semana que esta a data.
+$dateBr->modify('monday this week');
+echo $dateBr->format('d/m/Y')."\n";
 
+RESULTADO:
+
+31/12/2003
+01/01/2004
+15/01/2004
+12/02/2004
+09/02/2004
+
+</span></pre>
+<h4 class="cyber-h">4.4 DateTime (Diferença entre Datas)</h4>
+
+<p>Manipulação de datas.</p>
+<pre><span class="code-block">
+$data1 = new DateTime('1987-09-15 05:02:00');
+$data2 = new DateTime('2023-11-06 10:12:34');
+$interval = $data1->diff($data2);
+
+var_dump($interval);
+
+echo "Anos: {$interval->y} - Meses: {$interval->m} - Dias: {$interval->d} - Horas: {$interval->h} - Minutos: {$interval->i} - Segundos: {$interval->s}";
+
+RESULTADO:
+
+object(DateInterval)#3 (10) {
+  ["y"]=>
+  int(36)
+  ["m"]=>
+  int(1)
+  ["d"]=>
+  int(22)
+  ["h"]=>
+  int(5)
+  ["i"]=>
+  int(10)
+  ["s"]=>
+  int(34)
+  ["f"]=>
+  float(0)
+  ["invert"]=>
+  int(0)
+  ["days"]=>
+  int(13201)
+  ["from_string"]=>
+  bool(false)
+}
+
+Anos: 36 - Meses: 1 - Dias: 22 - Horas: 5 - Minutos: 10 - Segundos: 34
+
+</span></pre>
+<h4 class="cyber-h">4.5 DateTime (Comparação)</h4>
+
+<p>Manipulação de datas.</p>
+<pre><span class="code-block">
+$hoje = new DateTime('today');
+$ontem = new DateTime('yesterday');
+
+var_dump($hoje > $ontem);
+var_dump($hoje < $ontem);
+var_dump($hoje == $ontem);
+
+RESULTADO:
+bool(true)
+bool(false)
+bool(false)
+</span></pre>
+<h4 class="cyber-h">5.1 Typed Properties (PHP 7.4 >=)</h4>
+
+<p>Permite especificar os tipos de atributos e restringir valores..</p>
+<pre><span class="code-block">
+declare(strict_types=1);
+
+class Veiculo {
+	public string $placa;
+	public string $modelo;
+}
+
+class Pessoa {
+	public string $nome;
+	public Veiculo $veiculo;
+}
+
+$pessoa1 = new Pessoa();
+$pessoa1->nome = "Maria";
+//$pessoa1->nome = 14.2; //Erro de Tipagem
+
+$veiculo = new Veiculo();
+$veiculo->placa = "ABC 1234";
+$veiculo->modelo = "Ford";
+
+$pessoa1->veiculo = $veiculo;
+//$pessoa1->veiculo = new Pessoa(); //Erro de Tipagem
+var_dump($pessoa1);
+
+RESULTADO:
+
+object(Pessoa)#1 (2) {
+  ["nome"]=>
+  string(5) "Maria"
+  ["veiculo"]=>
+  object(Veiculo)#2 (2) {
+    ["placa"]=>
+    string(8) "ABC 1234"
+    ["modelo"]=>
+    string(4) "Ford"
+  }
+}
+
+</span></pre>
+<h4 class="cyber-h">5.2 Typed Properties (Criando Entrada Padrão)</h4>
+
+<p>Criando uma entrada Genérica para manipular coisas que não são objetos como JSON.</p>
+<pre><span class="code-block">
+declare(strict_types=1);
+
+$array = ['nome' => 'Maria', 'idade' => 35, 'filhos' => ['nome' => 'lucas', 'nome' => 'mateus']];
+$objeto1 = (object) $array;
+var_dump($objeto1);
+
+$json = '{"nome":"josé","idade":45}';
+$objeto2 = json_decode($json);
+var_dump($objeto2);
+
+$objeto3 = new StdClass();
+$objeto3->nome = 'Lucas';
+var_dump($objeto3);
+
+RESULTADO:
+
+object(stdClass)#1 (3) {
+  ["nome"]=>
+  string(5) "Maria"
+  ["idade"]=>
+  int(35)
+  ["filhos"]=>
+  array(1) {
+    ["nome"]=>
+    string(6) "mateus"
+  }
+}
+object(stdClass)#2 (2) {
+  ["nome"]=>
+  string(5) "josé"
+  ["idade"]=>
+  int(45)
+}
+object(stdClass)#3 (1) {
+  ["nome"]=>
+  string(5) "Lucas"
+}
+
+</span></pre>

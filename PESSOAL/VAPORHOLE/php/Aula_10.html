@@ -1,0 +1,48 @@
+<h1 class="cyber-h">Aula 10 de PHP</h1>
+
+<h4 class="cyber-h">1.1 Entrada de Dados (CLI - Linha de Comando)</h4>
+
+<p>Entrada pelo CLI - Entrada pelo Terminal</p>
+<pre><span class="code-block">
+echo "Qual é o seu nome?".PHP_EOL;
+$input = fgets(STDIN);
+
+echo "Seja bem vindo(a) $input";
+
+</span></pre>
+
+<h4 class="cyber-h">1.2 Entrada de Dados (Form HTML)</h4>
+
+<p>Entrada de dados com formulário HTML e arquivo PHP.</p>
+<br>
+<p>Arquivo Formulario.html</p>
+<pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Formulário&lt;/title&gt;
+		&lt;meta charset="UTF-8"&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form action="cadastrar.php" method="post"&gt;
+			&lt;label&gt;Nome:&lt;/label&gt;
+			&lt;input type="text" name="nome"&gt;
+			&lt;label&gt;E-mail&lt;/label&gt;
+			&lt;input type="email" name="email"&gt;
+			&lt;input type="submit" value="cadastrar"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</span></pre>
+<br>
+<p>Arquivo cadastrar.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+var_dump($_POST);
+echo "&lt;br&gt;Seja bem vindo(a) ". $_POST['nome'];
+
+?&gt;
+
+</span></pre>
+
