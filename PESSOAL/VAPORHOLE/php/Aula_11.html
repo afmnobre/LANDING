@@ -3,5 +3,49 @@
 <h4 class="cyber-h">1.1 PHP com JavaScrip - AJAX</h4>
 
 <p>PHP Assíncrono (Ajax)</p>
+<br>
+<p>Arquivo documento.php</p>
 <pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Teste de Ajax&lt;/title&gt;
+		&lt;script src='curso.js'&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id='mensagem'&gt;&lt;/div&gt;
+		&lt;button onclick='meuAjax()'&gt;Ver Mensagem!&lt;/button&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</span></pre>
+<br>
+<p>Documento curso.js</p>
+<pre><span class="code-block">
+function meuAjax(){
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', './meu_ajax.php?nome=Maria');
+	xhr.onload = function(){
+		if(xhr.status == 200){
+			document.getElementById('mensagem').innerHTML = xhr.responseText;
+		}else{
+			alert('Erro! Status:' + xhr.status);
+		}
+	};
+	xhr.send();
+}
+
+</span></pre>
+<br>
+<p>Documento meu_ajax.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+echo "Meu Nome é ".$_REQUEST['nome'];
+echo " ".(new DateTime())->format('h:s:i');
+
+?&gt;
+
+</span></pre>
+
 
