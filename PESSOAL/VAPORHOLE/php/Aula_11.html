@@ -48,4 +48,105 @@ echo " ".(new DateTime())->format('h:s:i');
 
 </span></pre>
 
+<h4 class="cyber-h">2.1 PHP com JavaScrip - FETCH</h4>
 
+<p>PHP Assíncrono (FETCH).</p>
+<br>
+<p>Arquivo documento.php</p>
+<pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Teste de Ajax&lt;/title&gt;
+		&lt;script src='curso.js'&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id='mensagem'&gt;&lt;/div&gt;
+		&lt;button onclick='meuFetch()'&gt;Ver Mensagem!&lt;/button&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</span></pre>
+<br>
+<p>Documento curso.js</p>
+<pre><span class="code-block">
+function meuFetch(){
+	window.fetch('meu_fetch.php?nome=Maria')
+			.then(response => response.text())
+			.then(data => {
+		document.getElementById('mensagem').innerHTML = data;
+	}).catch(error => alert('Erro!' + error));
+}
+</span></pre>
+<br>
+<p>Documento meu_fetch.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+echo "Meu Nome é ".$_REQUEST['nome'];
+echo " ".(new DateTime())->format('h:s:i');
+
+?&gt;
+
+</span></pre>
+
+<h4 class="cyber-h">3.1 FORM com FETCH</h4>
+
+<p>Form Assíncrono (FETCH).</p>
+<br>
+<p>Arquivo formulario.php</p>
+<pre><span class="code-block">
+&lt;!doctype html&gt;
+&lt;html lang="pt-br"&gt;
+	&lt;head&gt;
+		&lt;meta charset="utf-8"&gt;
+		&lt;title&gt;formulario fetch&lt;/title&gt;
+		&lt;script src="curso.js"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form id="meu_form" action="meu_form_data.php"&gt;
+			&lt;label&gt;nome:&lt;/label&gt;
+			&lt;input type=text name="nome"&gt;
+			&lt;label&gt;email:&lt;/label&gt;
+			&lt;input type="email" name="email"&gt;
+			&lt;input type="submit" value="cadastrar"&gt;
+		&lt;/form&gt;
+		&lt;br&gt;
+		&lt;div id="mensagem"&gt;&lt;/div&gt;
+
+	&lt;script&gt;
+		const form = document.getelementbyid("meu_form");
+		form.addeventlistener("submit", meuformdata);
+	&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</span></pre>
+<br>
+<p>Arquivo curso.js</p>
+<pre><span class="code-block">
+function meuFormData(event){
+	event.preventDefault();
+	const formData = new FormData(this);
+	window.fetch(this.getAttribute('action'), {
+		method: 'POST',
+		body: formData
+	}).then(function(response){
+		return response.text();
+	}).then(function (text){
+		document.getElementById('mensagem').innerHTML =text;
+	}).catch(function (error){
+		alert('erro !' + error);
+	});
+}
+</span></pre>
+<br>
+<p>Arquivo meu_form_data.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+echo "Email {$_REQUEST['email']} cadastrado com sucesso";
+
+?&gt;
+
+</span></pre>
