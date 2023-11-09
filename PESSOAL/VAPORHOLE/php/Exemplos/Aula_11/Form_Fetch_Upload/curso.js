@@ -13,7 +13,9 @@ function meuFormData(event){
 		method: 'POST',
 		body: formData
 	}).then(function(response){
-		return response.text(); 
+		return response.text(); 	
+	}).then(function (text){
+		document.getElementById('mensagem').innerHTML =text;
 	}).catch(function (error){
 		alert('erro !' + error);
 	});
