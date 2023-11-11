@@ -151,6 +151,91 @@ echo "Email {$_REQUEST['email']} cadastrado com sucesso";
 
 </span></pre>
 
+<h4 class="cyber-h">3.2 UPLOAD DE ARQUIVO FORM com FETCH</h4>
+
+<p>Form Assíncrono (FETCH).</p>
+<br>
+<p>Arquivo formulario.php</p>
+<pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;title&gt;Formulario FETCH&lt;/title&gt;
+		&lt;script src="curso.js"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form id="meu_form" method="post" action="meu_form_data.php" enctype="multipart/form-data"&gt;
+			&lt;input type="text" name="nome"&gt;
+			&lt;input type="file" name='anexo' multiple="multiple"&gt;
+			&lt;input type="submit" value="UPLOAD"&gt;
+		&lt;/form&gt;
+		&lt;br&gt;
+		&lt;div id="mensagem"&gt;&lt;/div&gt;
+	&lt;script&gt;
+		const form = document.getElementById("meu_form");
+		form.addEventListener("submit", meuFormData);
+	&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</span></pre>
+<br>
+<p>Arquivo curso.js</p>
+<pre><span class="code-block">
+function meuFormData(event) {
+
+	event.preventDefault();
+	const formData = new FormData(this);
+	
+	var fileInput = document.querySelector('input[type="file"]');
+	formData.delete('anexo');
+	
+	for(var i=0; i &lt; fileInput.files.length; i++){
+		formData.append('anexo'+i, fileInput.files.item(i));
+	}
+
+	window.fetch(this.getAttribute('action'), {
+		method: 'post',
+		body: formData
+	}).then(function(response){
+		return response.text(); 	
+	}).then(function (text){
+		document.getElementById('mensagem').innerHTML = text;
+	}).catch(function (error){
+		alert('erro !' + error);
+	});
+}
+
+</span></pre>
+<br>
+<p>Arquivo meu_form_data.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+$diretorio = "anexos".DIRECTORY_SEPARATOR;
+
+foreach($_FILES as $arquivo) {
+	$nome = $arquivo['nome'];
+	$conteudo = file_get_contents($arquivo['tmp_name']);
+	file_put_contents($diretorio.$nome, $conteudo);
+	
+	if(file_exists($diretorio.$nome)){
+		echo "Arquivo {$nome} salvo com sucesso!&lt;br&gt;";
+	}
+}
+
+?&gt;
+</span></pre>
+
+
+
+
+
+
+
+
+
 
 
 
