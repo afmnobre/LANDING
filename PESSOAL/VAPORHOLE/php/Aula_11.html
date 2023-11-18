@@ -227,4 +227,88 @@ foreach($_FILES as $arquivo) {
 
 ?&gt;
 </span></pre>
+<p>Form COMBOBOX Assíncrono (FETCH).</p>
+<br>
+<p>Arquivo combo.php</p>
+<pre><span class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-bt"&gt;
+&lt;head&gt;
+	&lt;title&gt;Combobox Assíncrono&lt;/title&gt;
+	&lt;script src='curso.js'&gt;&lt;/script&gt;
+&lt;/head&gt; 
+&lt;body&gt; 
+  
+	&lt;form&gt;  
+		&lt;label&gt;Região:&lt;/label&gt; 
+		&lt;select id='regioes'&gt;   
+			&lt;option value=''&gt;Selecione...&lt;/option&gt;	      
+			&lt;option value='centro-oeste'&gt;Centro Oeste&lt;/option&gt;
+			&lt;option value='sul'&gt;Sul&lt;/option&gt;
+		&lt;/select&gt; 
+		&lt;label&gt;Estado:&lt;/label&gt;
+		&lt;select id='estados'&gt;&lt;/select&gt;
+	&lt;/form&gt;
 
+	&lt;script&gt;
+		const select = document.getElementById('regioes');
+		select.addEventListener('change', selectEstados.bind(this, 'regioes', 'estados'));
+	&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</span></pre>
+<br>
+<p>Arquivo curso.js</p>
+<pre><span class="code-block">
+function selectEstados(fonte_id, alvo_id) {
+	fonte = document.getElementById(fonte_id);
+	alvo  = document.getElementById(alvo_id);
+	alvo.length = 0;
+
+	let regiao_selecionada = fonte.options[fonte.selectedIndex].value;
+
+	if(regiao_selecionada == '')
+		return;
+	window.fetch("estados.php?regiao_selecionada="+regiao_selecionada)
+			.then(response =&gt; response.json())
+			.then(data =&gt; {
+			for(var i=0; i&lt;data.length; i++) {
+				var option = document.createElement('option');
+				option.innerHTML = data[i].nome;
+				option.value = data[i].id;
+				alvo.options.add(option);
+			}
+		}).catch(error =&gt; alert(error));
+}
+
+</span></pre>
+<br>
+<p>Arquivo estados.php</p>
+<pre><span class="code-block">
+&lt;?php
+
+header('content-type: application/json');
+
+$regiao_selecionada = $_REQUEST['regiao_selecionada'];
+
+$estados = [
+		'centro-oeste' =&gt; [
+			['id' =&gt; 'DF', 'nome' =&gt; 'Distrito Federal'],
+			['id' =&gt; 'GO', 'nome' =&gt; 'Goiás'],	
+			['id' =&gt; 'MT', 'nome' =&gt; 'Mato Grosso'],
+			['id' =&gt; 'MS', 'nome' =&gt; 'Mato Grosso do Sul']
+		],
+		'sul' =&gt; [
+			['id' =&gt; 'PR', 'nome' =&gt; 'Paraná'],
+			['id' =&gt; 'RS', 'nome' =&gt; 'Rio Grande do Sul'],
+			['id' =&gt; 'SC', 'nome' =&gt; 'Santa Catarina']
+		]   
+	]; 
+
+echo json_encode($estados[$regiao_selecionada]);
+
+?&gt;
+
+</span></pre>
