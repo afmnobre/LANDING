@@ -1,8 +1,33 @@
 <h1 class="cyber-h">Aula 12 de PHP</h1>
 
-<h4 class="cyber-h">1.1 PHP com JavaScrip - AJAX</h4>
+<h4 class="cyber-h">1.1 Throwables PHP 7</h4>
 
-<p>PHP Assíncrono (Ajax)</p>
+<p>PHP Throwables</p>
 <br>
-<p>Arquivo documento.php</p>
+<p>Tratamento de Erros PHP</p>
 <pre><span class="code-block">
+										____________________________
+										|         Throwables       |
+										|--------------------------|
+										| + getMessage					|
+										| + getCode						|
+										| + getFile						|
+					--------------*| + getLine 					|*--------------
+					|					| + getTrace 					|					|
+					|					| + getTraceAsString			|					|
+					|					| + getPrevious				|					|
+					|					| + __toString					|					|
+					|					|__________________________|					|
+					|																			|
+	____________|_______________										____________|____________	
+	|         Exception        |										| 			Error 			|
+	|--------------------------| * LogicException				|_______________________| * ArithmeticException
+	| + message						| * RuntimeException				| + message					| * AssertionError
+	| + code							|										| + code 					| * ParseError
+	| + file							|										| + file 					| * TypeError
+	| + line 						|										| + line 					|
+	|--------------------------|										|-----------------------|  
+	| + clone          			|										| + clone               | 
+	|__________________________|										|_______________________|
+
+</span></pre>
