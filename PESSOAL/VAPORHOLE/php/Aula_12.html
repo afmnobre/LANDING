@@ -5,7 +5,17 @@
 <p>PHP Throwables</p>
 <br>
 <p>Tratamento de Erros PHP</p>
+<p>Erros Throwables</p>
+* Tratados com try/catch<br>
+* Exceptions e Errors.
+<p>Erros não Throwables</p>
+* Suprimidos ou não com error_reporting.<br>
+* Tratados com set_error_handler. 
+
 <pre><span class="code-block">
+<img src=php/Exemplos/Aula_12/imagem_1.png>
+</span></pre>
+<!--
 										____________________________
 										|         Throwables       |
 										|--------------------------|
@@ -30,4 +40,67 @@
 	| + clone          			|										| + clone               | 
 	|__________________________|										|_______________________|
 
+-->
+
+<h4 class="cyber-h">1.2 Manipulação de Throwables</h4>
+
+<p>Verifica o erro de divisão por ZERO e ERRO de TIPAGEM.</p>
+<pre><span class="code-block">
+try {
+	intdiv(10,0);
+	$x = (function():int{return "ss";})();
+}catch(DivisionByZeroError $t){
+	echo "Erro de divisão por zero\n";
+}catch(TypeError $t){
+	echo "Erro de Tipagem\n";	
+}finally{
+	echo "Terminou nosso Try\n";
+}
+
 </span></pre>
+<p>Verifica se o valor esta dentro do Array.</p>
+<pre><span class="code-block">
+function escolhaMcOferta(int $opcao) : ?string{
+	$ofertas = ['big-mac', 'mc cheddar', 'quarteirao', 'mc fish', 'mc chicken'];
+	if(!in_array($opcao, range(1,5))){
+		throw new OutOfRangeException("Oferta Inválida");
+	}	
+	return $ofertas[--$opcao];
+}
+
+try{
+escolhaMcOferta(6);
+}catch(\Throwable $t){
+	echo "Ocorreu um Erro: ". $t-&gt;getMessage();
+}
+
+</span></pre>
+<h4 class="cyber-h">1.3 classe Customizada Throwables</h4>
+
+<p>Verifica o erro e grava num arquivo log.txt.</p>
+<pre><span class="code-block">
+class MinhaException extends Exception {
+    public function __construct($mensagem = "") {
+        parent::__construct($mensagem);
+        file_put_contents(
+            "log.txt",
+            (new DateTime())-&gt;format('d-m-Y H:i:s') . " " . $this-&gt;getTraceAsString() . "\n",
+            FILE_APPEND | LOCK_EX
+        );
+    }
+}
+
+function testar(int $x){
+    if($x == 0){
+        throw new MinhaException('Zero não pode');
+    }
+}
+
+try{
+    testar(0);
+} catch (Exception $exc){
+    echo $exc-&gt;getMessage();
+}
+
+</span></pre>
+
