@@ -12,3 +12,5 @@
 #1 {main}
 19-11-2023 02:08:17 #0 /srv/http/programacao/LANDING/PESSOAL/VAPORHOLE/php/Exemplos/Aula_12/MinhaException/exception.php(21): testar()
 #1 {main}
+19-11-2023 02:42:41 #0 /srv/http/programacao/LANDING/PESSOAL/VAPORHOLE/php/Exemplos/Aula_12/MinhaException/exception.php(21): testar()
+#1 {main}

@@ -103,4 +103,58 @@ try{
 }
 
 </span></pre>
+<h4 class="cyber-h">1.4 Tipos de erros não Throwables</h4>
 
+<p>Tabela</p>
+
+<table class="cyber-table">
+	<tr>
+		<td>Tipo</td>
+		<td>Constante</td>
+		<td>Significado</td>
+		<td>Interrompe Script?</td>
+		<td>Suprimido com @?</td>
+		<td>Tempo de:</td>
+	</tr>
+	<tr>
+		<td>NOTICE</td>
+		<td>E_NOTICE</td>
+		<td>Aviso para indicar que o script encontrou alguma coisa que pode indicar um erro.</td>
+		<td>NÃO</td>
+		<td>SIM</td>
+		<td>Execução</td>
+	</tr>
+	<tr>
+		<td>WARNING</td>
+		<td>E_WARNING</td>
+		<td>Erro não fatal.</td>
+		<td>NÃO</td>
+		<td>SIM</td>
+		<td>Execução</td>
+	</tr>
+	<tr>
+		<td>DEPRECATED</td>
+		<td>E_DEPRECATED</td>
+		<td>Aviso de um recurso depreciado e sera futuramente removido nas proximas versões do PHP.<</td>
+		<td>NÃO</td>
+		<td>SIM</td>
+		<td>Execução</td>
+	</tr>
+	<tr>
+		<td>ERROR</td>
+		<td>E_ERROR</td>
+		<td>Erro fatal em tempo de execução. Estes indicam erros que não podem ser recuperados.</td>
+		<td>SIM</td>
+		<td>NÃO</td>
+		<td>Execução</td>
+	</tr>
+	<tr>
+		<td>PARSE ERROR</td>
+		<td>E_PARSE</td>
+		<td>Erros gerados pelo interpretador devido ao erro de sintaxe no script.</td>
+		<td>SIM</td>
+		<td>NÃO</td>
+		<td>Compilação</td>
+	</tr>
+</table>
+	
