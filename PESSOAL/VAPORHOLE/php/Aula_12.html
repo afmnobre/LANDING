@@ -135,7 +135,7 @@ try{
 	<tr>
 		<td>DEPRECATED</td>
 		<td>E_DEPRECATED</td>
-		<td>Aviso de um recurso depreciado e sera futuramente removido nas proximas versões do PHP.<</td>
+		<td>Aviso de um recurso depreciado e sera futuramente removido nas proximas versões do PHP.</td>
 		<td>NÃO</td>
 		<td>SIM</td>
 		<td>Execução</td>
@@ -157,4 +157,59 @@ try{
 		<td>Compilação</td>
 	</tr>
 </table>
-	
+
+<h4 class="cyber-h">1.5 Tentanto tratar erros não Throwables com Try Catch</h4>
+<p>Exemplo:</p>
+<pre><span class="code-block">
+try {
+	//$c = $_POST['nome'];
+	//echo (10 /0); // Agora esse da pra tratar via Throwable
+	$newfunc = create_function('$a', 'return;'); // Agora esse da pra tratar via Throwable
+}catch(Throwable $t){
+	echo "estou aqui\n";
+	echo $t-&gt;getMessage();
+}
+
+</span></pre>
+
+<h4 class="cyber-h">1.6 Comando error_reporting</h4>
+<p>Exemplo:</p>
+<pre><span class="code-block">
+
+//Todos os erros não Throwables serão desligados.
+error_reporting(0);
+
+//Somente mostrará erros warning.
+error_reporting(E_WARNING);
+
+//Funciona com uma lista.
+error_reporting(E_WARNING | E_NOTICE);
+
+//Funciona com uma lista. Mostra todos os erros menos os de depreciação.
+error_reporting(E_ALL & ~E_DEPRECATED);
+
+</span></pre>
+
+
+<h4 class="cyber-h">1.7 set_error_handler</h4>
+<p>Fazer um erro não tratado pelo Throwable ser tratado pelo Try Catch.</p>
+<pre><span class="code-block">
+function meuManipulador($codigo, $mensagem, $arquivo, $linha){
+	if(error_reporting() & $codigo){
+		throw new Exception($mensagem, 0);
+	}
+}
+
+set_error_handler('meuManipulador');
+
+try{
+	$array = ['maria','josé'];
+	$b = $array[3];
+}catch(Exception $t){
+	echo "Posição não encontrada!\n";
+}finally{
+	restore_error_handler();
+}
+
+</span></pre>
+
