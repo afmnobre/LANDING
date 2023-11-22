@@ -212,4 +212,71 @@ try{
 }
 
 </span></pre>
+<h4 class="cyber-h">2.1 SERIALIZAÇÃO</h4>
+<p>Salvando dados para manter informações em um arquivo ou bloco de arquivos.</p>
+<p>Exemplo:</p>
+
+<br>
+<p>Arquivo Alunos.php</p>
+<pre><span class="code-block">
+class Aluno {
+	public $nome;
+	public $matricula;
+	public function __construct(string $nome, int $matricula) {
+		$this-&gt;nome 	  = $nome;
+		$this-&gt;matricula = $matricula;
+	}
+
+}
+
+</span></pre>
+
+<br>
+<p>Arquivo Turma.php</p>
+<pre><span class="code-block">
+class Turma {
+	public $nome;
+	public $data;
+	public $alunos;
+	public function __construct(string $nome, \DateTime $data, array $alunos = []){
+		$this-&gt;nome	   = $nome;
+		$this-&gt;data 	= $data;
+		$this-&gt;alunos  = $alunos;
+	}
+}
+
+</span></pre>
+
+<br>
+<p>Arquivo home.php</p>
+<pre><span class="code-block">
+include_once 'Turma.php';
+include_once 'Aluno.php';
+
+$turmas = [];
+
+$Aluno_1 = new Aluno('José', 123);
+$Aluno_2 = new Aluno('Maria', 235);
+$aluno_3 = new Aluno('Thiago', 312);
+
+$turmas[] = new Turma('PHP', new \DateTime('today'), [$Aluno_1, $Aluno_2]);
+$turmas[] = new Turma('JAVA', new \DateTime('yesterday'), [$Aluno_1, $Aluno_2, $Aluno_3]);
+$turmas[] = new Turma('DATABASE', new \DateTime('-1 month'), [$Aluno_2, $Aluno_3]);
+
+
+$serializacao = serialize($turmas);
+
+try{	
+	file_put_contents('dados.db', $serializacao);
+	echo "Arquivo Criado com Sucesso!";
+}catch(Exception $e) {
+	echo "O erro é: ". $e-&gt;getMessage();
+}
+
+</span></pre>
+<br>
+<p>Arquivo dados.db</p>
+<pre><span class="code-block">
+a:3:{i:0;O:5:"Turma":3:{s:4:"nome";s:3:"PHP";s:4:"data";O:8:"DateTime":3:{s:4:"date";s:26:"2023-11-22 00:00:00.000000";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"UTC";}s:6:"alunos";a:2:{i:0;O:5:"Aluno":2:{s:4:"nome";s:5:"José";s:9:"matricula";i:123;}i:1;O:5:"Aluno":2:{s:4:"nome";s:5:"Maria";s:9:"matricula";i:235;}}}i:1;O:5:"Turma":3:{s:4:"nome";s:4:"JAVA";s:4:"data";O:8:"DateTime":3:{s:4:"date";s:26:"2023-11-21 00:00:00.000000";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"UTC";}s:6:"alunos";a:3:{i:0;r:9;i:1;r:12;i:2;N;}}i:2;O:5:"Turma":3:{s:4:"nome";s:8:"DATABASE";s:4:"data";O:8:"DateTime":3:{s:4:"date";s:26:"2023-10-22 04:27:10.940226";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"UTC";}s:6:"alunos";a:2:{i:0;r:12;i:1;N;}}
+</span></pre>
 
